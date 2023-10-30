@@ -1,5 +1,10 @@
 const video = document.getElementById('video')
 
+let list_electeur = JSON.parse(electeurs_stringify.replaceAll('&#34;',"\""))
+let list_vote = JSON.parse(votes_stringify.replaceAll('&#34;',"\""))
+
+console.log(list_vote);
+
 Promise.all([
     faceapi.nets.tinyFaceDetector.loadFromUri('/models'),
     faceapi.nets.faceLandmark68Net.loadFromUri('/models'),
@@ -16,20 +21,32 @@ function startVideo() {
     )
 }
 
+
 function getLabeledFaceDescriptions() {
-    const labels = ["Elie", "Autre"];
+
+    let labels = []
+
+    for(let elect of list_electeur){
+        labels.push({
+            label : elect.nom +"-"+elect.identite,
+            images : [elect.photo, elect.photo2]
+        })
+    }
+
     return Promise.all(
+        
         labels.map(async (label) => {
             const descriptions = [];
-            for (let i = 1; i <= 2; i++) {
-                const img = await faceapi.fetchImage(`/labels/${label}/${i}.jpg`);
+            for (let i = 0; i < label.images.length; i++) {
+                const img = await faceapi.fetchImage(`${label.images[i]}`);
+                // const img = await faceapi.fetchImage(`{/labels/${label}/${i}.jpg}`);
                 const detections = await faceapi
                     .detectSingleFace(img)
                     .withFaceLandmarks()
                     .withFaceDescriptor();
                 descriptions.push(detections.descriptor);
             }
-            return new faceapi.LabeledFaceDescriptors(label, descriptions);
+            return new faceapi.LabeledFaceDescriptors(label.label, descriptions);
         })
     );
 }
@@ -59,6 +76,9 @@ video.addEventListener('play', async () => {
             // console.log(im);
             return faceMatcher.findBestMatch(im.descriptor);
         });
+
+        // console.log(list_electeur);
+
         results.forEach((result, i) => {
 
             // console.log(result);
@@ -68,14 +88,35 @@ video.addEventListener('play', async () => {
             });
             drawBox.draw(canvas);
 
-            res.innerHTML += result.label + " a éssayé d'entrer dans le bureau de vote n° 01, le " + new Date().toLocaleString() + "<br>----------------------<br>"
-            res.scrollIntoView(false);
+            // res.innerHTML += result.label + " a éssayé d'entrer dans le bureau de vote n° 01, le " + new Date().toLocaleString() + "<br>----------------------<br>"
+            // res.scrollIntoView(false);
 
-            if(result.label == "Elie"){
-                setInterval(()=>{
-                    location.href ="/election"
-                }, 5000)
+            
+
+            for(let electeur of list_electeur){
+                if(result.label == electeur.nom+"-"+electeur.identite){
+                    for(let vote of list_vote){
+                        res.innerHTML+=vote.electeur_id + '****'+electeur.id
+                        // if(vote.electeur_id == electeur.id){
+                            
+                        //     res.innerHTML+="Efa teo ianao fa aza mandainga"
+                        //     console.log("Efa teo ianao fa aza mandainga");
+                        // }else{
+                        //     res.innerHTML+="/election?id="+electeur.id
+                        //     // setInterval(() => {
+                        //     //     location.href = "/election?id="+electeur.id
+                        //     // }, 3000)
+                        // }
+                    }
+                    
+                }
             }
+
+            // if (result.label == "Elie") {
+            //     setInterval(() => {
+            //         location.href = "/election"
+            //     }, 5000)
+            // }
         });
     }, 100)
 })

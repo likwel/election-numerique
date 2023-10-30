@@ -1,6 +1,6 @@
 
 window.onload = () => {
-    fetch("/static/candidat.json")
+    fetch("/getAllCandidat")
         .then(response => {
             return response.json();
         }).then(candidats => {
@@ -8,14 +8,14 @@ window.onload = () => {
             let ul1 = ""
             let ul2 = ""
             let iter = 0
-            for (let candidat of candidats.candidat) {
+            for (let candidat of candidats) {
 
                 if (iter <= 6) {
                     ul1 += `
                     <li class="candidat">
                         <div class="items-candidat">
                             <div class="numero-candidat">
-                                <p >${candidat.id.toString().padStart(2, '0')}</p> 
+                                <p >${candidat.numero.toString().padStart(2, '0')}</p> 
                             </div>
                             <img class="photo-candidat" src="${candidat.logo}" alt="canditat n°" />
                             <img class="photo-candidat" src="${candidat.photo}" alt="canditat n°" />
@@ -29,7 +29,7 @@ window.onload = () => {
                     <li class="candidat">
                         <div class="items-candidat">
                             <div class="numero-candidat">
-                                <p >${candidat.id.toString().padStart(2, '0')}</p> 
+                                <p >${candidat.numero.toString().padStart(2, '0')}</p> 
                             </div>
                             <img class="photo-candidat" src="${candidat.logo}" alt="canditat n°" />
                             <img class="photo-candidat" src="${candidat.photo}" alt="canditat n°" />

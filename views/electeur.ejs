@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>E-fidy</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script defer src="/js/electeur.js"></script>
+</head>
+
+<body class="body-liste-electeur">
+    <div class="liste-electeur">
+
+        <section class="section-liste-electorale">
+            <!--for demo wrap-->
+            <h1>Liste électorale</h1>
+            <button class="ajout-electeur" onclick="openModal()">Ajouter un electeur</button>
+            <div class="tbl-header">
+                <table cellpadding="0" cellspacing="0" border="0">
+                    <thead>
+                        <tr>
+                            <th style="width: 20px;">N°</th>
+                            <th>CIN</th>
+                            <th>Nom</th>
+                            <th>Photo</th>
+                            <th>2è photo</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+            <div class="tbl-content">
+                <table cellpadding="0" cellspacing="0" border="0">
+                    <tbody id="inner-liste-electorale">
+
+
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <div class="d-none" id="modal">
+            <div class="alert">
+                <div >
+                    <form class="form-eleteur" action="/saveOneElector" method="post" enctype="multipart/form-data">
+                        <label class="label-electeur">Nom de l'électeur</label>
+                        <input type="text" class="input-electeur" id="nom-electeur" name="nom_electeur">
+                        <label class="label-electeur">CIN de l'électeur</label>
+                        <input type="text" class="input-electeur" id="cin-electeur" name="cin_electeur">
+                        <label class="label-electeur" for="photo-electeur">Photo de l'électeur</label>
+                        <input type="file" class="input-electeur" id="photo-electeur" name="photo_electeur">
+                        <label class="label-electeur" for="photo2-electeur">2è photo de l'électeur</label>
+                        <input type="file" class="input-electeur" id="photo2-electeur" name="photo2_electeur">
+                        <button class="ajout-electeur-alert" type="submit" >Enregistrer</button>
+                    </form>
+                    
+                </div>
+            </div>
+
+        </div>
+</body>
+
+</html>

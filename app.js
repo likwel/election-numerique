@@ -5,6 +5,9 @@ const port = 5000;
 const path = require('path');
 var bodyParser = require('body-parser');
 
+let formidable = require('formidable');
+let fs = require('fs');
+
 const { Sequelize } = require('sequelize');
 
 const db = require('./connexion');
@@ -39,10 +42,24 @@ const server = http.createServer(app);
  * Retourner la tepmate index.html
  */
 app.get('/', (req, res) => {
-    // res.statusCode = 200;
-    // res.setHeader('Content-Type', 'text/html');
-    // res.end('Hello World');
-    res.render("index");
+
+    ElecteurModel.findAll({ raw: true }).then(electeurs => {
+
+        // console.log(electeurs);
+        VoteModel.findAll({row :true}).then(votes=>{
+            res.render('index', {
+                electeurs : JSON.stringify(electeurs),
+                votes : JSON.stringify(votes)
+            });
+        })
+    })
+})
+
+/**
+ * Retourner la template electeur.html
+ */
+app.get('/liste-electorale', (req, res) => {
+    res.render("electeur");
 })
 
 /**
@@ -52,10 +69,65 @@ app.get('/getAllElector', (req, res) => {
 
     ElecteurModel.findAll()
         .then(electeurs => {
-            console.log(electeurs);
+            // console.log(electeurs);
             res.send(electeurs);
 
         })
+
+})
+
+/**
+ * Sauvegarder un electeur electeur
+ */
+app.post('/saveOneElector', (req, res) => {
+
+    //Create an instance of the form object
+    let form = new formidable.IncomingForm();
+
+    //Process the file upload in Node
+    form.parse(req, function (error, fields, file) {
+        let photo = file.photo_electeur[0].filepath;
+        let photo2 = file.photo2_electeur[0].filepath;
+
+        let rawData = fs.readFileSync(photo)
+        let rawData2 = fs.readFileSync(photo2)
+        
+        let nom = fields.nom_electeur[0]
+        let identite = fields.cin_electeur[0]
+
+        let newpath = path.join(__dirname, 'public/labels') + '/' + nom+'-'+identite+'/'
+
+        photo = newpath + 1+path.extname(file.photo_electeur[0].originalFilename);
+        photo2 = newpath + 2+path.extname(file.photo2_electeur[0].originalFilename);
+
+        let electeur = {
+                identite: identite,
+                nom: nom,
+                photo: '/labels/'+nom+'-'+identite+'/'+1+path.extname(file.photo_electeur[0].originalFilename),
+                photo2: '/labels/'+nom+'-'+identite+'/'+2+path.extname(file.photo2_electeur[0].originalFilename)
+            }
+
+        
+        if (!fs.existsSync(newpath)){
+            fs.mkdirSync(newpath);
+        }
+ 
+        fs.writeFile(photo, rawData, function (err) {
+            if (err) console.log(err)
+            // return res.send("Successfully uploaded")
+        })
+
+        fs.writeFile(photo2, rawData2, function (err) {
+            if (err) console.log(err)
+            // return res.send("Successfully uploaded")
+        })
+
+        ElecteurModel.create(electeur);
+
+        res.render("electeur");
+
+    });
+    
 
 })
 
@@ -130,6 +202,18 @@ app.get('/getResultat', (req, res) => {
 
     //   res.send({ count, rows });
 
+
+})
+
+/**
+ * Retourner à la liste des candidats
+ */
+app.get('/getAllCandidat', (req, res) => {
+
+    CandidatModel.findAll().then(result => {
+        // console.log(res);
+        res.send(result);
+    })
 
 })
 
