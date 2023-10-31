@@ -6,14 +6,20 @@
     <script defer src="/static/face-api.min.js"></script>
     <script defer src="/js/index.js"></script>
     <script>var electeurs_stringify = "<%=electeurs%>";</script>
-    <script>var votes_stringify = "<%=votes%>";</script>
   </head>
   <body class="body-cam">
-    <div class="flex-cam">
+    <div class="flex-cam" id="cam-play">
         <div class="faciale">
             <video id="video" width="500" height="400" autoplay muted></video>
         </div>
-        <code id="resultat"></code>
+    </div>
+
+    <div class="simple-spinner d-none" id="modal">
+      <div>
+        <span></span>
+        <label>Miandrasa kely azafady...</label>
+      </div>
+      
     </div>
     
   </body>

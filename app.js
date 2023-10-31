@@ -45,13 +45,9 @@ app.get('/', (req, res) => {
 
     ElecteurModel.findAll({ raw: true }).then(electeurs => {
 
-        // console.log(electeurs);
-        VoteModel.findAll({row :true}).then(votes=>{
-            res.render('index', {
-                electeurs : JSON.stringify(electeurs),
-                votes : JSON.stringify(votes)
-            });
-        })
+        res.render('index', {
+            electeurs: JSON.stringify(electeurs)
+        });
     })
 })
 
@@ -91,27 +87,27 @@ app.post('/saveOneElector', (req, res) => {
 
         let rawData = fs.readFileSync(photo)
         let rawData2 = fs.readFileSync(photo2)
-        
+
         let nom = fields.nom_electeur[0]
         let identite = fields.cin_electeur[0]
 
-        let newpath = path.join(__dirname, 'public/labels') + '/' + nom+'-'+identite+'/'
+        let newpath = path.join(__dirname, 'public/labels') + '/' + nom + '-' + identite + '/'
 
-        photo = newpath + 1+path.extname(file.photo_electeur[0].originalFilename);
-        photo2 = newpath + 2+path.extname(file.photo2_electeur[0].originalFilename);
+        photo = newpath + 1 + path.extname(file.photo_electeur[0].originalFilename);
+        photo2 = newpath + 2 + path.extname(file.photo2_electeur[0].originalFilename);
 
         let electeur = {
-                identite: identite,
-                nom: nom,
-                photo: '/labels/'+nom+'-'+identite+'/'+1+path.extname(file.photo_electeur[0].originalFilename),
-                photo2: '/labels/'+nom+'-'+identite+'/'+2+path.extname(file.photo2_electeur[0].originalFilename)
-            }
+            identite: identite,
+            nom: nom,
+            photo: '/labels/' + nom + '-' + identite + '/' + 1 + path.extname(file.photo_electeur[0].originalFilename),
+            photo2: '/labels/' + nom + '-' + identite + '/' + 2 + path.extname(file.photo2_electeur[0].originalFilename)
+        }
 
-        
-        if (!fs.existsSync(newpath)){
+
+        if (!fs.existsSync(newpath)) {
             fs.mkdirSync(newpath);
         }
- 
+
         fs.writeFile(photo, rawData, function (err) {
             if (err) console.log(err)
             // return res.send("Successfully uploaded")
@@ -124,17 +120,18 @@ app.post('/saveOneElector', (req, res) => {
 
         ElecteurModel.create(electeur);
 
+        res.redirect('/liste-electorale')
         res.render("electeur");
 
     });
-    
+
 
 })
 
 /**
  * Return json d'un candidat par Numero dans la bulletin unique
  */
-app.get('/getOneElectorByNumero/:numero', (req, res) => {
+app.get('/getOneCandidatByNumero/:numero', (req, res) => {
     // console.log(req.params.numero);
     CandidatModel.findOne({
         where: {
@@ -145,6 +142,36 @@ app.get('/getOneElectorByNumero/:numero', (req, res) => {
             res.send(electeurs);
 
         })
+})
+
+/**
+ * Return json d'un electeur par id dans la bulletin unique
+ */
+app.get('/getOneElecteurById/:id', (req, res) => {
+    // console.log(req.params.numero);
+    ElecteurModel.findOne({
+        where: {
+            id: req.params.id,
+        }
+    })
+        .then(electeurs => {
+            res.send(electeurs);
+
+        })
+})
+
+/**
+ * Return json d'un voteur(electeur) par id dans la bulletin unique
+ */
+app.get('/getOneVoteById/:id', (req, res) => {
+    // console.log(req.params.numero);
+    VoteModel.findOne({
+        where: {
+            electeur_id: req.params.id,
+        }
+    }).then(electeurs => {
+        res.send(electeurs);
+    })
 })
 
 /**
@@ -170,7 +197,35 @@ app.get('/save-candidat/WqaTx0Uj', (req, res) => {
  * Return template election.html
  */
 app.get('/election', (req, res) => {
-    res.render("election");
+
+    let id = req.query.id
+
+    if (id) {
+
+        VoteModel.findOne({
+            where: {
+                electeur_id: id,
+            }
+        }).then(electeur => {
+            if(electeur){
+                // res.send("Efa avy nifidy ianao tompoko")
+                res.render("election",{
+                    message : "exists"
+                });
+            }else{
+                res.render("election");
+            }
+        })
+
+    }else {
+        ElecteurModel.findAll({ raw: true }).then(electeurs => {
+            res.redirect('/')
+            res.render('index', {
+                electeurs: JSON.stringify(electeurs)
+            });
+        })
+
+    }
 })
 
 /**
@@ -184,7 +239,8 @@ app.post('/election/send', async (req, res) => {
         vote: true
     })
 
-    res.render("index");
+    res.render("election");
+
 })
 
 /**
@@ -218,5 +274,5 @@ app.get('/getAllCandidat', (req, res) => {
 })
 
 server.listen(port, () => {
-    console.log(`Now listening on port ${port}`);
+    console.log(`Maintenant à l'écoute sur le port ${port}`);
 });

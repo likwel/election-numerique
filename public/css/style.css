@@ -17,7 +17,7 @@ canvas {
     margin-left: 60px;
     width: 400px;
     height: 380px;
-    background-color: black;
+    /* background-color: black; */
     color: aliceblue;
     padding-left: 5px;
     overflow-y: auto;
@@ -121,7 +121,7 @@ canvas {
 }
 
 .d-none {
-    display: none;
+    display: none !important;
 }
 
 .candidat-non {
@@ -318,12 +318,12 @@ canvas {
     }
 }
 
-label {
+/* label {
     margin-left: 40px;
     color: #ddd;
     font-size: 30px;
     font-weight: 700;
-}
+} */
 
 a {
     color: inherit;
@@ -409,12 +409,14 @@ table {
 
 .tbl-header {
     background-color: rgba(255, 255, 255, 0.3);
+    height: 40px;
 }
 
 .tbl-content {
     /* height: 300px; */
     overflow-y: auto;
     margin-top: 0px;
+    padding: 10px 0;
     border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
@@ -437,6 +439,10 @@ td {
     border-bottom: solid 1px rgba(255, 255, 255, 0.1);
 }
 
+#mon-table {
+    padding: 20px 0;
+}
+
 
 /* demo styles */
 
@@ -449,7 +455,7 @@ td {
 }
 
 .section-liste-electorale {
-    margin: 50px;
+    margin: 5px 50px;
 }
 
 
@@ -495,7 +501,8 @@ td {
 ::-webkit-scrollbar-thumb {
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
-.ajout-electeur{
+
+.ajout-electeur {
     margin: 5px 0;
     background: aliceblue;
     /* outline: none; */
@@ -503,25 +510,31 @@ td {
     padding: 5px 10px;
     cursor: pointer;
 }
-.form-eleteur{
+
+.form-eleteur {
     display: flex;
     flex-direction: column;
     margin: 10px;
 }
+
 .form-eleteur * {
     margin: 5px;
 }
-.label-electeur{
+
+.label-electeur {
     font-size: 12px !important;
     color: cadetblue;
 }
-.input-electeur{
+
+.input-electeur {
+    height: 20px;
     padding: 5px;
     border-radius: 0.5rem;
     outline: none;
     border: 1px solid #25b7c4;
 }
-.ajout-electeur-alert{
+
+.ajout-electeur-alert {
     font-size: 15px;
     margin: 5px 0;
     background: aqua;
@@ -531,8 +544,153 @@ td {
     cursor: pointer;
 }
 
-.photo-electeur{
+.photo-electeur {
     width: 50px;
     height: 50px;
     clip-path: circle();
+}
+
+.btn {
+    padding: 5px 10px;
+    margin: 0px 3px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+.btn-success {
+    background-color: aqua;
+    border: aqua;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border: #dc3545;
+}
+
+.btn-2 {
+    font-size: 15px;
+}
+
+tbody td {
+    padding: 2px 10px !important;
+}
+
+.d-flex {
+    display: flex;
+    flex: auto;
+    justify-content: space-between;
+}
+
+.image-show {
+    width: 200px;
+    height: 100%;
+}
+
+.card-profil {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+}
+
+.identite-profil {
+    color: grey;
+    font-size: 18px;
+}
+
+.nom-profil {
+    color: aqua;
+    font-size: 20px;
+}
+
+.p-profil {
+    color: #000;
+}
+
+.button-profil {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+.a-profil {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+}
+
+.button-profil:hover,
+.a-profil:hover {
+    opacity: 0.7;
+}
+
+.simple-spinner {
+    width: 100% !important;
+    height: 100% !important;
+    position: absolute;
+    left: 40% !important;
+    top: 20% !important;
+    /* transform: translate(-50%, -50%); */
+    transform: translate(-40%, -20%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.simple-spinner div span {
+    margin-left: 15%;
+    display: block;
+    width: 100px;
+    height: 100px;
+    border: 3px solid transparent;
+    border-radius: 50%;
+    border-right-color: aqua;
+    animation: spinner-anim 0.8s linear infinite;
+}
+
+.simple-spinner div label {
+    margin-top: 10px;
+    width: 100%;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+@keyframes spinner-anim {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.div-success {
+    text-align: center;
+    margin: 20px 5px;
+    display: inline-grid;
+}
+
+.text-success {
+    font-size: 20px;
+    margin: 10px 5px;
+    color: #0d6efd;
+}
+
+.text-danger {
+    font-size: 20px;
+    margin: 10px 5px;
+    color: red;
+}
+
+.center {
+    text-align: center;
 }

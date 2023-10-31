@@ -1,9 +1,9 @@
 const video = document.getElementById('video')
 
 let list_electeur = JSON.parse(electeurs_stringify.replaceAll('&#34;',"\""))
-let list_vote = JSON.parse(votes_stringify.replaceAll('&#34;',"\""))
+// let list_vote = JSON.parse(votes_stringify.replaceAll('&#34;',"\""))
 
-console.log(list_vote);
+// console.log(electeurs_stringify);
 
 Promise.all([
     faceapi.nets.tinyFaceDetector.loadFromUri('/models'),
@@ -56,7 +56,12 @@ video.addEventListener('play', async () => {
     const labeledFaceDescriptors = await getLabeledFaceDescriptions();
     const faceMatcher = new faceapi.FaceMatcher(labeledFaceDescriptors);
 
-    let res = document.querySelector("#resultat")
+    let res = document.querySelector("#cam-play")
+
+    // <div id="resultat"></div>
+
+    let div = document.createElement("div")
+    div.id = "resultat"
 
     const canvas = faceapi.createCanvasFromMedia(video)
     document.querySelector(".faciale").prepend(canvas)
@@ -91,23 +96,34 @@ video.addEventListener('play', async () => {
             // res.innerHTML += result.label + " a éssayé d'entrer dans le bureau de vote n° 01, le " + new Date().toLocaleString() + "<br>----------------------<br>"
             // res.scrollIntoView(false);
 
-            
-
             for(let electeur of list_electeur){
+
                 if(result.label == electeur.nom+"-"+electeur.identite){
-                    for(let vote of list_vote){
-                        res.innerHTML+=vote.electeur_id + '****'+electeur.id
-                        // if(vote.electeur_id == electeur.id){
+
+                    writeElector(div, JSON.stringify(electeur))
+
+                    res.appendChild(div)
+
+                    runSpinner()
+
+                    setInterval(() => {
+                        location.href = "/election?id="+electeur.id
+                    }, 5000)
+                    
+
+                    // for(let vote of list_vote){
+                    //     res.innerHTML+=vote.electeur_id + '****'+electeur.id
+                    //     // if(vote.electeur_id == electeur.id){
                             
-                        //     res.innerHTML+="Efa teo ianao fa aza mandainga"
-                        //     console.log("Efa teo ianao fa aza mandainga");
-                        // }else{
-                        //     res.innerHTML+="/election?id="+electeur.id
-                        //     // setInterval(() => {
-                        //     //     location.href = "/election?id="+electeur.id
-                        //     // }, 3000)
-                        // }
-                    }
+                    //     //     res.innerHTML+="Efa teo ianao fa aza mandainga"
+                    //     //     console.log("Efa teo ianao fa aza mandainga");
+                    //     // }else{
+                    //     //     res.innerHTML+="/election?id="+electeur.id
+                    //     //     // setInterval(() => {
+                    //     //     //     location.href = "/election?id="+electeur.id
+                    //     //     // }, 3000)
+                    //     // }
+                    // }
                     
                 }
             }
@@ -120,3 +136,25 @@ video.addEventListener('play', async () => {
         });
     }, 100)
 })
+
+function writeElector(div, electo){
+    let elector = JSON.parse(electo)
+    div.innerHTML =`
+    <div class="card-profil">
+        <img src="${elector.photo}" alt="John" style="width:100%;height:250px;">
+        <label class="nom-profil">${elector.nom}</label>
+        <p class="identite-profil">CIN : ${elector.identite}</p>
+        <p class="p-profil">Harvard University</p>
+        <p><button class="button-profil">E-fidy</button></p>
+    </div>
+
+    `
+}
+
+function runSpinner(){
+    document.querySelector(".simple-spinner").classList.remove("d-none")
+    setInterval(() => {
+        document.querySelector(".simple-spinner").classList.add("d-none")
+    }, 5000)
+
+}
