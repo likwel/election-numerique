@@ -153,11 +153,9 @@ app.get('/getOneElecteurById/:id', (req, res) => {
         where: {
             id: req.params.id,
         }
+    }).then(electeurs => {
+        res.send(electeurs);
     })
-        .then(electeurs => {
-            res.send(electeurs);
-
-        })
 })
 
 /**
@@ -210,10 +208,12 @@ app.get('/election', (req, res) => {
             if(electeur){
                 // res.send("Efa avy nifidy ianao tompoko")
                 res.render("election",{
-                    message : "exists"
+                    message : "exist"
                 });
             }else{
-                res.render("election");
+                res.render("election",{
+                    message : "notexist"
+                });
             }
         })
 
@@ -239,7 +239,9 @@ app.post('/election/send', async (req, res) => {
         vote: true
     })
 
-    res.render("election");
+    res.render("election",{
+        message : "notexist"
+    });
 
 })
 

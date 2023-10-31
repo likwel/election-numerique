@@ -110,29 +110,9 @@ video.addEventListener('play', async () => {
                         location.href = "/election?id="+electeur.id
                     }, 5000)
                     
-
-                    // for(let vote of list_vote){
-                    //     res.innerHTML+=vote.electeur_id + '****'+electeur.id
-                    //     // if(vote.electeur_id == electeur.id){
-                            
-                    //     //     res.innerHTML+="Efa teo ianao fa aza mandainga"
-                    //     //     console.log("Efa teo ianao fa aza mandainga");
-                    //     // }else{
-                    //     //     res.innerHTML+="/election?id="+electeur.id
-                    //     //     // setInterval(() => {
-                    //     //     //     location.href = "/election?id="+electeur.id
-                    //     //     // }, 3000)
-                    //     // }
-                    // }
-                    
                 }
             }
 
-            // if (result.label == "Elie") {
-            //     setInterval(() => {
-            //         location.href = "/election"
-            //     }, 5000)
-            // }
         });
     }, 100)
 })
@@ -141,7 +121,7 @@ function writeElector(div, electo){
     let elector = JSON.parse(electo)
     div.innerHTML =`
     <div class="card-profil">
-        <img src="${elector.photo}" alt="John" style="width:100%;height:250px;">
+        <img src="${elector.photo}" alt="John" style="width:100%;height:auto;">
         <label class="nom-profil">${elector.nom}</label>
         <p class="identite-profil">CIN : ${elector.identite}</p>
         <p class="p-profil">Harvard University</p>

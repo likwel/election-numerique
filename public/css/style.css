@@ -16,7 +16,7 @@ canvas {
 #resultat {
     margin-left: 60px;
     width: 400px;
-    height: 380px;
+    /* height: 380px; */
     /* background-color: black; */
     color: aliceblue;
     padding-left: 5px;
@@ -693,4 +693,9 @@ tbody td {
 
 .center {
     text-align: center;
+}
+
+#video{
+    height: 100% !important;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }

@@ -46,7 +46,9 @@ window.onload = () => {
             document.querySelectorAll('#ul-candidat')[1].innerHTML = ul2
         });
 
-    if(deja){
+        console.log(deja);
+
+    if(deja == 'exist'){
         
         document.querySelector("#modal").classList.remove("d-none");
         document.querySelector("#modal").classList.add("op-1");
@@ -159,7 +161,7 @@ function accepter(id, nom) {
             document.querySelector("body").classList.add("modal-open");
 
             fetch("/getOneElecteurById/"+electeur)
-            .then(electeurd=>electeurd.json())
+            .then(electeurd => electeurd.json())
             .then(el=>{
 
                 document.querySelector("#confirm-candidat").classList.add("center")
