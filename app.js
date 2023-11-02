@@ -16,6 +16,7 @@ const CandidatModel = require('./entity/candidat');
 const ElecteurModel = require('./entity/electeur');
 const VoteModel = require('./entity/vote');
 const CandidatList = require('./public/js/candida_list');
+const Electeur = require('./entity/electeur');
 
 app.use(bodyParser.json());
 // app.use(express.json())
@@ -121,7 +122,7 @@ app.post('/saveOneElector', (req, res) => {
         ElecteurModel.create(electeur);
 
         res.redirect('/liste-electorale')
-        res.render("electeur");
+        // res.render("electeur");
 
     });
 
@@ -188,7 +189,9 @@ app.get('/save-candidat/WqaTx0Uj', (req, res) => {
             photo: candidat.photo
         });
     }
-    res.render("index");
+
+    res.redirect('/')
+    // res.render("index");
 })
 
 /**
@@ -205,27 +208,65 @@ app.get('/election', (req, res) => {
                 electeur_id: id,
             }
         }).then(electeur => {
-            if(electeur){
+            if (electeur) {
                 // res.send("Efa avy nifidy ianao tompoko")
-                res.render("election",{
-                    message : "exist"
+                res.render("election", {
+                    message: "exist"
                 });
-            }else{
-                res.render("election",{
-                    message : "notexist"
+            } else {
+                res.render("election", {
+                    message: "notexist"
                 });
             }
         })
 
-    }else {
-        ElecteurModel.findAll({ raw: true }).then(electeurs => {
-            res.redirect('/')
-            res.render('index', {
-                electeurs: JSON.stringify(electeurs)
-            });
-        })
+    } else {
+
+        res.redirect('/')
 
     }
+})
+
+app.get('/destroy-electeur/:id', (req, res) => {
+    Electeur.destroy({
+        where: {
+            id: req.params.id
+        },
+        truncate: true
+    });
+    res.redirect('/liste-electorale')
+})
+
+app.get('/update-electeur', (req, res) => {
+
+    Electeur.update({
+        identite: req.body.identite,
+        nom: req.body.nom,
+        photo: req.body.photo,
+        photo2: req.body.photo2
+    }, {
+        where: {
+            id: req.params.id
+        }
+    });
+
+    res.redirect('/liste-electorale')
+})
+
+/**
+ * Return template election.html
+ */
+app.get('/resultat-election', (req, res) => {
+
+    VoteModel.findAll({
+        where: {
+            electeur_id: id,
+        }
+    }).then(result => {
+        res.render("resultatVote", {
+            result: result
+        });
+    })
 })
 
 /**
@@ -239,8 +280,8 @@ app.post('/election/send', async (req, res) => {
         vote: true
     })
 
-    res.render("election",{
-        message : "notexist"
+    res.render("election", {
+        message: "notexist"
     });
 
 })

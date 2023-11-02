@@ -1,6 +1,6 @@
 const video = document.getElementById('video')
 
-let list_electeur = JSON.parse(electeurs_stringify.replaceAll('&#34;',"\""))
+let list_electeur = JSON.parse(electeurs_stringify.replaceAll('&#34;', "\""))
 // let list_vote = JSON.parse(votes_stringify.replaceAll('&#34;',"\""))
 
 // console.log(electeurs_stringify);
@@ -26,15 +26,15 @@ function getLabeledFaceDescriptions() {
 
     let labels = []
 
-    for(let elect of list_electeur){
+    for (let elect of list_electeur) {
         labels.push({
-            label : elect.nom +"-"+elect.identite,
-            images : [elect.photo, elect.photo2]
+            label: elect.nom + "-" + elect.identite,
+            images: [elect.photo, elect.photo2]
         })
     }
 
     return Promise.all(
-        
+
         labels.map(async (label) => {
             const descriptions = [];
             for (let i = 0; i < label.images.length; i++) {
@@ -96,9 +96,9 @@ video.addEventListener('play', async () => {
             // res.innerHTML += result.label + " a éssayé d'entrer dans le bureau de vote n° 01, le " + new Date().toLocaleString() + "<br>----------------------<br>"
             // res.scrollIntoView(false);
 
-            for(let electeur of list_electeur){
+            for (let electeur of list_electeur) {
 
-                if(result.label == electeur.nom+"-"+electeur.identite){
+                if (result.label == electeur.nom + "-" + electeur.identite) {
 
                     writeElector(div, JSON.stringify(electeur))
 
@@ -107,9 +107,9 @@ video.addEventListener('play', async () => {
                     runSpinner()
 
                     setInterval(() => {
-                        location.href = "/election?id="+electeur.id
+                        location.href = "/election?id=" + electeur.id
                     }, 5000)
-                    
+
                 }
             }
 
@@ -117,9 +117,9 @@ video.addEventListener('play', async () => {
     }, 100)
 })
 
-function writeElector(div, electo){
+function writeElector(div, electo) {
     let elector = JSON.parse(electo)
-    div.innerHTML =`
+    div.innerHTML = `
     <div class="card-profil">
         <img src="${elector.photo}" alt="John" style="width:100%;height:auto;">
         <label class="nom-profil">${elector.nom}</label>
@@ -131,10 +131,11 @@ function writeElector(div, electo){
     `
 }
 
-function runSpinner(){
+function runSpinner() {
     document.querySelector(".simple-spinner").classList.remove("d-none")
     setInterval(() => {
         document.querySelector(".simple-spinner").classList.add("d-none")
     }, 5000)
 
 }
+
