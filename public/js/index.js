@@ -131,11 +131,4 @@ function writeElector(div, electo) {
     `
 }
 
-function runSpinner() {
-    document.querySelector(".simple-spinner").classList.remove("d-none")
-    setInterval(() => {
-        document.querySelector(".simple-spinner").classList.add("d-none")
-    }, 5000)
-
-}
 

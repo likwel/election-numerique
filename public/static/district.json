@@ -1,0 +1,588 @@
+[
+    {
+        "type": "header",
+        "version": "5.2.1",
+        "comment": "Export to JSON plugin for PHPMyAdmin"
+    },
+    {
+        "type": "database",
+        "name": "ge"
+    },
+    {
+        "type": "table",
+        "name": "district",
+        "database": "ge",
+        "data": [
+            {
+                "id": "1",
+                "id_region": "1",
+                "libelle": "Arivonimamo"
+            },
+            {
+                "id": "2",
+                "id_region": "1",
+                "libelle": "Miarinarivo"
+            },
+            {
+                "id": "3",
+                "id_region": "1",
+                "libelle": "Soavinandriana"
+            },
+            {
+                "id": "4",
+                "id_region": "2",
+                "libelle": "Ambohidratrimo"
+            },
+            {
+                "id": "5",
+                "id_region": "2",
+                "libelle": "Andramasina"
+            },
+            {
+                "id": "6",
+                "id_region": "2",
+                "libelle": "Anjozorobe"
+            },
+            {
+                "id": "7",
+                "id_region": "2",
+                "libelle": "Ankazobe"
+            },
+            {
+                "id": "8",
+                "id_region": "2",
+                "libelle": "Antananarivo-Atsimondrano"
+            },
+            {
+                "id": "9",
+                "id_region": "2",
+                "libelle": "Antananarivo-Avaradrano"
+            },
+            {
+                "id": "10",
+                "id_region": "2",
+                "libelle": "Antananarivo-Renivohitra"
+            },
+            {
+                "id": "11",
+                "id_region": "2",
+                "libelle": "Manjakandriana"
+            },
+            {
+                "id": "13",
+                "id_region": "3",
+                "libelle": "Ambatolampy"
+            },
+            {
+                "id": "14",
+                "id_region": "3",
+                "libelle": "Antanifotsy"
+            },
+            {
+                "id": "15",
+                "id_region": "3",
+                "libelle": "Antsirabe-I"
+            },
+            {
+                "id": "16",
+                "id_region": "3",
+                "libelle": "Antsirabe-II"
+            },
+            {
+                "id": "17",
+                "id_region": "3",
+                "libelle": "Betafo"
+            },
+            {
+                "id": "18",
+                "id_region": "3",
+                "libelle": "Faratsiho"
+            },
+            {
+                "id": "19",
+                "id_region": "3",
+                "libelle": "Mandoto"
+            },
+            {
+                "id": "20",
+                "id_region": "4",
+                "libelle": "Fenoarivobe"
+            },
+            {
+                "id": "21",
+                "id_region": "4",
+                "libelle": "Tsiroanomandidy"
+            },
+            {
+                "id": "22",
+                "id_region": "5",
+                "libelle": "Andapa"
+            },
+            {
+                "id": "23",
+                "id_region": "5",
+                "libelle": "Antalaha"
+            },
+            {
+                "id": "24",
+                "id_region": "5",
+                "libelle": "Sambava"
+            },
+            {
+                "id": "25",
+                "id_region": "5",
+                "libelle": "Vohemar"
+            },
+            {
+                "id": "27",
+                "id_region": "6",
+                "libelle": "Antsiranana-I"
+            },
+            {
+                "id": "28",
+                "id_region": "6",
+                "libelle": "Antsiranana-II"
+            },
+            {
+                "id": "29",
+                "id_region": "6",
+                "libelle": "Ambilobe"
+            },
+            {
+                "id": "30",
+                "id_region": "6",
+                "libelle": "Ambanja"
+            },
+            {
+                "id": "31",
+                "id_region": "6",
+                "libelle": "Nosy-Be"
+            },
+            {
+                "id": "32",
+                "id_region": "7",
+                "libelle": "Ambatofinandrahana"
+            },
+            {
+                "id": "33",
+                "id_region": "7",
+                "libelle": "Ambositra"
+            },
+            {
+                "id": "34",
+                "id_region": "7",
+                "libelle": "Fandriana"
+            },
+            {
+                "id": "35",
+                "id_region": "7",
+                "libelle": "Manandriana"
+            },
+            {
+                "id": "36",
+                "id_region": "8",
+                "libelle": "Ambalavao"
+            },
+            {
+                "id": "37",
+                "id_region": "8",
+                "libelle": "Ambohimahasoa"
+            },
+            {
+                "id": "38",
+                "id_region": "8",
+                "libelle": "Fianarantsoa"
+            },
+            {
+                "id": "39",
+                "id_region": "8",
+                "libelle": "Ikalamavony"
+            },
+            {
+                "id": "40",
+                "id_region": "8",
+                "libelle": "Isandra"
+            },
+            {
+                "id": "41",
+                "id_region": "8",
+                "libelle": "Lalangina"
+            },
+            {
+                "id": "42",
+                "id_region": "8",
+                "libelle": "Vohibato"
+            },
+            {
+                "id": "43",
+                "id_region": "9",
+                "libelle": "Ifanadiana"
+            },
+            {
+                "id": "44",
+                "id_region": "9",
+                "libelle": "Ikongo"
+            },
+            {
+                "id": "45",
+                "id_region": "9",
+                "libelle": "Manakara"
+            },
+            {
+                "id": "46",
+                "id_region": "9",
+                "libelle": "Mananjary"
+            },
+            {
+                "id": "47",
+                "id_region": "9",
+                "libelle": "Nosy-Varika"
+            },
+            {
+                "id": "48",
+                "id_region": "9",
+                "libelle": "Vohipeno"
+            },
+            {
+                "id": "49",
+                "id_region": "10",
+                "libelle": "Befotaka"
+            },
+            {
+                "id": "50",
+                "id_region": "10",
+                "libelle": "Farafangana"
+            },
+            {
+                "id": "51",
+                "id_region": "10",
+                "libelle": "Midongy"
+            },
+            {
+                "id": "52",
+                "id_region": "10",
+                "libelle": "Vangaindrano"
+            },
+            {
+                "id": "53",
+                "id_region": "10",
+                "libelle": "Vondrozo"
+            },
+            {
+                "id": "54",
+                "id_region": "11",
+                "libelle": "Iakora"
+            },
+            {
+                "id": "55",
+                "id_region": "11",
+                "libelle": "Ihosy"
+            },
+            {
+                "id": "56",
+                "id_region": "11",
+                "libelle": "Ivohibe"
+            },
+            {
+                "id": "57",
+                "id_region": "12",
+                "libelle": "Analalava"
+            },
+            {
+                "id": "58",
+                "id_region": "12",
+                "libelle": "Antsohihy"
+            },
+            {
+                "id": "59",
+                "id_region": "12",
+                "libelle": "Bealanana"
+            },
+            {
+                "id": "60",
+                "id_region": "12",
+                "libelle": "Befandriana-Avaratra"
+            },
+            {
+                "id": "61",
+                "id_region": "12",
+                "libelle": "Boriziny"
+            },
+            {
+                "id": "62",
+                "id_region": "12",
+                "libelle": "Mampikony"
+            },
+            {
+                "id": "63",
+                "id_region": "12",
+                "libelle": "Mandritsara"
+            },
+            {
+                "id": "64",
+                "id_region": "13",
+                "libelle": "Ambato-Boeny"
+            },
+            {
+                "id": "65",
+                "id_region": "13",
+                "libelle": "Mahajanga-I"
+            },
+            {
+                "id": "66",
+                "id_region": "13",
+                "libelle": "Mahajanga-II"
+            },
+            {
+                "id": "67",
+                "id_region": "13",
+                "libelle": "Marovoay"
+            },
+            {
+                "id": "68",
+                "id_region": "13",
+                "libelle": "Mitsinjo"
+            },
+            {
+                "id": "69",
+                "id_region": "13",
+                "libelle": "Soalala"
+            },
+            {
+                "id": "70",
+                "id_region": "14",
+                "libelle": "Kandreho"
+            },
+            {
+                "id": "71",
+                "id_region": "14",
+                "libelle": "Maevatanana"
+            },
+            {
+                "id": "72",
+                "id_region": "14",
+                "libelle": "Tsaratanana"
+            },
+            {
+                "id": "73",
+                "id_region": "15",
+                "libelle": "Ambatomainty"
+            },
+            {
+                "id": "74",
+                "id_region": "15",
+                "libelle": "Antsalova"
+            },
+            {
+                "id": "75",
+                "id_region": "15",
+                "libelle": "Besalampy"
+            },
+            {
+                "id": "76",
+                "id_region": "15",
+                "libelle": "Maintirano"
+            },
+            {
+                "id": "77",
+                "id_region": "15",
+                "libelle": "Morafenobe"
+            },
+            {
+                "id": "78",
+                "id_region": "16",
+                "libelle": "Ambatondrazaka"
+            },
+            {
+                "id": "79",
+                "id_region": "16",
+                "libelle": "Amparafaravola"
+            },
+            {
+                "id": "80",
+                "id_region": "16",
+                "libelle": "Andilamena"
+            },
+            {
+                "id": "81",
+                "id_region": "16",
+                "libelle": "Anosibe-An'ala"
+            },
+            {
+                "id": "82",
+                "id_region": "16",
+                "libelle": "Moramanga"
+            },
+            {
+                "id": "83",
+                "id_region": "17",
+                "libelle": "Antanambao-Manampotsy"
+            },
+            {
+                "id": "84",
+                "id_region": "17",
+                "libelle": "Brickaville"
+            },
+            {
+                "id": "85",
+                "id_region": "17",
+                "libelle": "Mahanoro"
+            },
+            {
+                "id": "86",
+                "id_region": "17",
+                "libelle": "Marolambo"
+            },
+            {
+                "id": "87",
+                "id_region": "17",
+                "libelle": "Tamatave-I"
+            },
+            {
+                "id": "88",
+                "id_region": "17",
+                "libelle": "Tamatave-II"
+            },
+            {
+                "id": "89",
+                "id_region": "17",
+                "libelle": "Vatomandry"
+            },
+            {
+                "id": "90",
+                "id_region": "18",
+                "libelle": "Fénérive-Est"
+            },
+            {
+                "id": "91",
+                "id_region": "18",
+                "libelle": "Manarana-Nord"
+            },
+            {
+                "id": "92",
+                "id_region": "18",
+                "libelle": "Maroantsetra"
+            },
+            {
+                "id": "93",
+                "id_region": "18",
+                "libelle": "Nosy-Boraha"
+            },
+            {
+                "id": "94",
+                "id_region": "18",
+                "libelle": "Soanierana-Ivongo"
+            },
+            {
+                "id": "95",
+                "id_region": "18",
+                "libelle": "Vavatenina"
+            },
+            {
+                "id": "96",
+                "id_region": "19",
+                "libelle": "Belo-sur-Tsiribihina"
+            },
+            {
+                "id": "97",
+                "id_region": "19",
+                "libelle": "Mahabo"
+            },
+            {
+                "id": "98",
+                "id_region": "19",
+                "libelle": "Manja"
+            },
+            {
+                "id": "99",
+                "id_region": "19",
+                "libelle": "Miandrivazo"
+            },
+            {
+                "id": "100",
+                "id_region": "19",
+                "libelle": "Morondava"
+            },
+            {
+                "id": "101",
+                "id_region": "20",
+                "libelle": "Ampanihy"
+            },
+            {
+                "id": "102",
+                "id_region": "20",
+                "libelle": "Ankazoabo"
+            },
+            {
+                "id": "103",
+                "id_region": "20",
+                "libelle": "Benenitra"
+            },
+            {
+                "id": "104",
+                "id_region": "20",
+                "libelle": "Betioky-Sud"
+            },
+            {
+                "id": "105",
+                "id_region": "20",
+                "libelle": "Beroroha"
+            },
+            {
+                "id": "106",
+                "id_region": "20",
+                "libelle": "Morombe"
+            },
+            {
+                "id": "107",
+                "id_region": "20",
+                "libelle": "Sakaraha"
+            },
+            {
+                "id": "108",
+                "id_region": "20",
+                "libelle": "Tuléar-I"
+            },
+            {
+                "id": "109",
+                "id_region": "20",
+                "libelle": "Tuléar-II"
+            },
+            {
+                "id": "110",
+                "id_region": "21",
+                "libelle": "Ambovombe"
+            },
+            {
+                "id": "111",
+                "id_region": "21",
+                "libelle": "Bekily"
+            },
+            {
+                "id": "112",
+                "id_region": "21",
+                "libelle": "Beloha"
+            },
+            {
+                "id": "113",
+                "id_region": "21",
+                "libelle": "Tsiombe"
+            },
+            {
+                "id": "114",
+                "id_region": "22",
+                "libelle": "Amboasary-Sud"
+            },
+            {
+                "id": "115",
+                "id_region": "22",
+                "libelle": "Betroka"
+            },
+            {
+                "id": "116",
+                "id_region": "22",
+                "libelle": "Taolanaro"
+            }
+        ]
+    }
+]

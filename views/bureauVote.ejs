@@ -4,16 +4,17 @@
 <head>
     <title>E-fidy</title>
     <link rel="stylesheet" href="/css/style.css">
-    <!-- <script defer src="face-api.min.js"></script> -->
+    <link rel="stylesheet" href="/static/jquery.dataTables.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
     <script defer src="/js/script.js"></script>
+    <script defer src="/js/bureauVote.js"></script>
     <script src="/static/jquery-3.7.1.min.js"></script>
-    <script defer src="/js/election.js"></script>
-    <script> var deja = "<%=message%>"; </script>
-
+    <script src="/static/jquery.dataTables.min.js"></script>
+    <script src="/static/sweetalert2@11.js"></script>
 </head>
 
 <body>
+
     <nav class="navbar navbar-expand-custom navbar-mainbg">
         <!-- <a class="navbar-brand navbar-logo" href="#"> </a>
         <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -32,46 +33,57 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/"><i class="fas fa-tachometer-alt"></i>Fandraisana</a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="/election"><i class="fa-solid fa-user-check"></i>Fifidianana</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/liste-electorale"><i class="fa-solid fa-list-ol"></i>Lisi-pifidianana</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item active">
                     <a class="nav-link" href="/bureau-de-vote"><i
                             class="fa-regular fa-building"></i></i>Biraom-pifidianana</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/resultat-election"><i class="far fa-chart-bar"></i>Valim-pifidianana</a>
                 </li>
-                
+
             </ul>
         </div>
     </nav>
 
-    <h1 style="color: blueviolet !important;">Fifidianana filoham-pirenena 2023</h1>
-    <div class="election-head" >
-        <img src="/assets/images/head.png">
-    </div>
-    <div class="election-body">
-        <ul id="ul-candidat" class="ul1">
-        </ul>
-        <div class="bulletin-specimen">
-            <img src="/assets/images/specimen.png">
+    <div class="body-liste-electeur">
+        <div class="liste-electeur">
+
+            <section class="section-liste-electorale">
+
+                <div class="tbl-content">
+                    <table cellpadding="0" cellspacing="0" border="0" id="mon-table">
+
+                        <thead style="padding: 0 10px ;" class="tbl-header">
+                            <tr>
+                                <th style="width: 20px;">N°</th>
+                                <th>Fokontany</th>
+                                <th>Kaominina</th>
+                            </tr>
+                        </thead>
+
+                        <tbody id="inner-bureau-electorale">
+
+
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
         </div>
-        <ul id="ul-candidat" class="ul2">
-        </ul>
-    </div>
 
-    <div class="d-none" id="modal">
-        <div class="alert" id="confirm-candidat">
+        <div class="simple-spinner d-none" id="modal">
+            <div>
+                <span></span>
+                <label>Miandrasa kely azafady...</label>
+            </div>
 
         </div>
-
-    </div>
-
 </body>
 
 </html>
-

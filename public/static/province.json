@@ -1,0 +1,42 @@
+[
+    {
+        "type": "header",
+        "version": "5.2.1",
+        "comment": "Export to JSON plugin for PHPMyAdmin"
+    },
+    {
+        "type": "database",
+        "name": "ge"
+    },
+    {
+        "type": "table",
+        "name": "province",
+        "database": "ge",
+        "data": [
+            {
+                "id": "1",
+                "nom": "Antananarivo"
+            },
+            {
+                "id": "2",
+                "nom": "Antsiranana"
+            },
+            {
+                "id": "3",
+                "nom": "Fianarantsoa"
+            },
+            {
+                "id": "4",
+                "nom": "Mahajanga"
+            },
+            {
+                "id": "5",
+                "nom": "Toamasina"
+            },
+            {
+                "id": "6",
+                "nom": "Toliara"
+            }
+        ]
+    }
+]

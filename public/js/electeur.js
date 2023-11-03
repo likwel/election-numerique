@@ -1,11 +1,4 @@
 
-// let electeur = {
-//     identite: req.body.identite,
-//     nom: req.body.nom,
-//     photo: req.body.photo,
-//     photo2: req.body.photo2
-// }
-
 fetch('/getAllElector').then(response => response.json())
     .then(electeurs => {
 
@@ -19,7 +12,7 @@ fetch('/getAllElector').then(response => response.json())
             <td>${electeur.nom}</td>
             <td><img class="photo-electeur" src="${electeur.photo}"></td>
             <td><img class="photo-electeur" src="${electeur.photo2}"></td>
-            <td><button class="btn btn-success"><i class="fa-regular fa-pen-to-square"></i>Hanova</button><button class="btn btn-danger" onclick="hamafa(${electeur.id})"><i class="fa-solid fa-user-xmark"></i>Fafàna</button></td>
+            <td><button class="btn btn-success" onclick="hanova(${electeur.id},'${electeur.nom}','${electeur.identite}','${electeur.photo}','${electeur.photo2}')"><i class="fa-regular fa-pen-to-square"></i>Hanova</button><button class="btn btn-danger" onclick="hamafa(${electeur.id})"><i class="fa-solid fa-user-xmark"></i>Fafàna</button></td>
             </tr>`
             }
 
@@ -34,11 +27,11 @@ fetch('/getAllElector').then(response => response.json())
 
         $('#mon-table').DataTable({
             "language": {
-                url: '//cdn.datatables.net/plug-ins/1.13.4/i18n/fr-FR.json',
+                url: '/static/mg-MG.json',
             }
         });
 
-    })
+})
 
 function closeModal() {
     document.querySelector("#modal").classList.add("d-none");
@@ -50,6 +43,13 @@ function openModal() {
     document.querySelector("#modal").classList.remove("d-none");
     document.querySelector("#modal").classList.add("op-1");
     document.querySelector("body").classList.add("modal-open");
+
+    document.querySelector('#id-hidden').value = 0
+    document.querySelector('#type-hidden').value = "create"
+    document.querySelector('#nom-electeur').value = ""
+    document.querySelector('#cin-electeur').value =""
+    document.querySelector('#photo-electeur').value = ""
+    document.querySelector('#photo2-electeur').value =""
 }
 
 function saveElector() {
@@ -84,4 +84,19 @@ function hamafa(id) {
         }
     })
 
+}
+
+function hanova(id, nom, identite, photo, photo2){
+    openModal()
+
+    // console.log(JSON.parse(electeur));
+
+    // let ele = JSON.parse(electeur)
+    
+    document.querySelector('#id-hidden').value = id
+    document.querySelector('#type-hidden').value = "update"
+    document.querySelector('#nom-electeur').value = nom
+    document.querySelector('#cin-electeur').value =identite
+    document.querySelector('#photo-electeur').value = photo
+    document.querySelector('#photo2-electeur').value =photo2
 }

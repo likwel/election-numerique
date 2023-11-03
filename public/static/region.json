@@ -1,0 +1,128 @@
+[
+    {
+        "type": "header",
+        "version": "5.2.1",
+        "comment": "Export to JSON plugin for PHPMyAdmin"
+    },
+    {
+        "type": "database",
+        "name": "ge"
+    },
+    {
+        "type": "table",
+        "name": "region",
+        "database": "ge",
+        "data": [
+            {
+                "id": "1",
+                "id_province": "1",
+                "nom": "Itasy"
+            },
+            {
+                "id": "2",
+                "id_province": "1",
+                "nom": "Analamanga"
+            },
+            {
+                "id": "3",
+                "id_province": "1",
+                "nom": "Vakinankaratra"
+            },
+            {
+                "id": "4",
+                "id_province": "1",
+                "nom": "Bongolava"
+            },
+            {
+                "id": "5",
+                "id_province": "2",
+                "nom": "SAVA"
+            },
+            {
+                "id": "6",
+                "id_province": "2",
+                "nom": "DIANA"
+            },
+            {
+                "id": "7",
+                "id_province": "3",
+                "nom": "Amoron'i Mania"
+            },
+            {
+                "id": "8",
+                "id_province": "3",
+                "nom": "Haute Matsiatra"
+            },
+            {
+                "id": "9",
+                "id_province": "3",
+                "nom": "Vatovavy-Fitovinany"
+            },
+            {
+                "id": "10",
+                "id_province": "3",
+                "nom": "Atsimo-Atsinanana"
+            },
+            {
+                "id": "11",
+                "id_province": "3",
+                "nom": "Ihorombe"
+            },
+            {
+                "id": "12",
+                "id_province": "4",
+                "nom": "Sofia"
+            },
+            {
+                "id": "13",
+                "id_province": "4",
+                "nom": "Boeny"
+            },
+            {
+                "id": "14",
+                "id_province": "4",
+                "nom": "Betsiboka"
+            },
+            {
+                "id": "15",
+                "id_province": "4",
+                "nom": "Melaky"
+            },
+            {
+                "id": "16",
+                "id_province": "5",
+                "nom": "Alaotra-Mangoro"
+            },
+            {
+                "id": "17",
+                "id_province": "5",
+                "nom": "Atsinanana"
+            },
+            {
+                "id": "18",
+                "id_province": "5",
+                "nom": "Analanjirofo"
+            },
+            {
+                "id": "19",
+                "id_province": "6",
+                "nom": "Menabe"
+            },
+            {
+                "id": "20",
+                "id_province": "6",
+                "nom": "Atsimo-Andrefana"
+            },
+            {
+                "id": "21",
+                "id_province": "6",
+                "nom": "Androy"
+            },
+            {
+                "id": "22",
+                "id_province": "6",
+                "nom": "Anosy"
+            }
+        ]
+    }
+]

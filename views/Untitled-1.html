@@ -1,0 +1,113 @@
+
+<main class="em-page__content">
+  <div class="em-search-form--wrapper">
+    <form id="em-search-form" class="em-search-form" action="" method="post">
+      <h2 class="em-search-form__title em-title--secondary"> Votre recherche </h2>
+      <div class="em-search-form__content">
+        <div class="mdc-tab-bar em-search-form__scroll-wrapper" role="tablist">
+          <div class="mdc-tab-scroller">
+            <div class="mdc-tab-scroller__scroll-area">
+              <div class="mdc-tab-scroller__scroll-content"> <button type="button" id="casden" value="casden"
+                  class="mdc-tab mdc-tab--active em-search-form__agence-type-button" role="tab" aria-selected="true"
+                  tabindex="0"> <span class="mdc-tab__content"> <span class="mdc-tab__text-label"> Délégations
+                      Départementales CASDEN </span> </span> <span class="mdc-tab-indicator mdc-tab-indicator--active">
+                    <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"> </span> </span>
+                  <span class="mdc-tab__ripple"> </span> </button> <button type="button" value="bp"
+                  class="mdc-tab mdc-tab em-search-form__agence-type-button" role="tab" aria-selected="false"
+                  tabindex="1"> <span class="mdc-tab__content"> <span class="mdc-tab__text-label"> Agences Banque
+                      Populaire </span> </span> <span class="mdc-tab-indicator mdc-tab-indicator"> <span
+                      class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"> </span> </span> <span
+                    class="mdc-tab__ripple"> </span> </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="em-search-form__fieldset-wrapper">
+          <fieldset class="em-search-form__fieldset em-search-form__search-fields">
+            <div class="em-search-form__field" id="fieldsearchstreet">
+              <input type="text" id="em-search-form__searchstreet" value="" autocomplete="off"> <label
+                for="em-search-form__searchstreet"> Rue </label>
+            </div>
+            <div class="em-search-form__field" id="fieldsearchcity">
+              <input type="text" id="em-search-form__searchcity" value="" autocomplete="off"> <label
+                for="em-search-form__searchcity"> Ville / Code postal </label> <a href="#"
+                class="em-search-form__localize-me"> <span> Me localiser </span> </a>
+            </div>
+          </fieldset>
+          <fieldset class="em-search-form__fieldset em-search-form__buttons">
+            <div class="em-search-form__field">
+              <input type="checkbox" id="em-search-form__saturday" value="on"> <label for="em-search-form__saturday">
+                Ouvert le samedi </label>
+            </div>
+            <div class="em-search-form__field"> <button type="submit"
+                class="em-search-form__submit em-button em-button--primary"> Rechercher </button>
+            </div>
+          </fieldset>
+        </div>
+        <div class="em-search-form__fieldset-wrapper-bp hide"> <a
+            href="https://agences.banquepopulaire.fr/banque-assurance/" class="bp-link"> <span> Rechercher une agence
+              Banque Populaire </span> </a>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="em-results-wrapper">
+    <div class="em-results">
+      <div class="btnswap"> <a class="btn btnmap active" href="#"> Carte </a> <a class="btn btnlist" href="#"> Liste
+        </a>
+      </div>
+      <div class="em-results__list-wrapper">
+        <div class="em-results__list">
+          <ul class="em-results__items">
+            <li class="em-results__item em-poi-card" data-id="11307DD023"> <span class="em-poi-card__icon"> 1 </span>
+              <h2 class="em-poi-card__label"> <a class="em-poi-card__link"
+                  href="/delegation-casden-gueret-id11307DD023"> Délégation Départementale CASDEN GUERET </a> <span
+                  class="em-poi-card__network"> CASDEN Banque Populaire </span> </h2>
+              <div class="em-poi-card__address">
+                13 AVENUE CHARLES DE GAULLE
+                <br> RESIDENCE PIERRE CORNEILLE
+                <br> 23000 GUERET
+              </div>
+              <div class="em-poi-card__opening-hours closed">
+                Fermée aujourd'hui
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="em-results__map-wrapper">
+        <div class="em-results__map em-map map" id="regionmap">
+          <div id="regionviewer" class="em-results__map-viewer em-map__viewer">
+          </div>
+          <div id="regionbtnsmap" class="em-map__buttons"> <a id="regionbtnzoomin"
+              class="em-map__btn-zoomin em-map__btn-zoom" href="#" title="Zoom avant"> <span> Zoom avant </span> </a> <a
+              id="regionbtnzoomout" class="em-map__btn-zoomout em-map__btn-zoom" href="#" title="Zoom arrière"> <span>
+                Zoom arrière </span> </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="em-info">
+    <h2 class="em-title em-title--secondary"> Notre délégation départementale&nbsp;CASDEN du département de la <span
+        class="em-info-placename"> Creuse </span> </h2>
+    <div class="em-info-text">
+      <p> Rendez-vous dans&nbsp;votre délégation de votre département de la <span class="em-info-text-strong"> Creuse
+        </span> . </p>
+      <p> Nos conseillers CASDEN y seront à votre disposition pour vous accompagner. Vous recherchez une offre adaptée à
+        vos moments de vie, une épargne pour préparer vos futurs projets ou un crédit <span class="em-info-mention"> (1)
+        </span> pour financer votre projet ? </p>
+      <p class="em-info-credit"> Un crédit vous engage et doit être remboursé. Vérifiez vos capacités de remboursement
+        avant de vous engager. </p>
+      <p> Découvrez nos solutions sur <span class="em-info-bloc-link"> <a class="em-info-text-link"
+            href="https://www.casden.fr/" target="_blank"> casden.fr </a> . </span> </p>
+    </div>
+    <p class="em-info-text-mention"> Document à caractère publicitaire et sans valeur contractuelle. <br> (1) Offre
+      soumise à conditions et dans les limites fixées par l’offre de crédit, sous réserve d’acceptation de votre dossier
+      par l’organisme prêteur, la CASDEN Banque Populaire. Pour le financement d’une opération relevant des articles
+      L313-1 et suivants du code de la consommation (crédit immobilier), l’emprunteur dispose d’un délai de réflexion de
+      10 jours avant d’accepter l’offre de crédit. La réalisation de la vente est subordonnée à l’obtention du prêt. Si
+      celui-ci n’est pas obtenu, le vendeur doit rembourser les sommes versées. Pour les crédits à la consommation,
+      l’emprunteur dispose du délai légal de rétractation. </p>
+  </div>
+</main>

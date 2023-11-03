@@ -1,0 +1,7153 @@
+[
+    {
+        "type": "header",
+        "version": "5.2.1",
+        "comment": "Export to JSON plugin for PHPMyAdmin"
+    },
+    {
+        "type": "database",
+        "name": "ge"
+    },
+    {
+        "type": "table",
+        "name": "commune",
+        "database": "ge",
+        "data": [
+            {
+                "id": "1",
+                "id_district": "1",
+                "nom": "Alakamisikely"
+            },
+            {
+                "id": "2",
+                "id_district": "1",
+                "nom": "Ambatomanga"
+            },
+            {
+                "id": "3",
+                "id_district": "1",
+                "nom": "Ambatomirahavavy"
+            },
+            {
+                "id": "4",
+                "id_district": "1",
+                "nom": "Amboanana"
+            },
+            {
+                "id": "5",
+                "id_district": "1",
+                "nom": "Ambohimandry"
+            },
+            {
+                "id": "6",
+                "id_district": "1",
+                "nom": "Ambohimasina"
+            },
+            {
+                "id": "7",
+                "id_district": "1",
+                "nom": "Ambohipandrano"
+            },
+            {
+                "id": "8",
+                "id_district": "1",
+                "nom": "Ambohitrambo"
+            },
+            {
+                "id": "9",
+                "id_district": "1",
+                "nom": "Ampahimanga"
+            },
+            {
+                "id": "10",
+                "id_district": "1",
+                "nom": "Andranomiely"
+            },
+            {
+                "id": "11",
+                "id_district": "1",
+                "nom": "Antambolo"
+            },
+            {
+                "id": "12",
+                "id_district": "1",
+                "nom": "Antenimbe"
+            },
+            {
+                "id": "13",
+                "id_district": "1",
+                "nom": "Arivonimamo"
+            },
+            {
+                "id": "14",
+                "id_district": "1",
+                "nom": "Arivonimamo-II"
+            },
+            {
+                "id": "15",
+                "id_district": "1",
+                "nom": "Imerintsiatosika"
+            },
+            {
+                "id": "16",
+                "id_district": "1",
+                "nom": "Mahatsinjo-Est"
+            },
+            {
+                "id": "17",
+                "id_district": "1",
+                "nom": "Manalalondo"
+            },
+            {
+                "id": "18",
+                "id_district": "1",
+                "nom": "Marofangady"
+            },
+            {
+                "id": "19",
+                "id_district": "1",
+                "nom": "Miantsoarivo"
+            },
+            {
+                "id": "20",
+                "id_district": "1",
+                "nom": "Morafeno"
+            },
+            {
+                "id": "21",
+                "id_district": "1",
+                "nom": "Morarano"
+            },
+            {
+                "id": "22",
+                "id_district": "2",
+                "nom": "Ambatomanjaka"
+            },
+            {
+                "id": "23",
+                "id_district": "2",
+                "nom": "Analavory"
+            },
+            {
+                "id": "24",
+                "id_district": "2",
+                "nom": "Andolofotsy"
+            },
+            {
+                "id": "25",
+                "id_district": "2",
+                "nom": "Anosibe-Ifanja"
+            },
+            {
+                "id": "26",
+                "id_district": "2",
+                "nom": "Antoby-Est"
+            },
+            {
+                "id": "27",
+                "id_district": "2",
+                "nom": "Manazary"
+            },
+            {
+                "id": "28",
+                "id_district": "2",
+                "nom": "Mandiavato"
+            },
+            {
+                "id": "29",
+                "id_district": "2",
+                "nom": "Miarinarivo"
+            },
+            {
+                "id": "30",
+                "id_district": "2",
+                "nom": "Miarinarivo-II"
+            },
+            {
+                "id": "31",
+                "id_district": "2",
+                "nom": "SarobaratraIfanja"
+            },
+            {
+                "id": "32",
+                "id_district": "2",
+                "nom": "Soamahamanina"
+            },
+            {
+                "id": "33",
+                "id_district": "2",
+                "nom": "Soavimbazaha"
+            },
+            {
+                "id": "34",
+                "id_district": "2",
+                "nom": "Zoma-Bealoka"
+            },
+            {
+                "id": "35",
+                "id_district": "3",
+                "nom": "Ambatoasana-Centre"
+            },
+            {
+                "id": "36",
+                "id_district": "3",
+                "nom": "Amberomanga"
+            },
+            {
+                "id": "37",
+                "id_district": "3",
+                "nom": "Amparaky"
+            },
+            {
+                "id": "38",
+                "id_district": "3",
+                "nom": "Ampary"
+            },
+            {
+                "id": "39",
+                "id_district": "3",
+                "nom": "Ampefy"
+            },
+            {
+                "id": "40",
+                "id_district": "3",
+                "nom": "Ankaranana"
+            },
+            {
+                "id": "41",
+                "id_district": "3",
+                "nom": "Ankisabe"
+            },
+            {
+                "id": "42",
+                "id_district": "3",
+                "nom": "Antanetibe"
+            },
+            {
+                "id": "43",
+                "id_district": "3",
+                "nom": "Dondona"
+            },
+            {
+                "id": "44",
+                "id_district": "3",
+                "nom": "Mahavelona"
+            },
+            {
+                "id": "45",
+                "id_district": "3",
+                "nom": "Mananasy"
+            },
+            {
+                "id": "46",
+                "id_district": "3",
+                "nom": "Masindray"
+            },
+            {
+                "id": "47",
+                "id_district": "3",
+                "nom": "Soavinandriana"
+            },
+            {
+                "id": "48",
+                "id_district": "3",
+                "nom": "Tamponala"
+            },
+            {
+                "id": "49",
+                "id_district": "4",
+                "nom": "Ambato(Madagascar)"
+            },
+            {
+                "id": "50",
+                "id_district": "4",
+                "nom": "Ambatolampy"
+            },
+            {
+                "id": "51",
+                "id_district": "4",
+                "nom": "Ambohidratrimo"
+            },
+            {
+                "id": "52",
+                "id_district": "4",
+                "nom": "Ambohimanjaka"
+            },
+            {
+                "id": "53",
+                "id_district": "4",
+                "nom": "Ambohipihaonana"
+            },
+            {
+                "id": "54",
+                "id_district": "4",
+                "nom": "Ambohitrimanjaka"
+            },
+            {
+                "id": "55",
+                "id_district": "4",
+                "nom": "Ampangabe"
+            },
+            {
+                "id": "56",
+                "id_district": "4",
+                "nom": "Ampanotokana"
+            },
+            {
+                "id": "57",
+                "id_district": "4",
+                "nom": "Anjanadoria"
+            },
+            {
+                "id": "58",
+                "id_district": "4",
+                "nom": "Anosiala"
+            },
+            {
+                "id": "59",
+                "id_district": "4",
+                "nom": "Antanetibe"
+            },
+            {
+                "id": "60",
+                "id_district": "4",
+                "nom": "Antehiroka"
+            },
+            {
+                "id": "61",
+                "id_district": "4",
+                "nom": "Antsahafilo"
+            },
+            {
+                "id": "62",
+                "id_district": "4",
+                "nom": "Avaratsena"
+            },
+            {
+                "id": "63",
+                "id_district": "4",
+                "nom": "Fiadanana"
+            },
+            {
+                "id": "64",
+                "id_district": "4",
+                "nom": "Iarinarivo"
+            },
+            {
+                "id": "65",
+                "id_district": "4",
+                "nom": "Ivato(aéroport)"
+            },
+            {
+                "id": "66",
+                "id_district": "4",
+                "nom": "IvatoFiraisana"
+            },
+            {
+                "id": "67",
+                "id_district": "4",
+                "nom": "Mahabo"
+            },
+            {
+                "id": "68",
+                "id_district": "4",
+                "nom": "Mahereza"
+            },
+            {
+                "id": "69",
+                "id_district": "4",
+                "nom": "Mahitsy"
+            },
+            {
+                "id": "70",
+                "id_district": "4",
+                "nom": "Mananjara"
+            },
+            {
+                "id": "71",
+                "id_district": "4",
+                "nom": "Manjakavaradrano"
+            },
+            {
+                "id": "72",
+                "id_district": "4",
+                "nom": "Merimandroso"
+            },
+            {
+                "id": "73",
+                "id_district": "4",
+                "nom": "Talatamaty"
+            },
+            {
+                "id": "74",
+                "id_district": "5",
+                "nom": "Abohimiadana"
+            },
+            {
+                "id": "75",
+                "id_district": "5",
+                "nom": "Alarobia-Vatosola"
+            },
+            {
+                "id": "76",
+                "id_district": "5",
+                "nom": "Alatsinainy-Bakaro"
+            },
+            {
+                "id": "77",
+                "id_district": "5",
+                "nom": "Andohariana"
+            },
+            {
+                "id": "78",
+                "id_district": "5",
+                "nom": "Andramasina"
+            },
+            {
+                "id": "79",
+                "id_district": "5",
+                "nom": "Anosibe-Trimoloharana"
+            },
+            {
+                "id": "80",
+                "id_district": "5",
+                "nom": "Fitsinjovana-Bakaro"
+            },
+            {
+                "id": "81",
+                "id_district": "5",
+                "nom": "Mandrosoa"
+            },
+            {
+                "id": "82",
+                "id_district": "5",
+                "nom": "Sabotsy-Ambohitromby"
+            },
+            {
+                "id": "83",
+                "id_district": "5",
+                "nom": "Sabotsy-Manjakavcahoaka"
+            },
+            {
+                "id": "84",
+                "id_district": "5",
+                "nom": "Tankafatra"
+            },
+            {
+                "id": "85",
+                "id_district": "6",
+                "nom": "Alakamisy"
+            },
+            {
+                "id": "86",
+                "id_district": "6",
+                "nom": "Ambatomanoina"
+            },
+            {
+                "id": "87",
+                "id_district": "6",
+                "nom": "Amboasary"
+            },
+            {
+                "id": "88",
+                "id_district": "6",
+                "nom": "Ambohibary"
+            },
+            {
+                "id": "89",
+                "id_district": "6",
+                "nom": "Ambongamarina"
+            },
+            {
+                "id": "90",
+                "id_district": "6",
+                "nom": "Analaroa"
+            },
+            {
+                "id": "91",
+                "id_district": "6",
+                "nom": "Anjozorobe"
+            },
+            {
+                "id": "92",
+                "id_district": "6",
+                "nom": "Antanetibe"
+            },
+            {
+                "id": "93",
+                "id_district": "6",
+                "nom": "Beronono"
+            },
+            {
+                "id": "94",
+                "id_district": "6",
+                "nom": "Betatao"
+            },
+            {
+                "id": "95",
+                "id_district": "6",
+                "nom": "Mangamila"
+            },
+            {
+                "id": "96",
+                "id_district": "6",
+                "nom": "Marotsipoy"
+            },
+            {
+                "id": "97",
+                "id_district": "7",
+                "nom": "Ambohitromby"
+            },
+            {
+                "id": "98",
+                "id_district": "7",
+                "nom": "Ambolotarakely"
+            },
+            {
+                "id": "99",
+                "id_district": "7",
+                "nom": "Ankazobe"
+            },
+            {
+                "id": "100",
+                "id_district": "7",
+                "nom": "Antakavana"
+            },
+            {
+                "id": "101",
+                "id_district": "7",
+                "nom": "Antotohazo"
+            },
+            {
+                "id": "102",
+                "id_district": "7",
+                "nom": "Fiadanana"
+            },
+            {
+                "id": "103",
+                "id_district": "7",
+                "nom": "Fihaonana"
+            },
+            {
+                "id": "104",
+                "id_district": "7",
+                "nom": "Kiangara"
+            },
+            {
+                "id": "105",
+                "id_district": "7",
+                "nom": "Mahavelona"
+            },
+            {
+                "id": "106",
+                "id_district": "7",
+                "nom": "Miantso"
+            },
+            {
+                "id": "107",
+                "id_district": "7",
+                "nom": "Talata-Angavo"
+            },
+            {
+                "id": "108",
+                "id_district": "7",
+                "nom": "Tsaramasoandro"
+            },
+            {
+                "id": "109",
+                "id_district": "8",
+                "nom": "Ambalavao"
+            },
+            {
+                "id": "110",
+                "id_district": "8",
+                "nom": "Ambatofahavalo"
+            },
+            {
+                "id": "111",
+                "id_district": "8",
+                "nom": "Ambohidrapeto"
+            },
+            {
+                "id": "112",
+                "id_district": "8",
+                "nom": "Ambohijanaka"
+            },
+            {
+                "id": "113",
+                "id_district": "8",
+                "nom": "Ampitatafika"
+            },
+            {
+                "id": "114",
+                "id_district": "8",
+                "nom": "Andoharanofotsy"
+            },
+            {
+                "id": "115",
+                "id_district": "8",
+                "nom": "Andranonahoatra"
+            },
+            {
+                "id": "116",
+                "id_district": "8",
+                "nom": "Androhibe"
+            },
+            {
+                "id": "117",
+                "id_district": "8",
+                "nom": "Ankaraobato"
+            },
+            {
+                "id": "118",
+                "id_district": "8",
+                "nom": "Antanetikely"
+            },
+            {
+                "id": "119",
+                "id_district": "8",
+                "nom": "Bemasoandro"
+            },
+            {
+                "id": "120",
+                "id_district": "8",
+                "nom": "Bongotsara"
+            },
+            {
+                "id": "121",
+                "id_district": "8",
+                "nom": "Fenoarivo"
+            },
+            {
+                "id": "122",
+                "id_district": "8",
+                "nom": "Itaosy"
+            },
+            {
+                "id": "123",
+                "id_district": "8",
+                "nom": "Soalandy"
+            },
+            {
+                "id": "124",
+                "id_district": "8",
+                "nom": "Tanjombato"
+            },
+            {
+                "id": "125",
+                "id_district": "8",
+                "nom": "Tsiafahy"
+            },
+            {
+                "id": "126",
+                "id_district": "9",
+                "nom": "Alasora"
+            },
+            {
+                "id": "127",
+                "id_district": "9",
+                "nom": "Ambohimalaza-Miray"
+            },
+            {
+                "id": "128",
+                "id_district": "9",
+                "nom": "Ambohimanambola"
+            },
+            {
+                "id": "129",
+                "id_district": "9",
+                "nom": "AmbohimangRova"
+            },
+            {
+                "id": "130",
+                "id_district": "9",
+                "nom": "Ambohimangakely"
+            },
+            {
+                "id": "131",
+                "id_district": "9",
+                "nom": "Anjeva-Gara"
+            },
+            {
+                "id": "132",
+                "id_district": "9",
+                "nom": "Ankadikely-Ilafy"
+            },
+            {
+                "id": "133",
+                "id_district": "9",
+                "nom": "Ankadinandriana"
+            },
+            {
+                "id": "134",
+                "id_district": "9",
+                "nom": "Fieferana"
+            },
+            {
+                "id": "135",
+                "id_district": "9",
+                "nom": "Masindray"
+            },
+            {
+                "id": "136",
+                "id_district": "9",
+                "nom": "Sabotsy-Namehana"
+            },
+            {
+                "id": "137",
+                "id_district": "9",
+                "nom": "Talatavolonondry"
+            },
+            {
+                "id": "138",
+                "id_district": "10",
+                "nom": "Antananarivo-Renivohitra"
+            },
+            {
+                "id": "139",
+                "id_district": "11",
+                "nom": "Alarobia"
+            },
+            {
+                "id": "140",
+                "id_district": "11",
+                "nom": "Ambanitsena"
+            },
+            {
+                "id": "141",
+                "id_district": "11",
+                "nom": "Ambatolaona"
+            },
+            {
+                "id": "142",
+                "id_district": "11",
+                "nom": "Ambatomanga"
+            },
+            {
+                "id": "143",
+                "id_district": "11",
+                "nom": "Ambatomena"
+            },
+            {
+                "id": "144",
+                "id_district": "11",
+                "nom": "Ambohibary"
+            },
+            {
+                "id": "145",
+                "id_district": "11",
+                "nom": "Ambohitrandriamanitra"
+            },
+            {
+                "id": "146",
+                "id_district": "11",
+                "nom": "Ambohitrolomahitsy"
+            },
+            {
+                "id": "147",
+                "id_district": "11",
+                "nom": "Ambohitrony"
+            },
+            {
+                "id": "148",
+                "id_district": "11",
+                "nom": "Ambohitseheno"
+            },
+            {
+                "id": "149",
+                "id_district": "11",
+                "nom": "Anjepy"
+            },
+            {
+                "id": "150",
+                "id_district": "11",
+                "nom": "Anjoma-Betoho"
+            },
+            {
+                "id": "151",
+                "id_district": "11",
+                "nom": "Ankazondandy"
+            },
+            {
+                "id": "152",
+                "id_district": "11",
+                "nom": "Antsahalalina"
+            },
+            {
+                "id": "153",
+                "id_district": "11",
+                "nom": "Manjakandriana"
+            },
+            {
+                "id": "154",
+                "id_district": "11",
+                "nom": "Mantasoa"
+            },
+            {
+                "id": "155",
+                "id_district": "11",
+                "nom": "Merimanjaka"
+            },
+            {
+                "id": "156",
+                "id_district": "11",
+                "nom": "Miadanandriana"
+            },
+            {
+                "id": "157",
+                "id_district": "11",
+                "nom": "Nandihizana"
+            },
+            {
+                "id": "158",
+                "id_district": "11",
+                "nom": "Ranovao"
+            },
+            {
+                "id": "159",
+                "id_district": "11",
+                "nom": "Sadabe"
+            },
+            {
+                "id": "160",
+                "id_district": "11",
+                "nom": "Sambaina"
+            },
+            {
+                "id": "161",
+                "id_district": "11",
+                "nom": "Soavinandriana"
+            },
+            {
+                "id": "162",
+                "id_district": "13",
+                "nom": "Ambatolampy"
+            },
+            {
+                "id": "163",
+                "id_district": "13",
+                "nom": "Ambatondrakalavao"
+            },
+            {
+                "id": "164",
+                "id_district": "13",
+                "nom": "Ambodifarihy-Fenomanana"
+            },
+            {
+                "id": "165",
+                "id_district": "13",
+                "nom": "Ambohipihaonana"
+            },
+            {
+                "id": "166",
+                "id_district": "13",
+                "nom": "Andranovelona"
+            },
+            {
+                "id": "167",
+                "id_district": "13",
+                "nom": "AndravolaVohipeno"
+            },
+            {
+                "id": "168",
+                "id_district": "13",
+                "nom": "Andriambilany"
+            },
+            {
+                "id": "169",
+                "id_district": "13",
+                "nom": "Antakasina"
+            },
+            {
+                "id": "170",
+                "id_district": "13",
+                "nom": "Antanamalaza"
+            },
+            {
+                "id": "171",
+                "id_district": "13",
+                "nom": "Antanimasaka"
+            },
+            {
+                "id": "172",
+                "id_district": "13",
+                "nom": "Antsampandrano"
+            },
+            {
+                "id": "173",
+                "id_district": "13",
+                "nom": "Behenjy"
+            },
+            {
+                "id": "174",
+                "id_district": "13",
+                "nom": "Belambo"
+            },
+            {
+                "id": "175",
+                "id_district": "13",
+                "nom": "Manjakatompo"
+            },
+            {
+                "id": "176",
+                "id_district": "13",
+                "nom": "Morarano"
+            },
+            {
+                "id": "177",
+                "id_district": "13",
+                "nom": "Sabotsy-Namatoana"
+            },
+            {
+                "id": "178",
+                "id_district": "13",
+                "nom": "Tsiafajavona-Ankaratra"
+            },
+            {
+                "id": "179",
+                "id_district": "13",
+                "nom": "Tsinjoarivo"
+            },
+            {
+                "id": "180",
+                "id_district": "14",
+                "nom": "Ambatolahy"
+            },
+            {
+                "id": "181",
+                "id_district": "14",
+                "nom": "Ambatomiady"
+            },
+            {
+                "id": "182",
+                "id_district": "14",
+                "nom": "Ambatotsipihina"
+            },
+            {
+                "id": "183",
+                "id_district": "14",
+                "nom": "Ambodiriana"
+            },
+            {
+                "id": "184",
+                "id_district": "14",
+                "nom": "Ambohimandroso"
+            },
+            {
+                "id": "185",
+                "id_district": "14",
+                "nom": "Ambohitompoina"
+            },
+            {
+                "id": "186",
+                "id_district": "14",
+                "nom": "Ampitatafika"
+            },
+            {
+                "id": "187",
+                "id_district": "14",
+                "nom": "Andranofito"
+            },
+            {
+                "id": "188",
+                "id_district": "14",
+                "nom": "Antanifotsy"
+            },
+            {
+                "id": "189",
+                "id_district": "14",
+                "nom": "Antsahalava"
+            },
+            {
+                "id": "190",
+                "id_district": "14",
+                "nom": "Antsampandrano"
+            },
+            {
+                "id": "191",
+                "id_district": "15",
+                "nom": "Antsirabe"
+            },
+            {
+                "id": "192",
+                "id_district": "16",
+                "nom": "Alakamisy"
+            },
+            {
+                "id": "193",
+                "id_district": "16",
+                "nom": "Ambano"
+            },
+            {
+                "id": "194",
+                "id_district": "16",
+                "nom": "Ambatomena"
+            },
+            {
+                "id": "195",
+                "id_district": "16",
+                "nom": "Ambohibary"
+            },
+            {
+                "id": "196",
+                "id_district": "16",
+                "nom": "Ambohidranandriana"
+            },
+            {
+                "id": "197",
+                "id_district": "16",
+                "nom": "Ambohimiarivo"
+            },
+            {
+                "id": "198",
+                "id_district": "16",
+                "nom": "Ambohitsimanova"
+            },
+            {
+                "id": "199",
+                "id_district": "16",
+                "nom": "Andranomanelatra"
+            },
+            {
+                "id": "200",
+                "id_district": "16",
+                "nom": "Antanambao"
+            },
+            {
+                "id": "201",
+                "id_district": "16",
+                "nom": "Antanimandry"
+            },
+            {
+                "id": "202",
+                "id_district": "16",
+                "nom": "Antsoatany"
+            },
+            {
+                "id": "203",
+                "id_district": "16",
+                "nom": "Belazao"
+            },
+            {
+                "id": "204",
+                "id_district": "16",
+                "nom": "Ibity"
+            },
+            {
+                "id": "205",
+                "id_district": "16",
+                "nom": "Manandona"
+            },
+            {
+                "id": "206",
+                "id_district": "16",
+                "nom": "Mandrosohasina"
+            },
+            {
+                "id": "207",
+                "id_district": "16",
+                "nom": "Mangatano"
+            },
+            {
+                "id": "208",
+                "id_district": "16",
+                "nom": "Sahanivotry-Mandona"
+            },
+            {
+                "id": "209",
+                "id_district": "16",
+                "nom": "Soanindrariny"
+            },
+            {
+                "id": "210",
+                "id_district": "16",
+                "nom": "Tsarahonenana-Sahanivotry"
+            },
+            {
+                "id": "211",
+                "id_district": "16",
+                "nom": "Vinaninkarena"
+            },
+            {
+                "id": "212",
+                "id_district": "17",
+                "nom": "Alakamisy-Anativato"
+            },
+            {
+                "id": "213",
+                "id_district": "17",
+                "nom": "Alakamisy-Marososona"
+            },
+            {
+                "id": "214",
+                "id_district": "17",
+                "nom": "AlarobiaBemaha"
+            },
+            {
+                "id": "215",
+                "id_district": "17",
+                "nom": "Ambatonikonilahy"
+            },
+            {
+                "id": "216",
+                "id_district": "17",
+                "nom": "Ambohimanambola"
+            },
+            {
+                "id": "217",
+                "id_district": "17",
+                "nom": "Ambohimasina"
+            },
+            {
+                "id": "218",
+                "id_district": "17",
+                "nom": "Andranomafana"
+            },
+            {
+                "id": "219",
+                "id_district": "17",
+                "nom": "Andrembesoa"
+            },
+            {
+                "id": "220",
+                "id_district": "17",
+                "nom": "Anosiarivo-Manapa"
+            },
+            {
+                "id": "221",
+                "id_district": "17",
+                "nom": "Antohobe"
+            },
+            {
+                "id": "222",
+                "id_district": "17",
+                "nom": "Antsotso"
+            },
+            {
+                "id": "223",
+                "id_district": "17",
+                "nom": "Betafo"
+            },
+            {
+                "id": "224",
+                "id_district": "17",
+                "nom": "Inanantona"
+            },
+            {
+                "id": "225",
+                "id_district": "17",
+                "nom": "Mahaiza"
+            },
+            {
+                "id": "226",
+                "id_district": "17",
+                "nom": "Mandritsara"
+            },
+            {
+                "id": "227",
+                "id_district": "17",
+                "nom": "Manohisoa"
+            },
+            {
+                "id": "228",
+                "id_district": "17",
+                "nom": "Soavina"
+            },
+            {
+                "id": "229",
+                "id_district": "17",
+                "nom": "Tritriva"
+            },
+            {
+                "id": "230",
+                "id_district": "18",
+                "nom": "Ambohiborona"
+            },
+            {
+                "id": "231",
+                "id_district": "18",
+                "nom": "Andranomiady"
+            },
+            {
+                "id": "232",
+                "id_district": "18",
+                "nom": "Antsapanimahazo"
+            },
+            {
+                "id": "233",
+                "id_district": "18",
+                "nom": "Faratsiho"
+            },
+            {
+                "id": "234",
+                "id_district": "18",
+                "nom": "Miandrarivo"
+            },
+            {
+                "id": "235",
+                "id_district": "18",
+                "nom": "Ramainandro"
+            },
+            {
+                "id": "236",
+                "id_district": "18",
+                "nom": "Valabetokana"
+            },
+            {
+                "id": "237",
+                "id_district": "18",
+                "nom": "Vinaninony-Atsimo"
+            },
+            {
+                "id": "238",
+                "id_district": "18",
+                "nom": "VinaninonyNord"
+            },
+            {
+                "id": "239",
+                "id_district": "19",
+                "nom": "AnjomaRamartina"
+            },
+            {
+                "id": "240",
+                "id_district": "19",
+                "nom": "Ankazomiriotra"
+            },
+            {
+                "id": "241",
+                "id_district": "19",
+                "nom": "AntanambaoAmbary"
+            },
+            {
+                "id": "242",
+                "id_district": "19",
+                "nom": "Betsohana"
+            },
+            {
+                "id": "243",
+                "id_district": "19",
+                "nom": "Fidirana"
+            },
+            {
+                "id": "244",
+                "id_district": "19",
+                "nom": "Mandoto"
+            },
+            {
+                "id": "245",
+                "id_district": "19",
+                "nom": "Vasiana"
+            },
+            {
+                "id": "246",
+                "id_district": "19",
+                "nom": "Vinany"
+            },
+            {
+                "id": "247",
+                "id_district": "20",
+                "nom": "Ambatomainty-Atsimo"
+            },
+            {
+                "id": "248",
+                "id_district": "20",
+                "nom": "Ambohitromby"
+            },
+            {
+                "id": "249",
+                "id_district": "20",
+                "nom": "Fenoarivobe"
+            },
+            {
+                "id": "250",
+                "id_district": "20",
+                "nom": "Firavahana"
+            },
+            {
+                "id": "251",
+                "id_district": "20",
+                "nom": "Kiranomena"
+            },
+            {
+                "id": "252",
+                "id_district": "20",
+                "nom": "Mahajeby"
+            },
+            {
+                "id": "253",
+                "id_district": "20",
+                "nom": "Maritampona"
+            },
+            {
+                "id": "254",
+                "id_district": "20",
+                "nom": "Tsinjoarivo"
+            },
+            {
+                "id": "255",
+                "id_district": "21",
+                "nom": "Ambalanirana"
+            },
+            {
+                "id": "256",
+                "id_district": "21",
+                "nom": "Ambararatabe"
+            },
+            {
+                "id": "257",
+                "id_district": "21",
+                "nom": "Ambatolampy"
+            },
+            {
+                "id": "258",
+                "id_district": "21",
+                "nom": "Ankadinondry-Sakay"
+            },
+            {
+                "id": "259",
+                "id_district": "21",
+                "nom": "Ankerana-Avaratra"
+            },
+            {
+                "id": "260",
+                "id_district": "21",
+                "nom": "Anosy"
+            },
+            {
+                "id": "261",
+                "id_district": "21",
+                "nom": "Belobaka"
+            },
+            {
+                "id": "262",
+                "id_district": "21",
+                "nom": "Bemahatazana"
+            },
+            {
+                "id": "263",
+                "id_district": "21",
+                "nom": "Bevato"
+            },
+            {
+                "id": "264",
+                "id_district": "21",
+                "nom": "Fierenana"
+            },
+            {
+                "id": "265",
+                "id_district": "21",
+                "nom": "Mahasolo"
+            },
+            {
+                "id": "266",
+                "id_district": "21",
+                "nom": "Maroharana"
+            },
+            {
+                "id": "267",
+                "id_district": "21",
+                "nom": "Miandanarivo"
+            },
+            {
+                "id": "268",
+                "id_district": "21",
+                "nom": "Soanierana"
+            },
+            {
+                "id": "269",
+                "id_district": "21",
+                "nom": "Tsinjoarivo"
+            },
+            {
+                "id": "270",
+                "id_district": "21",
+                "nom": "Tsiroanomandidy-Fihaonana"
+            },
+            {
+                "id": "271",
+                "id_district": "21",
+                "nom": "Tsiroanomandidy"
+            },
+            {
+                "id": "272",
+                "id_district": "22",
+                "nom": "Ambalamanasy-II"
+            },
+            {
+                "id": "273",
+                "id_district": "22",
+                "nom": "Ambodiangezoka"
+            },
+            {
+                "id": "274",
+                "id_district": "22",
+                "nom": "Ambodimanga"
+            },
+            {
+                "id": "275",
+                "id_district": "22",
+                "nom": "Andapa"
+            },
+            {
+                "id": "276",
+                "id_district": "22",
+                "nom": "Andrakata"
+            },
+            {
+                "id": "277",
+                "id_district": "22",
+                "nom": "Andranomena"
+            },
+            {
+                "id": "278",
+                "id_district": "22",
+                "nom": "Anjialava-Be"
+            },
+            {
+                "id": "279",
+                "id_district": "22",
+                "nom": "Ankiaka-Be-Nord"
+            },
+            {
+                "id": "280",
+                "id_district": "22",
+                "nom": "Anoviara"
+            },
+            {
+                "id": "281",
+                "id_district": "22",
+                "nom": "Antsahamena"
+            },
+            {
+                "id": "282",
+                "id_district": "22",
+                "nom": "Bealampona"
+            },
+            {
+                "id": "283",
+                "id_district": "22",
+                "nom": "Belaoka-Marovato"
+            },
+            {
+                "id": "284",
+                "id_district": "22",
+                "nom": "Betsakotsako-Andranotsara"
+            },
+            {
+                "id": "285",
+                "id_district": "22",
+                "nom": "Doany"
+            },
+            {
+                "id": "286",
+                "id_district": "22",
+                "nom": "Marovato"
+            },
+            {
+                "id": "287",
+                "id_district": "22",
+                "nom": "Matsohely"
+            },
+            {
+                "id": "288",
+                "id_district": "22",
+                "nom": "Tanandava"
+            },
+            {
+                "id": "289",
+                "id_district": "23",
+                "nom": "Ambalabe"
+            },
+            {
+                "id": "290",
+                "id_district": "23",
+                "nom": "Ambinanifaho"
+            },
+            {
+                "id": "291",
+                "id_district": "23",
+                "nom": "Ambohitralanana"
+            },
+            {
+                "id": "292",
+                "id_district": "23",
+                "nom": "Ampahana"
+            },
+            {
+                "id": "293",
+                "id_district": "23",
+                "nom": "Ampohibe"
+            },
+            {
+                "id": "294",
+                "id_district": "23",
+                "nom": "Antalaha"
+            },
+            {
+                "id": "295",
+                "id_district": "23",
+                "nom": "Antananambo"
+            },
+            {
+                "id": "296",
+                "id_district": "23",
+                "nom": "Antombana"
+            },
+            {
+                "id": "297",
+                "id_district": "23",
+                "nom": "Antsahanoro"
+            },
+            {
+                "id": "298",
+                "id_district": "23",
+                "nom": "Antsambalahy"
+            },
+            {
+                "id": "299",
+                "id_district": "23",
+                "nom": "Lanjarivo"
+            },
+            {
+                "id": "300",
+                "id_district": "23",
+                "nom": "Marofinaritra"
+            },
+            {
+                "id": "301",
+                "id_district": "23",
+                "nom": "Sarahandrano"
+            },
+            {
+                "id": "302",
+                "id_district": "23",
+                "nom": "Vinanivao"
+            },
+            {
+                "id": "303",
+                "id_district": "24",
+                "nom": "Ambatoafo"
+            },
+            {
+                "id": "304",
+                "id_district": "24",
+                "nom": "Amboangibe"
+            },
+            {
+                "id": "305",
+                "id_district": "24",
+                "nom": "Ambodiampana"
+            },
+            {
+                "id": "306",
+                "id_district": "24",
+                "nom": "Ambodivoara"
+            },
+            {
+                "id": "307",
+                "id_district": "24",
+                "nom": "Ambohimalaza"
+            },
+            {
+                "id": "308",
+                "id_district": "24",
+                "nom": "Ambohimitsinjo"
+            },
+            {
+                "id": "309",
+                "id_district": "24",
+                "nom": "Analamaho"
+            },
+            {
+                "id": "310",
+                "id_district": "24",
+                "nom": "Andrahanjo"
+            },
+            {
+                "id": "311",
+                "id_district": "24",
+                "nom": "Andratamarina"
+            },
+            {
+                "id": "312",
+                "id_district": "24",
+                "nom": "Anjangoveratra"
+            },
+            {
+                "id": "313",
+                "id_district": "24",
+                "nom": "Anjialava"
+            },
+            {
+                "id": "314",
+                "id_district": "24",
+                "nom": "Anjinjaomby"
+            },
+            {
+                "id": "315",
+                "id_district": "24",
+                "nom": "Antindra"
+            },
+            {
+                "id": "316",
+                "id_district": "24",
+                "nom": "Antsahambaharo"
+            },
+            {
+                "id": "317",
+                "id_district": "24",
+                "nom": "Antsahavaribe"
+            },
+            {
+                "id": "318",
+                "id_district": "24",
+                "nom": "Bemanevika"
+            },
+            {
+                "id": "319",
+                "id_district": "24",
+                "nom": "Bevonotra"
+            },
+            {
+                "id": "320",
+                "id_district": "24",
+                "nom": "Farahalana"
+            },
+            {
+                "id": "321",
+                "id_district": "24",
+                "nom": "Maroambiny"
+            },
+            {
+                "id": "322",
+                "id_district": "24",
+                "nom": "Marogaona"
+            },
+            {
+                "id": "323",
+                "id_district": "24",
+                "nom": "Marojala"
+            },
+            {
+                "id": "324",
+                "id_district": "24",
+                "nom": "Morafeno"
+            },
+            {
+                "id": "325",
+                "id_district": "24",
+                "nom": "Nosiarina"
+            },
+            {
+                "id": "326",
+                "id_district": "24",
+                "nom": "Sambava"
+            },
+            {
+                "id": "327",
+                "id_district": "24",
+                "nom": "Tanambao-Daoud"
+            },
+            {
+                "id": "328",
+                "id_district": "25",
+                "nom": "Ambalasatrana"
+            },
+            {
+                "id": "329",
+                "id_district": "25",
+                "nom": "Ambinanin'andravory"
+            },
+            {
+                "id": "330",
+                "id_district": "25",
+                "nom": "Amboriala"
+            },
+            {
+                "id": "331",
+                "id_district": "25",
+                "nom": "Ampanefena"
+            },
+            {
+                "id": "332",
+                "id_district": "25",
+                "nom": "Ampisikina"
+            },
+            {
+                "id": "333",
+                "id_district": "25",
+                "nom": "Ampondra"
+            },
+            {
+                "id": "334",
+                "id_district": "25",
+                "nom": "Andrafainkona"
+            },
+            {
+                "id": "335",
+                "id_district": "25",
+                "nom": "Andravory"
+            },
+            {
+                "id": "336",
+                "id_district": "25",
+                "nom": "Antsahavaribe"
+            },
+            {
+                "id": "337",
+                "id_district": "25",
+                "nom": "AntsirabeNord"
+            },
+            {
+                "id": "338",
+                "id_district": "25",
+                "nom": "Belambo"
+            },
+            {
+                "id": "339",
+                "id_district": "25",
+                "nom": "Bobakindro"
+            },
+            {
+                "id": "340",
+                "id_district": "25",
+                "nom": "Daraina"
+            },
+            {
+                "id": "341",
+                "id_district": "25",
+                "nom": "Fanambana"
+            },
+            {
+                "id": "342",
+                "id_district": "25",
+                "nom": "Maromokotra"
+            },
+            {
+                "id": "343",
+                "id_district": "25",
+                "nom": "Milanoa"
+            },
+            {
+                "id": "344",
+                "id_district": "25",
+                "nom": "Nosibe"
+            },
+            {
+                "id": "345",
+                "id_district": "25",
+                "nom": "Tsarabaria"
+            },
+            {
+                "id": "346",
+                "id_district": "25",
+                "nom": "Vohemar"
+            },
+            {
+                "id": "347",
+                "id_district": "27",
+                "nom": "Antsiranana"
+            },
+            {
+                "id": "348",
+                "id_district": "28",
+                "nom": "Ambondrona"
+            },
+            {
+                "id": "349",
+                "id_district": "28",
+                "nom": "Ambolobozobe"
+            },
+            {
+                "id": "350",
+                "id_district": "28",
+                "nom": "Andrafiabe"
+            },
+            {
+                "id": "351",
+                "id_district": "28",
+                "nom": "Andranofanjava"
+            },
+            {
+                "id": "352",
+                "id_district": "28",
+                "nom": "Andranovondronina"
+            },
+            {
+                "id": "353",
+                "id_district": "28",
+                "nom": "Anivorano-Nord"
+            },
+            {
+                "id": "354",
+                "id_district": "28",
+                "nom": "Ankarangona"
+            },
+            {
+                "id": "355",
+                "id_district": "28",
+                "nom": "Anketrakabe"
+            },
+            {
+                "id": "356",
+                "id_district": "28",
+                "nom": "Antanamitarana"
+            },
+            {
+                "id": "357",
+                "id_district": "28",
+                "nom": "Antsahampano"
+            },
+            {
+                "id": "358",
+                "id_district": "28",
+                "nom": "Antsakoabe"
+            },
+            {
+                "id": "359",
+                "id_district": "28",
+                "nom": "Antsalaka"
+            },
+            {
+                "id": "360",
+                "id_district": "28",
+                "nom": "Antsoha"
+            },
+            {
+                "id": "361",
+                "id_district": "28",
+                "nom": "Bobasakoa"
+            },
+            {
+                "id": "362",
+                "id_district": "28",
+                "nom": "Bobakilandy"
+            },
+            {
+                "id": "363",
+                "id_district": "28",
+                "nom": "Joffreville"
+            },
+            {
+                "id": "364",
+                "id_district": "28",
+                "nom": "Mahalina"
+            },
+            {
+                "id": "365",
+                "id_district": "28",
+                "nom": "Mahavanona"
+            },
+            {
+                "id": "366",
+                "id_district": "28",
+                "nom": "Mangaoka"
+            },
+            {
+                "id": "367",
+                "id_district": "28",
+                "nom": "Mosorolava"
+            },
+            {
+                "id": "368",
+                "id_district": "28",
+                "nom": "Ramena"
+            },
+            {
+                "id": "369",
+                "id_district": "28",
+                "nom": "Sadjoavato"
+            },
+            {
+                "id": "370",
+                "id_district": "28",
+                "nom": "Sakaramy"
+            },
+            {
+                "id": "371",
+                "id_district": "29",
+                "nom": "Ambakirano"
+            },
+            {
+                "id": "372",
+                "id_district": "29",
+                "nom": "Ambalan'anjavy"
+            },
+            {
+                "id": "373",
+                "id_district": "29",
+                "nom": "Ambarakaraka"
+            },
+            {
+                "id": "374",
+                "id_district": "29",
+                "nom": "Ambilobe"
+            },
+            {
+                "id": "375",
+                "id_district": "29",
+                "nom": "Ambodibonara"
+            },
+            {
+                "id": "376",
+                "id_district": "29",
+                "nom": "Ampondralava"
+            },
+            {
+                "id": "377",
+                "id_district": "29",
+                "nom": "Anaborano-Ifasy"
+            },
+            {
+                "id": "378",
+                "id_district": "29",
+                "nom": "Anjiabe-Ambony"
+            },
+            {
+                "id": "379",
+                "id_district": "29",
+                "nom": "Antanambe"
+            },
+            {
+                "id": "380",
+                "id_district": "29",
+                "nom": "Antsaravibe"
+            },
+            {
+                "id": "381",
+                "id_district": "29",
+                "nom": "Antsohimbondrona"
+            },
+            {
+                "id": "382",
+                "id_district": "29",
+                "nom": "Beramanja"
+            },
+            {
+                "id": "383",
+                "id_district": "29",
+                "nom": "Betsihaka"
+            },
+            {
+                "id": "384",
+                "id_district": "29",
+                "nom": "Manambato"
+            },
+            {
+                "id": "385",
+                "id_district": "29",
+                "nom": "Mantaly"
+            },
+            {
+                "id": "386",
+                "id_district": "29",
+                "nom": "Sirama-Ankaragna"
+            },
+            {
+                "id": "387",
+                "id_district": "29",
+                "nom": "Tanambao-Marivorahona"
+            },
+            {
+                "id": "388",
+                "id_district": "30",
+                "nom": "Ambalahonko"
+            },
+            {
+                "id": "389",
+                "id_district": "30",
+                "nom": "Ambanja"
+            },
+            {
+                "id": "390",
+                "id_district": "30",
+                "nom": "Ambodimanga"
+            },
+            {
+                "id": "391",
+                "id_district": "30",
+                "nom": "Ambohimarina"
+            },
+            {
+                "id": "392",
+                "id_district": "30",
+                "nom": "Ankatafa"
+            },
+            {
+                "id": "393",
+                "id_district": "30",
+                "nom": "Ankingameloko"
+            },
+            {
+                "id": "394",
+                "id_district": "30",
+                "nom": "Anorotsangana"
+            },
+            {
+                "id": "395",
+                "id_district": "30",
+                "nom": "Antafiambotry"
+            },
+            {
+                "id": "396",
+                "id_district": "30",
+                "nom": "Antranokarany"
+            },
+            {
+                "id": "397",
+                "id_district": "30",
+                "nom": "Antsahabe"
+            },
+            {
+                "id": "398",
+                "id_district": "30",
+                "nom": "Antsakoamanondro"
+            },
+            {
+                "id": "399",
+                "id_district": "30",
+                "nom": "Antsatsaka"
+            },
+            {
+                "id": "400",
+                "id_district": "30",
+                "nom": "Antsirabe"
+            },
+            {
+                "id": "401",
+                "id_district": "30",
+                "nom": "Benavony"
+            },
+            {
+                "id": "402",
+                "id_district": "30",
+                "nom": "BemanevikaEst"
+            },
+            {
+                "id": "403",
+                "id_district": "30",
+                "nom": "BemanevikyOuest"
+            },
+            {
+                "id": "404",
+                "id_district": "30",
+                "nom": "Djangoa"
+            },
+            {
+                "id": "405",
+                "id_district": "30",
+                "nom": "Maevatanana"
+            },
+            {
+                "id": "406",
+                "id_district": "30",
+                "nom": "Maherivaratra"
+            },
+            {
+                "id": "407",
+                "id_district": "30",
+                "nom": "Marotolana"
+            },
+            {
+                "id": "408",
+                "id_district": "30",
+                "nom": "Marovato"
+            },
+            {
+                "id": "409",
+                "id_district": "31",
+                "nom": "Nosy-Be"
+            },
+            {
+                "id": "410",
+                "id_district": "32",
+                "nom": "Ambatofinandrahana"
+            },
+            {
+                "id": "411",
+                "id_district": "32",
+                "nom": "Ambatomifanongoa"
+            },
+            {
+                "id": "412",
+                "id_district": "32",
+                "nom": "Ambondromisotra"
+            },
+            {
+                "id": "413",
+                "id_district": "32",
+                "nom": "Amborompotsy"
+            },
+            {
+                "id": "414",
+                "id_district": "32",
+                "nom": "Fenoarivo"
+            },
+            {
+                "id": "415",
+                "id_district": "32",
+                "nom": "Itremo"
+            },
+            {
+                "id": "416",
+                "id_district": "32",
+                "nom": "Mandrosonoro"
+            },
+            {
+                "id": "417",
+                "id_district": "32",
+                "nom": "Mangataboahangy"
+            },
+            {
+                "id": "418",
+                "id_district": "32",
+                "nom": "Soavina"
+            },
+            {
+                "id": "419",
+                "id_district": "33",
+                "nom": "Alakamisy-Ambohijato"
+            },
+            {
+                "id": "420",
+                "id_district": "33",
+                "nom": "Ambalamanakana"
+            },
+            {
+                "id": "421",
+                "id_district": "33",
+                "nom": "Ambatofitorahana"
+            },
+            {
+                "id": "422",
+                "id_district": "33",
+                "nom": "Ambinanindrano"
+            },
+            {
+                "id": "423",
+                "id_district": "33",
+                "nom": "Ambohimitombo"
+            },
+            {
+                "id": "424",
+                "id_district": "33",
+                "nom": "Ambositra"
+            },
+            {
+                "id": "425",
+                "id_district": "33",
+                "nom": "Ambositra-II"
+            },
+            {
+                "id": "426",
+                "id_district": "33",
+                "nom": "Andina"
+            },
+            {
+                "id": "427",
+                "id_district": "33",
+                "nom": "Ankazoambo"
+            },
+            {
+                "id": "428",
+                "id_district": "33",
+                "nom": "Antoetra"
+            },
+            {
+                "id": "429",
+                "id_district": "33",
+                "nom": "Fahizay-Ambatolahimasina"
+            },
+            {
+                "id": "430",
+                "id_district": "33",
+                "nom": "Ihadilanana"
+            },
+            {
+                "id": "431",
+                "id_district": "33",
+                "nom": "Ilaka-Centre"
+            },
+            {
+                "id": "432",
+                "id_district": "33",
+                "nom": "Imerina-Imady"
+            },
+            {
+                "id": "433",
+                "id_district": "33",
+                "nom": "Ivato"
+            },
+            {
+                "id": "434",
+                "id_district": "33",
+                "nom": "Ivony-Miaramiasa"
+            },
+            {
+                "id": "435",
+                "id_district": "33",
+                "nom": "Kianjandrakefina"
+            },
+            {
+                "id": "436",
+                "id_district": "33",
+                "nom": "Mahazina-Ambohipierenana"
+            },
+            {
+                "id": "437",
+                "id_district": "33",
+                "nom": "Marosoa"
+            },
+            {
+                "id": "438",
+                "id_district": "33",
+                "nom": "Sahatsiho-Ambohimanjaka"
+            },
+            {
+                "id": "439",
+                "id_district": "33",
+                "nom": "Tsarasaotra"
+            },
+            {
+                "id": "440",
+                "id_district": "34",
+                "nom": "Alakamisy-Ambohimahazo"
+            },
+            {
+                "id": "441",
+                "id_district": "34",
+                "nom": "Ankarinoro"
+            },
+            {
+                "id": "442",
+                "id_district": "34",
+                "nom": "Betsimisotra"
+            },
+            {
+                "id": "443",
+                "id_district": "34",
+                "nom": "Fandriana"
+            },
+            {
+                "id": "444",
+                "id_district": "34",
+                "nom": "Fiadanana"
+            },
+            {
+                "id": "445",
+                "id_district": "34",
+                "nom": "Imito"
+            },
+            {
+                "id": "446",
+                "id_district": "34",
+                "nom": "Mahazoarivo"
+            },
+            {
+                "id": "447",
+                "id_district": "34",
+                "nom": "Miarinavaratra"
+            },
+            {
+                "id": "448",
+                "id_district": "34",
+                "nom": "Milamaina"
+            },
+            {
+                "id": "449",
+                "id_district": "34",
+                "nom": "Sahamadio"
+            },
+            {
+                "id": "450",
+                "id_district": "34",
+                "nom": "Sandrandahy"
+            },
+            {
+                "id": "451",
+                "id_district": "34",
+                "nom": "Tatamalaza"
+            },
+            {
+                "id": "452",
+                "id_district": "34",
+                "nom": "Tsarazaza"
+            },
+            {
+                "id": "453",
+                "id_district": "35",
+                "nom": "Ambatomarina"
+            },
+            {
+                "id": "454",
+                "id_district": "35",
+                "nom": "Ambohimahazo"
+            },
+            {
+                "id": "455",
+                "id_district": "35",
+                "nom": "Ambohimilanja"
+            },
+            {
+                "id": "456",
+                "id_district": "35",
+                "nom": "Ambohipo"
+            },
+            {
+                "id": "457",
+                "id_district": "35",
+                "nom": "Ambovombe-Afovoany"
+            },
+            {
+                "id": "458",
+                "id_district": "35",
+                "nom": "Andakatanikely"
+            },
+            {
+                "id": "459",
+                "id_district": "35",
+                "nom": "Andakatany"
+            },
+            {
+                "id": "460",
+                "id_district": "35",
+                "nom": "Anjoma-Nandihizana"
+            },
+            {
+                "id": "461",
+                "id_district": "35",
+                "nom": "Anjoman'ankona"
+            },
+            {
+                "id": "462",
+                "id_district": "35",
+                "nom": "Talata-Vohimena"
+            },
+            {
+                "id": "463",
+                "id_district": "36",
+                "nom": "Ambalavao"
+            },
+            {
+                "id": "464",
+                "id_district": "36",
+                "nom": "Ambinanindovoka"
+            },
+            {
+                "id": "465",
+                "id_district": "36",
+                "nom": "Ambinanindroa"
+            },
+            {
+                "id": "466",
+                "id_district": "36",
+                "nom": "Ambohimahamasina"
+            },
+            {
+                "id": "467",
+                "id_district": "36",
+                "nom": "Ambohimandroso"
+            },
+            {
+                "id": "468",
+                "id_district": "36",
+                "nom": "Andrainjato"
+            },
+            {
+                "id": "469",
+                "id_district": "36",
+                "nom": "Anjoma"
+            },
+            {
+                "id": "470",
+                "id_district": "36",
+                "nom": "Ankaramena"
+            },
+            {
+                "id": "471",
+                "id_district": "36",
+                "nom": "Besoa"
+            },
+            {
+                "id": "472",
+                "id_district": "36",
+                "nom": "Fenoarivo"
+            },
+            {
+                "id": "473",
+                "id_district": "36",
+                "nom": "Iarintsena"
+            },
+            {
+                "id": "474",
+                "id_district": "36",
+                "nom": "Kirano"
+            },
+            {
+                "id": "475",
+                "id_district": "36",
+                "nom": "Mahazony"
+            },
+            {
+                "id": "476",
+                "id_district": "36",
+                "nom": "Manamisoa"
+            },
+            {
+                "id": "477",
+                "id_district": "36",
+                "nom": "Miarinarivo"
+            },
+            {
+                "id": "478",
+                "id_district": "36",
+                "nom": "Sendrisoa"
+            },
+            {
+                "id": "479",
+                "id_district": "36",
+                "nom": "Vohitsaoka"
+            },
+            {
+                "id": "480",
+                "id_district": "37",
+                "nom": "Ambalakindresy"
+            },
+            {
+                "id": "481",
+                "id_district": "37",
+                "nom": "Ambatosoa"
+            },
+            {
+                "id": "482",
+                "id_district": "37",
+                "nom": "Ambohimahasoa"
+            },
+            {
+                "id": "483",
+                "id_district": "37",
+                "nom": "Ambohinamboarina"
+            },
+            {
+                "id": "484",
+                "id_district": "37",
+                "nom": "Ampitana"
+            },
+            {
+                "id": "485",
+                "id_district": "37",
+                "nom": "Ankafina-Tsarafidy"
+            },
+            {
+                "id": "486",
+                "id_district": "37",
+                "nom": "Ankerana"
+            },
+            {
+                "id": "487",
+                "id_district": "37",
+                "nom": "Befeta"
+            },
+            {
+                "id": "488",
+                "id_district": "37",
+                "nom": "Camp-Robin"
+            },
+            {
+                "id": "489",
+                "id_district": "37",
+                "nom": "Fiadanana"
+            },
+            {
+                "id": "490",
+                "id_district": "37",
+                "nom": "Isaka"
+            },
+            {
+                "id": "491",
+                "id_district": "37",
+                "nom": "Kalalao"
+            },
+            {
+                "id": "492",
+                "id_district": "37",
+                "nom": "Manandroy"
+            },
+            {
+                "id": "493",
+                "id_district": "37",
+                "nom": "Morafeno"
+            },
+            {
+                "id": "494",
+                "id_district": "37",
+                "nom": "Sahatona"
+            },
+            {
+                "id": "495",
+                "id_district": "37",
+                "nom": "Sahave"
+            },
+            {
+                "id": "496",
+                "id_district": "37",
+                "nom": "Vohiposa"
+            },
+            {
+                "id": "497",
+                "id_district": "38",
+                "nom": "Fianarantsoa"
+            },
+            {
+                "id": "498",
+                "id_district": "39",
+                "nom": "Ambatomainty"
+            },
+            {
+                "id": "499",
+                "id_district": "39",
+                "nom": "Fitampito"
+            },
+            {
+                "id": "500",
+                "id_district": "39",
+                "nom": "Ikalamavony"
+            },
+            {
+                "id": "501",
+                "id_district": "39",
+                "nom": "Mangidy"
+            },
+            {
+                "id": "502",
+                "id_district": "39",
+                "nom": "Sakay"
+            },
+            {
+                "id": "503",
+                "id_district": "39",
+                "nom": "Solila"
+            },
+            {
+                "id": "504",
+                "id_district": "39",
+                "nom": "Tanamarina"
+            },
+            {
+                "id": "505",
+                "id_district": "39",
+                "nom": "Tsitondroina"
+            },
+            {
+                "id": "506",
+                "id_district": "40",
+                "nom": "Ambalamidera-II"
+            },
+            {
+                "id": "507",
+                "id_district": "40",
+                "nom": "Ambondrona"
+            },
+            {
+                "id": "508",
+                "id_district": "40",
+                "nom": "Andoharanomaintso"
+            },
+            {
+                "id": "509",
+                "id_district": "40",
+                "nom": "Anjoma-Itsara"
+            },
+            {
+                "id": "510",
+                "id_district": "40",
+                "nom": "Ankarinarivo-Manirisoa"
+            },
+            {
+                "id": "511",
+                "id_district": "40",
+                "nom": "Fanjakana"
+            },
+            {
+                "id": "512",
+                "id_district": "40",
+                "nom": "Iavinomby-Vohibola"
+            },
+            {
+                "id": "513",
+                "id_district": "40",
+                "nom": "Isorana"
+            },
+            {
+                "id": "514",
+                "id_district": "40",
+                "nom": "Mahazoarivo"
+            },
+            {
+                "id": "515",
+                "id_district": "40",
+                "nom": "Nasandratrony"
+            },
+            {
+                "id": "516",
+                "id_district": "40",
+                "nom": "Soatanana"
+            },
+            {
+                "id": "517",
+                "id_district": "41",
+                "nom": "Alakamisy-Ambohimaha"
+            },
+            {
+                "id": "518",
+                "id_district": "41",
+                "nom": "Alatsinainy-Ialamarina"
+            },
+            {
+                "id": "519",
+                "id_district": "41",
+                "nom": "Ambalakely"
+            },
+            {
+                "id": "520",
+                "id_district": "41",
+                "nom": "Ambalamahasoa"
+            },
+            {
+                "id": "521",
+                "id_district": "41",
+                "nom": "Andrainjato-Centre"
+            },
+            {
+                "id": "522",
+                "id_district": "41",
+                "nom": "Andrainjato-Est"
+            },
+            {
+                "id": "523",
+                "id_district": "41",
+                "nom": "Androy"
+            },
+            {
+                "id": "524",
+                "id_district": "41",
+                "nom": "Fandrandava"
+            },
+            {
+                "id": "525",
+                "id_district": "41",
+                "nom": "Ialananindro"
+            },
+            {
+                "id": "526",
+                "id_district": "41",
+                "nom": "Ivoamba"
+            },
+            {
+                "id": "527",
+                "id_district": "41",
+                "nom": "Mahatsinjony"
+            },
+            {
+                "id": "528",
+                "id_district": "41",
+                "nom": "Sahambavy"
+            },
+            {
+                "id": "529",
+                "id_district": "41",
+                "nom": "Taindambo"
+            },
+            {
+                "id": "530",
+                "id_district": "42",
+                "nom": "Alakamisy-Itenina"
+            },
+            {
+                "id": "531",
+                "id_district": "42",
+                "nom": "Andranomiditra"
+            },
+            {
+                "id": "532",
+                "id_district": "42",
+                "nom": "Andranovorivato"
+            },
+            {
+                "id": "533",
+                "id_district": "42",
+                "nom": "Ankaromalaza-Mifanasoa"
+            },
+            {
+                "id": "534",
+                "id_district": "42",
+                "nom": "Ihazoara"
+            },
+            {
+                "id": "535",
+                "id_district": "42",
+                "nom": "Mahaditra"
+            },
+            {
+                "id": "536",
+                "id_district": "42",
+                "nom": "Mahasoabe"
+            },
+            {
+                "id": "537",
+                "id_district": "42",
+                "nom": "Maneva"
+            },
+            {
+                "id": "538",
+                "id_district": "42",
+                "nom": "Soaindrana"
+            },
+            {
+                "id": "539",
+                "id_district": "42",
+                "nom": "Talata-Ampano"
+            },
+            {
+                "id": "540",
+                "id_district": "42",
+                "nom": "Vinanitelo"
+            },
+            {
+                "id": "541",
+                "id_district": "42",
+                "nom": "Vohibato-Ouest"
+            },
+            {
+                "id": "542",
+                "id_district": "42",
+                "nom": "Vohimarina-Lamosina"
+            },
+            {
+                "id": "543",
+                "id_district": "42",
+                "nom": "Vohitrafeno"
+            },
+            {
+                "id": "544",
+                "id_district": "43",
+                "nom": "Ambohimanga-Sud"
+            },
+            {
+                "id": "545",
+                "id_district": "43",
+                "nom": "Ambohimiera"
+            },
+            {
+                "id": "546",
+                "id_district": "43",
+                "nom": "Analampasina"
+            },
+            {
+                "id": "547",
+                "id_district": "43",
+                "nom": "Androrangavola"
+            },
+            {
+                "id": "548",
+                "id_district": "43",
+                "nom": "Antaretra"
+            },
+            {
+                "id": "549",
+                "id_district": "43",
+                "nom": "Antsindra"
+            },
+            {
+                "id": "550",
+                "id_district": "43",
+                "nom": "Fasintsara"
+            },
+            {
+                "id": "551",
+                "id_district": "43",
+                "nom": "Ifanadiana"
+            },
+            {
+                "id": "552",
+                "id_district": "43",
+                "nom": "Kelilalina"
+            },
+            {
+                "id": "553",
+                "id_district": "43",
+                "nom": "Maroharatra"
+            },
+            {
+                "id": "554",
+                "id_district": "43",
+                "nom": "Marotoko"
+            },
+            {
+                "id": "555",
+                "id_district": "43",
+                "nom": "Ranomafana"
+            },
+            {
+                "id": "556",
+                "id_district": "43",
+                "nom": "Tsaratanana"
+            },
+            {
+                "id": "557",
+                "id_district": "44",
+                "nom": "Ambatofotsy"
+            },
+            {
+                "id": "558",
+                "id_district": "44",
+                "nom": "Ambohimisafy"
+            },
+            {
+                "id": "559",
+                "id_district": "44",
+                "nom": "Ambolomadinika"
+            },
+            {
+                "id": "560",
+                "id_district": "44",
+                "nom": "Ankarimbelo"
+            },
+            {
+                "id": "561",
+                "id_district": "44",
+                "nom": "Belemoka"
+            },
+            {
+                "id": "562",
+                "id_district": "44",
+                "nom": "Ifanirea"
+            },
+            {
+                "id": "563",
+                "id_district": "44",
+                "nom": "Ikongo"
+            },
+            {
+                "id": "564",
+                "id_district": "44",
+                "nom": "Kalafotsy"
+            },
+            {
+                "id": "565",
+                "id_district": "44",
+                "nom": "Manampatrana"
+            },
+            {
+                "id": "566",
+                "id_district": "44",
+                "nom": "Maromiandra"
+            },
+            {
+                "id": "567",
+                "id_district": "44",
+                "nom": "Sahalanona"
+            },
+            {
+                "id": "568",
+                "id_district": "44",
+                "nom": "Tanakambana"
+            },
+            {
+                "id": "569",
+                "id_district": "44",
+                "nom": "Tolongoina"
+            },
+            {
+                "id": "570",
+                "id_district": "45",
+                "nom": "Ambahatrazo"
+            },
+            {
+                "id": "571",
+                "id_district": "45",
+                "nom": "Ambahive"
+            },
+            {
+                "id": "572",
+                "id_district": "45",
+                "nom": "Ambalaroka"
+            },
+            {
+                "id": "573",
+                "id_district": "45",
+                "nom": "Ambalavero"
+            },
+            {
+                "id": "574",
+                "id_district": "45",
+                "nom": "Ambila"
+            },
+            {
+                "id": "575",
+                "id_district": "45",
+                "nom": "Amboanjo"
+            },
+            {
+                "id": "576",
+                "id_district": "45",
+                "nom": "Ambohitsara-M"
+            },
+            {
+                "id": "577",
+                "id_district": "45",
+                "nom": "Amborondra"
+            },
+            {
+                "id": "578",
+                "id_district": "45",
+                "nom": "Ambotaka"
+            },
+            {
+                "id": "579",
+                "id_district": "45",
+                "nom": "Ampasimanjeva"
+            },
+            {
+                "id": "580",
+                "id_district": "45",
+                "nom": "Ampasimboraka"
+            },
+            {
+                "id": "581",
+                "id_district": "45",
+                "nom": "Ampasipotsy"
+            },
+            {
+                "id": "582",
+                "id_district": "45",
+                "nom": "Analavory"
+            },
+            {
+                "id": "583",
+                "id_district": "45",
+                "nom": "Anorombato"
+            },
+            {
+                "id": "584",
+                "id_district": "45",
+                "nom": "Anosiala"
+            },
+            {
+                "id": "585",
+                "id_district": "45",
+                "nom": "Anteza"
+            },
+            {
+                "id": "586",
+                "id_district": "45",
+                "nom": "Bekatra"
+            },
+            {
+                "id": "587",
+                "id_district": "45",
+                "nom": "Fenomby"
+            },
+            {
+                "id": "588",
+                "id_district": "45",
+                "nom": "Lokomby"
+            },
+            {
+                "id": "589",
+                "id_district": "45",
+                "nom": "Mahabako"
+            },
+            {
+                "id": "590",
+                "id_district": "45",
+                "nom": "Mahamaibe"
+            },
+            {
+                "id": "591",
+                "id_district": "45",
+                "nom": "Manakara"
+            },
+            {
+                "id": "592",
+                "id_district": "45",
+                "nom": "Mangatsiotra"
+            },
+            {
+                "id": "593",
+                "id_district": "45",
+                "nom": "Marofarihy"
+            },
+            {
+                "id": "594",
+                "id_district": "45",
+                "nom": "Mavorano"
+            },
+            {
+                "id": "595",
+                "id_district": "45",
+                "nom": "Mitanty"
+            },
+            {
+                "id": "596",
+                "id_district": "45",
+                "nom": "Mizilo-Gara"
+            },
+            {
+                "id": "597",
+                "id_district": "45",
+                "nom": "Nihaonana"
+            },
+            {
+                "id": "598",
+                "id_district": "45",
+                "nom": "Onilahy"
+            },
+            {
+                "id": "599",
+                "id_district": "45",
+                "nom": "Sahanambohitra"
+            },
+            {
+                "id": "600",
+                "id_district": "45",
+                "nom": "Saharefo"
+            },
+            {
+                "id": "601",
+                "id_district": "45",
+                "nom": "Sahasinaka"
+            },
+            {
+                "id": "602",
+                "id_district": "45",
+                "nom": "Sakoana"
+            },
+            {
+                "id": "603",
+                "id_district": "45",
+                "nom": "Sorombo"
+            },
+            {
+                "id": "604",
+                "id_district": "45",
+                "nom": "Tataho"
+            },
+            {
+                "id": "605",
+                "id_district": "45",
+                "nom": "Vatana"
+            },
+            {
+                "id": "606",
+                "id_district": "45",
+                "nom": "Vinanitelo"
+            },
+            {
+                "id": "607",
+                "id_district": "45",
+                "nom": "Vohilava"
+            },
+            {
+                "id": "608",
+                "id_district": "45",
+                "nom": "Vohimanitra"
+            },
+            {
+                "id": "609",
+                "id_district": "45",
+                "nom": "Vohimasina-Nord"
+            },
+            {
+                "id": "610",
+                "id_district": "45",
+                "nom": "Vohimasina-Sud"
+            },
+            {
+                "id": "611",
+                "id_district": "45",
+                "nom": "Vohimasy"
+            },
+            {
+                "id": "612",
+                "id_district": "46",
+                "nom": "Ambalahosy-Nord"
+            },
+            {
+                "id": "613",
+                "id_district": "46",
+                "nom": "Ambodinonoka"
+            },
+            {
+                "id": "614",
+                "id_district": "46",
+                "nom": "Ambohimiarina-II"
+            },
+            {
+                "id": "615",
+                "id_district": "46",
+                "nom": "Ambohinihaonana"
+            },
+            {
+                "id": "616",
+                "id_district": "46",
+                "nom": "Andonabe"
+            },
+            {
+                "id": "617",
+                "id_district": "46",
+                "nom": "Andranambolava"
+            },
+            {
+                "id": "618",
+                "id_district": "46",
+                "nom": "Anosimparihy"
+            },
+            {
+                "id": "619",
+                "id_district": "46",
+                "nom": "Antsenavolo"
+            },
+            {
+                "id": "620",
+                "id_district": "46",
+                "nom": "Kianjavato"
+            },
+            {
+                "id": "621",
+                "id_district": "46",
+                "nom": "Mahaela"
+            },
+            {
+                "id": "622",
+                "id_district": "46",
+                "nom": "Mahatsara-Iefaka"
+            },
+            {
+                "id": "623",
+                "id_district": "46",
+                "nom": "Mahatsara-Sud"
+            },
+            {
+                "id": "624",
+                "id_district": "46",
+                "nom": "Mahavoky-Nord"
+            },
+            {
+                "id": "625",
+                "id_district": "46",
+                "nom": "Manakana-Nord"
+            },
+            {
+                "id": "626",
+                "id_district": "46",
+                "nom": "Mananjary"
+            },
+            {
+                "id": "627",
+                "id_district": "46",
+                "nom": "Marofototra"
+            },
+            {
+                "id": "628",
+                "id_district": "46",
+                "nom": "Marokarima"
+            },
+            {
+                "id": "629",
+                "id_district": "46",
+                "nom": "Marosangy"
+            },
+            {
+                "id": "630",
+                "id_district": "46",
+                "nom": "Morafeno"
+            },
+            {
+                "id": "631",
+                "id_district": "46",
+                "nom": "Namorona"
+            },
+            {
+                "id": "632",
+                "id_district": "46",
+                "nom": "Sandrohy"
+            },
+            {
+                "id": "633",
+                "id_district": "46",
+                "nom": "Tsaravary"
+            },
+            {
+                "id": "634",
+                "id_district": "46",
+                "nom": "Tsiatosika"
+            },
+            {
+                "id": "635",
+                "id_district": "46",
+                "nom": "Vatohandrina"
+            },
+            {
+                "id": "636",
+                "id_district": "46",
+                "nom": "Vohilava"
+            },
+            {
+                "id": "637",
+                "id_district": "47",
+                "nom": "Ambahy"
+            },
+            {
+                "id": "638",
+                "id_district": "47",
+                "nom": "Ambodilafa"
+            },
+            {
+                "id": "639",
+                "id_district": "47",
+                "nom": "Ampasinambo"
+            },
+            {
+                "id": "640",
+                "id_district": "47",
+                "nom": "Androrangovola"
+            },
+            {
+                "id": "641",
+                "id_district": "47",
+                "nom": "Befody"
+            },
+            {
+                "id": "642",
+                "id_district": "47",
+                "nom": "Fiadanana"
+            },
+            {
+                "id": "643",
+                "id_district": "47",
+                "nom": "NosyVarika"
+            },
+            {
+                "id": "644",
+                "id_district": "47",
+                "nom": "Sahavato"
+            },
+            {
+                "id": "645",
+                "id_district": "47",
+                "nom": "SoavinaEst"
+            },
+            {
+                "id": "646",
+                "id_district": "47",
+                "nom": "Vohilava"
+            },
+            {
+                "id": "647",
+                "id_district": "47",
+                "nom": "Vohindroa"
+            },
+            {
+                "id": "648",
+                "id_district": "47",
+                "nom": "Vohitrandriana"
+            },
+            {
+                "id": "649",
+                "id_district": "48",
+                "nom": "Andemaka"
+            },
+            {
+                "id": "650",
+                "id_district": "48",
+                "nom": "Ankarimbary"
+            },
+            {
+                "id": "651",
+                "id_district": "48",
+                "nom": "Ifatsy"
+            },
+            {
+                "id": "652",
+                "id_district": "48",
+                "nom": "Ilakatra"
+            },
+            {
+                "id": "653",
+                "id_district": "48",
+                "nom": "Ivato"
+            },
+            {
+                "id": "654",
+                "id_district": "48",
+                "nom": "Lanivo"
+            },
+            {
+                "id": "655",
+                "id_district": "48",
+                "nom": "Mahabo"
+            },
+            {
+                "id": "656",
+                "id_district": "48",
+                "nom": "Mahasoabe"
+            },
+            {
+                "id": "657",
+                "id_district": "48",
+                "nom": "Mahazoarivo"
+            },
+            {
+                "id": "658",
+                "id_district": "48",
+                "nom": "Nato"
+            },
+            {
+                "id": "659",
+                "id_district": "48",
+                "nom": "Onjatsy"
+            },
+            {
+                "id": "660",
+                "id_district": "48",
+                "nom": "Sahalava"
+            },
+            {
+                "id": "661",
+                "id_district": "48",
+                "nom": "Savana"
+            },
+            {
+                "id": "662",
+                "id_district": "48",
+                "nom": "Vohilany"
+            },
+            {
+                "id": "663",
+                "id_district": "48",
+                "nom": "Vohindava"
+            },
+            {
+                "id": "664",
+                "id_district": "48",
+                "nom": "Vohipeno"
+            },
+            {
+                "id": "665",
+                "id_district": "48",
+                "nom": "Vohitrindry"
+            },
+            {
+                "id": "666",
+                "id_district": "49",
+                "nom": "Antaninarenina"
+            },
+            {
+                "id": "667",
+                "id_district": "49",
+                "nom": "Antondabe"
+            },
+            {
+                "id": "668",
+                "id_district": "49",
+                "nom": "Befotaka"
+            },
+            {
+                "id": "669",
+                "id_district": "49",
+                "nom": "Befotaka-Sud"
+            },
+            {
+                "id": "670",
+                "id_district": "49",
+                "nom": "Beharena"
+            },
+            {
+                "id": "671",
+                "id_district": "49",
+                "nom": "Marovitsika"
+            },
+            {
+                "id": "672",
+                "id_district": "49",
+                "nom": "Ranotsara-Sud"
+            },
+            {
+                "id": "673",
+                "id_district": "50",
+                "nom": "Ambalatany"
+            },
+            {
+                "id": "674",
+                "id_district": "50",
+                "nom": "Ambalavato"
+            },
+            {
+                "id": "675",
+                "id_district": "50",
+                "nom": "Ambalavato-Antevato"
+            },
+            {
+                "id": "676",
+                "id_district": "50",
+                "nom": "Ambohigogo"
+            },
+            {
+                "id": "677",
+                "id_district": "50",
+                "nom": "Ambohimandroso"
+            },
+            {
+                "id": "678",
+                "id_district": "50",
+                "nom": "Amporoforo"
+            },
+            {
+                "id": "679",
+                "id_district": "50",
+                "nom": "Ankarana-Miraihina"
+            },
+            {
+                "id": "680",
+                "id_district": "50",
+                "nom": "Anosivelo"
+            },
+            {
+                "id": "681",
+                "id_district": "50",
+                "nom": "Anosy-Tsararafa"
+            },
+            {
+                "id": "682",
+                "id_district": "50",
+                "nom": "Antsiranambe"
+            },
+            {
+                "id": "683",
+                "id_district": "50",
+                "nom": "Beretra-Bevoay"
+            },
+            {
+                "id": "684",
+                "id_district": "50",
+                "nom": "Efatsy-Anandroza"
+            },
+            {
+                "id": "685",
+                "id_district": "50",
+                "nom": "Etrotroka-Sud"
+            },
+            {
+                "id": "686",
+                "id_district": "50",
+                "nom": "Evato"
+            },
+            {
+                "id": "687",
+                "id_district": "50",
+                "nom": "Farafangana"
+            },
+            {
+                "id": "688",
+                "id_district": "50",
+                "nom": "Fenoarivo"
+            },
+            {
+                "id": "689",
+                "id_district": "50",
+                "nom": "Iabohazo"
+            },
+            {
+                "id": "690",
+                "id_district": "50",
+                "nom": "Ihorombe"
+            },
+            {
+                "id": "691",
+                "id_district": "50",
+                "nom": "Ivandrika"
+            },
+            {
+                "id": "692",
+                "id_district": "50",
+                "nom": "Mahabo-Mananivo"
+            },
+            {
+                "id": "693",
+                "id_district": "50",
+                "nom": "Mahafasa-Centre"
+            },
+            {
+                "id": "694",
+                "id_district": "50",
+                "nom": "Mahavelo"
+            },
+            {
+                "id": "695",
+                "id_district": "50",
+                "nom": "Maheriraty"
+            },
+            {
+                "id": "696",
+                "id_district": "50",
+                "nom": "Manambotra-Sud"
+            },
+            {
+                "id": "697",
+                "id_district": "50",
+                "nom": "Marovandrika"
+            },
+            {
+                "id": "698",
+                "id_district": "50",
+                "nom": "Namohora-Iaborano"
+            },
+            {
+                "id": "699",
+                "id_district": "50",
+                "nom": "Sahamadio"
+            },
+            {
+                "id": "700",
+                "id_district": "50",
+                "nom": "Tangainony"
+            },
+            {
+                "id": "701",
+                "id_district": "50",
+                "nom": "Tovona"
+            },
+            {
+                "id": "702",
+                "id_district": "50",
+                "nom": "Vohilengo"
+            },
+            {
+                "id": "703",
+                "id_district": "50",
+                "nom": "Vohimasy"
+            },
+            {
+                "id": "704",
+                "id_district": "50",
+                "nom": "Vohitromby"
+            },
+            {
+                "id": "705",
+                "id_district": "51",
+                "nom": "Andranolalina"
+            },
+            {
+                "id": "706",
+                "id_district": "51",
+                "nom": "Ankazovelo"
+            },
+            {
+                "id": "707",
+                "id_district": "51",
+                "nom": "Irondro"
+            },
+            {
+                "id": "708",
+                "id_district": "51",
+                "nom": "Maliorano"
+            },
+            {
+                "id": "709",
+                "id_district": "51",
+                "nom": "Midongy"
+            },
+            {
+                "id": "710",
+                "id_district": "51",
+                "nom": "Soakibany"
+            },
+            {
+                "id": "711",
+                "id_district": "52",
+                "nom": "Ambatolava"
+            },
+            {
+                "id": "712",
+                "id_district": "52",
+                "nom": "Ambongo"
+            },
+            {
+                "id": "713",
+                "id_district": "52",
+                "nom": "Amparihy-Est"
+            },
+            {
+                "id": "714",
+                "id_district": "52",
+                "nom": "Ampasimalemy"
+            },
+            {
+                "id": "715",
+                "id_district": "52",
+                "nom": "Ampataka"
+            },
+            {
+                "id": "716",
+                "id_district": "52",
+                "nom": "Anilobe"
+            },
+            {
+                "id": "717",
+                "id_district": "52",
+                "nom": "Bekaraoka"
+            },
+            {
+                "id": "718",
+                "id_district": "52",
+                "nom": "Bema"
+            },
+            {
+                "id": "719",
+                "id_district": "52",
+                "nom": "Bevata"
+            },
+            {
+                "id": "720",
+                "id_district": "52",
+                "nom": "Fenoambany"
+            },
+            {
+                "id": "721",
+                "id_district": "52",
+                "nom": "Iara"
+            },
+            {
+                "id": "722",
+                "id_district": "52",
+                "nom": "Isahara"
+            },
+            {
+                "id": "723",
+                "id_district": "52",
+                "nom": "Karimbary"
+            },
+            {
+                "id": "724",
+                "id_district": "52",
+                "nom": "Lohafary"
+            },
+            {
+                "id": "725",
+                "id_district": "52",
+                "nom": "Lopary"
+            },
+            {
+                "id": "726",
+                "id_district": "52",
+                "nom": "Manambondro"
+            },
+            {
+                "id": "727",
+                "id_district": "52",
+                "nom": "Marokibo"
+            },
+            {
+                "id": "728",
+                "id_district": "52",
+                "nom": "Masianaka"
+            },
+            {
+                "id": "729",
+                "id_district": "52",
+                "nom": "Matanga"
+            },
+            {
+                "id": "730",
+                "id_district": "52",
+                "nom": "Ranomena"
+            },
+            {
+                "id": "731",
+                "id_district": "52",
+                "nom": "Sandravinany"
+            },
+            {
+                "id": "732",
+                "id_district": "52",
+                "nom": "Soamanova"
+            },
+            {
+                "id": "733",
+                "id_district": "52",
+                "nom": "Tsianofana"
+            },
+            {
+                "id": "734",
+                "id_district": "52",
+                "nom": "Tsiately"
+            },
+            {
+                "id": "735",
+                "id_district": "52",
+                "nom": "Vangaindrano"
+            },
+            {
+                "id": "736",
+                "id_district": "52",
+                "nom": "Vatanato"
+            },
+            {
+                "id": "737",
+                "id_district": "52",
+                "nom": "Vohimalaza"
+            },
+            {
+                "id": "738",
+                "id_district": "52",
+                "nom": "Vohipaho"
+            },
+            {
+                "id": "739",
+                "id_district": "52",
+                "nom": "Vohitrambo"
+            },
+            {
+                "id": "740",
+                "id_district": "53",
+                "nom": "Ambohimana"
+            },
+            {
+                "id": "741",
+                "id_district": "53",
+                "nom": "Anandravy"
+            },
+            {
+                "id": "742",
+                "id_district": "53",
+                "nom": "Andakana"
+            },
+            {
+                "id": "743",
+                "id_district": "53",
+                "nom": "Antokonala"
+            },
+            {
+                "id": "744",
+                "id_district": "53",
+                "nom": "Iamonta"
+            },
+            {
+                "id": "745",
+                "id_district": "53",
+                "nom": "Ivato"
+            },
+            {
+                "id": "746",
+                "id_district": "53",
+                "nom": "Karianga"
+            },
+            {
+                "id": "747",
+                "id_district": "53",
+                "nom": "Mahatsinjo"
+            },
+            {
+                "id": "748",
+                "id_district": "53",
+                "nom": "Mahavelo"
+            },
+            {
+                "id": "749",
+                "id_district": "53",
+                "nom": "Mahazoarivo"
+            },
+            {
+                "id": "750",
+                "id_district": "53",
+                "nom": "Manambidala"
+            },
+            {
+                "id": "751",
+                "id_district": "53",
+                "nom": "Manato"
+            },
+            {
+                "id": "752",
+                "id_district": "53",
+                "nom": "Maroteza"
+            },
+            {
+                "id": "753",
+                "id_district": "53",
+                "nom": "Vohiboreka"
+            },
+            {
+                "id": "754",
+                "id_district": "53",
+                "nom": "Vohimary"
+            },
+            {
+                "id": "755",
+                "id_district": "53",
+                "nom": "Vondrozo"
+            },
+            {
+                "id": "756",
+                "id_district": "54",
+                "nom": "Begogo"
+            },
+            {
+                "id": "757",
+                "id_district": "54",
+                "nom": "Iakora"
+            },
+            {
+                "id": "758",
+                "id_district": "54",
+                "nom": "Ranotsara-Nord"
+            },
+            {
+                "id": "759",
+                "id_district": "55",
+                "nom": "Ambatolahy"
+            },
+            {
+                "id": "760",
+                "id_district": "55",
+                "nom": "Ambia"
+            },
+            {
+                "id": "761",
+                "id_district": "55",
+                "nom": "Analaliry"
+            },
+            {
+                "id": "762",
+                "id_district": "55",
+                "nom": "Analavoka"
+            },
+            {
+                "id": "763",
+                "id_district": "55",
+                "nom": "Andiolava"
+            },
+            {
+                "id": "764",
+                "id_district": "55",
+                "nom": "Ankily"
+            },
+            {
+                "id": "765",
+                "id_district": "55",
+                "nom": "Ihosy"
+            },
+            {
+                "id": "766",
+                "id_district": "55",
+                "nom": "Ilakaka"
+            },
+            {
+                "id": "767",
+                "id_district": "55",
+                "nom": "Irina"
+            },
+            {
+                "id": "768",
+                "id_district": "55",
+                "nom": "Mahasoa"
+            },
+            {
+                "id": "769",
+                "id_district": "55",
+                "nom": "Menamaty-Iloto"
+            },
+            {
+                "id": "770",
+                "id_district": "55",
+                "nom": "Ranohira"
+            },
+            {
+                "id": "771",
+                "id_district": "55",
+                "nom": "Sahambano"
+            },
+            {
+                "id": "772",
+                "id_district": "55",
+                "nom": "Sakalalina"
+            },
+            {
+                "id": "773",
+                "id_district": "55",
+                "nom": "Satrokala"
+            },
+            {
+                "id": "774",
+                "id_district": "55",
+                "nom": "Soamatasy"
+            },
+            {
+                "id": "775",
+                "id_district": "55",
+                "nom": "Zazafotsy"
+            },
+            {
+                "id": "776",
+                "id_district": "56",
+                "nom": "Antambohobe"
+            },
+            {
+                "id": "777",
+                "id_district": "56",
+                "nom": "Ivohibe"
+            },
+            {
+                "id": "778",
+                "id_district": "56",
+                "nom": "Ivongo"
+            },
+            {
+                "id": "779",
+                "id_district": "56",
+                "nom": "Maropaika"
+            },
+            {
+                "id": "780",
+                "id_district": "57",
+                "nom": "Ambaliha"
+            },
+            {
+                "id": "781",
+                "id_district": "57",
+                "nom": "Ambarijeby"
+            },
+            {
+                "id": "782",
+                "id_district": "57",
+                "nom": "Analalava"
+            },
+            {
+                "id": "783",
+                "id_district": "57",
+                "nom": "Andriambavontsona"
+            },
+            {
+                "id": "784",
+                "id_district": "57",
+                "nom": "Ankaramy-Be"
+            },
+            {
+                "id": "785",
+                "id_district": "57",
+                "nom": "Antonibe"
+            },
+            {
+                "id": "786",
+                "id_district": "57",
+                "nom": "Befotaka"
+            },
+            {
+                "id": "787",
+                "id_district": "57",
+                "nom": "Mahadrodroka"
+            },
+            {
+                "id": "788",
+                "id_district": "57",
+                "nom": "Maromandia"
+            },
+            {
+                "id": "789",
+                "id_district": "57",
+                "nom": "Marovantaza"
+            },
+            {
+                "id": "790",
+                "id_district": "57",
+                "nom": "Marovatolena"
+            },
+            {
+                "id": "791",
+                "id_district": "58",
+                "nom": "Ambimadiro"
+            },
+            {
+                "id": "792",
+                "id_district": "58",
+                "nom": "Ambodimanary"
+            },
+            {
+                "id": "793",
+                "id_district": "58",
+                "nom": "Ambodimandresy"
+            },
+            {
+                "id": "794",
+                "id_district": "58",
+                "nom": "Ampandriakalindy"
+            },
+            {
+                "id": "795",
+                "id_district": "58",
+                "nom": "Anahidrano"
+            },
+            {
+                "id": "796",
+                "id_district": "58",
+                "nom": "Andreba"
+            },
+            {
+                "id": "797",
+                "id_district": "58",
+                "nom": "Anjalazala"
+            },
+            {
+                "id": "798",
+                "id_district": "58",
+                "nom": "Anjiamangirana-I"
+            },
+            {
+                "id": "799",
+                "id_district": "58",
+                "nom": "Ankerika"
+            },
+            {
+                "id": "800",
+                "id_district": "58",
+                "nom": "Antsahabe"
+            },
+            {
+                "id": "801",
+                "id_district": "58",
+                "nom": "Antsohihy"
+            },
+            {
+                "id": "802",
+                "id_district": "58",
+                "nom": "Maroala"
+            },
+            {
+                "id": "803",
+                "id_district": "59",
+                "nom": "Ambalaromba"
+            },
+            {
+                "id": "804",
+                "id_district": "59",
+                "nom": "Ambatoriha"
+            },
+            {
+                "id": "805",
+                "id_district": "59",
+                "nom": "Ambatosia"
+            },
+            {
+                "id": "806",
+                "id_district": "59",
+                "nom": "Ambodiadabo"
+            },
+            {
+                "id": "807",
+                "id_district": "59",
+                "nom": "Ambodisikidy"
+            },
+            {
+                "id": "808",
+                "id_district": "59",
+                "nom": "Ambonomby"
+            },
+            {
+                "id": "809",
+                "id_district": "59",
+                "nom": "Analila"
+            },
+            {
+                "id": "810",
+                "id_district": "59",
+                "nom": "Antananivo-Haut"
+            },
+            {
+                "id": "811",
+                "id_district": "59",
+                "nom": "Antsamaka"
+            },
+            {
+                "id": "812",
+                "id_district": "59",
+                "nom": "Bealanana"
+            },
+            {
+                "id": "813",
+                "id_district": "59",
+                "nom": "Beandrarezona"
+            },
+            {
+                "id": "814",
+                "id_district": "59",
+                "nom": "Mangidrano"
+            },
+            {
+                "id": "815",
+                "id_district": "59",
+                "nom": "Marotolana"
+            },
+            {
+                "id": "816",
+                "id_district": "60",
+                "nom": "Ambararata"
+            },
+            {
+                "id": "817",
+                "id_district": "60",
+                "nom": "Ambodimotso-Atsimo"
+            },
+            {
+                "id": "818",
+                "id_district": "60",
+                "nom": "Ambolidibe-Est"
+            },
+            {
+                "id": "819",
+                "id_district": "60",
+                "nom": "Ankarongana"
+            },
+            {
+                "id": "820",
+                "id_district": "60",
+                "nom": "Antsakabary"
+            },
+            {
+                "id": "821",
+                "id_district": "60",
+                "nom": "Antsakanalabe"
+            },
+            {
+                "id": "822",
+                "id_district": "60",
+                "nom": "Befandriana-Avaratra"
+            },
+            {
+                "id": "823",
+                "id_district": "60",
+                "nom": "Maroamalona"
+            },
+            {
+                "id": "824",
+                "id_district": "60",
+                "nom": "Matsondana"
+            },
+            {
+                "id": "825",
+                "id_district": "60",
+                "nom": "Morafeno"
+            },
+            {
+                "id": "826",
+                "id_district": "60",
+                "nom": "Tsarahonenana"
+            },
+            {
+                "id": "827",
+                "id_district": "60",
+                "nom": "Tsiamalao"
+            },
+            {
+                "id": "828",
+                "id_district": "61",
+                "nom": "Ambanjabe"
+            },
+            {
+                "id": "829",
+                "id_district": "61",
+                "nom": "Ambodimahabibo"
+            },
+            {
+                "id": "830",
+                "id_district": "61",
+                "nom": "Ambodisakoana"
+            },
+            {
+                "id": "831",
+                "id_district": "61",
+                "nom": "Ambodivongo"
+            },
+            {
+                "id": "832",
+                "id_district": "61",
+                "nom": "Amparihy"
+            },
+            {
+                "id": "833",
+                "id_district": "61",
+                "nom": "Andranomeva"
+            },
+            {
+                "id": "834",
+                "id_district": "61",
+                "nom": "Boriziny(Port-Bergé)"
+            },
+            {
+                "id": "835",
+                "id_district": "61",
+                "nom": "BorizinyII"
+            },
+            {
+                "id": "836",
+                "id_district": "61",
+                "nom": "Leanja"
+            },
+            {
+                "id": "837",
+                "id_district": "61",
+                "nom": "Maevaranohely"
+            },
+            {
+                "id": "838",
+                "id_district": "61",
+                "nom": "Marovato"
+            },
+            {
+                "id": "839",
+                "id_district": "61",
+                "nom": "Tsarahasina"
+            },
+            {
+                "id": "840",
+                "id_district": "61",
+                "nom": "Tsaratanana"
+            },
+            {
+                "id": "841",
+                "id_district": "61",
+                "nom": "Tsiningia"
+            },
+            {
+                "id": "842",
+                "id_district": "61",
+                "nom": "Tsinjomitondraka"
+            },
+            {
+                "id": "843",
+                "id_district": "62",
+                "nom": "Ambohitoaka"
+            },
+            {
+                "id": "844",
+                "id_district": "62",
+                "nom": "Ampasimatera"
+            },
+            {
+                "id": "845",
+                "id_district": "62",
+                "nom": "Bekoratsaka"
+            },
+            {
+                "id": "846",
+                "id_district": "62",
+                "nom": "Komajia"
+            },
+            {
+                "id": "847",
+                "id_district": "62",
+                "nom": "Mampikony"
+            },
+            {
+                "id": "848",
+                "id_district": "62",
+                "nom": "Mampikony-II"
+            },
+            {
+                "id": "849",
+                "id_district": "63",
+                "nom": "Ambalakirajy"
+            },
+            {
+                "id": "850",
+                "id_district": "63",
+                "nom": "Ambarikorano"
+            },
+            {
+                "id": "851",
+                "id_district": "63",
+                "nom": "Ambaripaika"
+            },
+            {
+                "id": "852",
+                "id_district": "63",
+                "nom": "Ambilombe"
+            },
+            {
+                "id": "853",
+                "id_district": "63",
+                "nom": "Amboaboa"
+            },
+            {
+                "id": "854",
+                "id_district": "63",
+                "nom": "Ambodiadabo"
+            },
+            {
+                "id": "855",
+                "id_district": "63",
+                "nom": "Ambohisoa"
+            },
+            {
+                "id": "856",
+                "id_district": "63",
+                "nom": "Amborondolo"
+            },
+            {
+                "id": "857",
+                "id_district": "63",
+                "nom": "Ampatakamaroreny"
+            },
+            {
+                "id": "858",
+                "id_district": "63",
+                "nom": "Andohajango"
+            },
+            {
+                "id": "859",
+                "id_district": "63",
+                "nom": "Anjiabe"
+            },
+            {
+                "id": "860",
+                "id_district": "63",
+                "nom": "Ankiabe-Salohy"
+            },
+            {
+                "id": "861",
+                "id_district": "63",
+                "nom": "Antanambaon'amberina"
+            },
+            {
+                "id": "862",
+                "id_district": "63",
+                "nom": "Antananadava"
+            },
+            {
+                "id": "863",
+                "id_district": "63",
+                "nom": "Antsatramidoladola"
+            },
+            {
+                "id": "864",
+                "id_district": "63",
+                "nom": "Antsirabe-Afovoany"
+            },
+            {
+                "id": "865",
+                "id_district": "63",
+                "nom": "Antsoha"
+            },
+            {
+                "id": "866",
+                "id_district": "63",
+                "nom": "Kalandy"
+            },
+            {
+                "id": "867",
+                "id_district": "63",
+                "nom": "Manampaneva"
+            },
+            {
+                "id": "868",
+                "id_district": "63",
+                "nom": "Mandritsara"
+            },
+            {
+                "id": "869",
+                "id_district": "63",
+                "nom": "Marotandrano"
+            },
+            {
+                "id": "870",
+                "id_district": "63",
+                "nom": "Tsaratanana"
+            },
+            {
+                "id": "871",
+                "id_district": "64",
+                "nom": "AmbatoAmbarimay"
+            },
+            {
+                "id": "872",
+                "id_district": "64",
+                "nom": "Ambondromamy"
+            },
+            {
+                "id": "873",
+                "id_district": "64",
+                "nom": "Andranofasika"
+            },
+            {
+                "id": "874",
+                "id_district": "64",
+                "nom": "Andranomamy"
+            },
+            {
+                "id": "875",
+                "id_district": "64",
+                "nom": "Anjiajia"
+            },
+            {
+                "id": "876",
+                "id_district": "64",
+                "nom": "Ankijabe"
+            },
+            {
+                "id": "877",
+                "id_district": "64",
+                "nom": "Ankirihitra"
+            },
+            {
+                "id": "878",
+                "id_district": "64",
+                "nom": "Madirovalo"
+            },
+            {
+                "id": "879",
+                "id_district": "64",
+                "nom": "Manerinerina"
+            },
+            {
+                "id": "880",
+                "id_district": "64",
+                "nom": "Sitampiky"
+            },
+            {
+                "id": "881",
+                "id_district": "64",
+                "nom": "Tsaramandroso"
+            },
+            {
+                "id": "882",
+                "id_district": "65",
+                "nom": "Mahajanga"
+            },
+            {
+                "id": "883",
+                "id_district": "66",
+                "nom": "Ambalabe-Befanjava"
+            },
+            {
+                "id": "884",
+                "id_district": "66",
+                "nom": "Ambalakida"
+            },
+            {
+                "id": "885",
+                "id_district": "66",
+                "nom": "Andranoboka"
+            },
+            {
+                "id": "886",
+                "id_district": "66",
+                "nom": "Bekobay"
+            },
+            {
+                "id": "887",
+                "id_district": "66",
+                "nom": "Belobaka"
+            },
+            {
+                "id": "888",
+                "id_district": "66",
+                "nom": "Betsako"
+            },
+            {
+                "id": "889",
+                "id_district": "66",
+                "nom": "Boanamary"
+            },
+            {
+                "id": "890",
+                "id_district": "66",
+                "nom": "Mahajamba-Usine"
+            },
+            {
+                "id": "891",
+                "id_district": "66",
+                "nom": "Mariarano"
+            },
+            {
+                "id": "892",
+                "id_district": "67",
+                "nom": "Ambolomoty"
+            },
+            {
+                "id": "893",
+                "id_district": "67",
+                "nom": "Ankaraobato"
+            },
+            {
+                "id": "894",
+                "id_district": "67",
+                "nom": "Ankazomborona"
+            },
+            {
+                "id": "895",
+                "id_district": "67",
+                "nom": "Anosinalainolona"
+            },
+            {
+                "id": "896",
+                "id_district": "67",
+                "nom": "Antanambao-Andranolava"
+            },
+            {
+                "id": "897",
+                "id_district": "67",
+                "nom": "Antanimasaka"
+            },
+            {
+                "id": "898",
+                "id_district": "67",
+                "nom": "Bemaharivo"
+            },
+            {
+                "id": "899",
+                "id_district": "67",
+                "nom": "Manaratsandry"
+            },
+            {
+                "id": "900",
+                "id_district": "67",
+                "nom": "Marosakoa"
+            },
+            {
+                "id": "901",
+                "id_district": "67",
+                "nom": "Marovoay"
+            },
+            {
+                "id": "902",
+                "id_district": "67",
+                "nom": "Marovoay-Banlieue"
+            },
+            {
+                "id": "903",
+                "id_district": "67",
+                "nom": "Tsararano"
+            },
+            {
+                "id": "904",
+                "id_district": "68",
+                "nom": "Ambarimaninga"
+            },
+            {
+                "id": "905",
+                "id_district": "68",
+                "nom": "Antongomena-Bevary"
+            },
+            {
+                "id": "906",
+                "id_district": "68",
+                "nom": "Antseza"
+            },
+            {
+                "id": "907",
+                "id_district": "68",
+                "nom": "Bekipay"
+            },
+            {
+                "id": "908",
+                "id_district": "68",
+                "nom": "Katsepy"
+            },
+            {
+                "id": "909",
+                "id_district": "68",
+                "nom": "Matsakabanja"
+            },
+            {
+                "id": "910",
+                "id_district": "68",
+                "nom": "Mitsinjo"
+            },
+            {
+                "id": "911",
+                "id_district": "69",
+                "nom": "Ambohipaky"
+            },
+            {
+                "id": "912",
+                "id_district": "69",
+                "nom": "Andranomavo"
+            },
+            {
+                "id": "913",
+                "id_district": "69",
+                "nom": "Soalala"
+            },
+            {
+                "id": "914",
+                "id_district": "70",
+                "nom": "Ambaliha"
+            },
+            {
+                "id": "915",
+                "id_district": "70",
+                "nom": "Andasibe"
+            },
+            {
+                "id": "916",
+                "id_district": "70",
+                "nom": "Antanimbaribe"
+            },
+            {
+                "id": "917",
+                "id_district": "70",
+                "nom": "Behazomaty"
+            },
+            {
+                "id": "918",
+                "id_district": "70",
+                "nom": "Betaimboay"
+            },
+            {
+                "id": "919",
+                "id_district": "70",
+                "nom": "Kandreho"
+            },
+            {
+                "id": "920",
+                "id_district": "71",
+                "nom": "Ambalajia"
+            },
+            {
+                "id": "921",
+                "id_district": "71",
+                "nom": "Ambalanjanakomby"
+            },
+            {
+                "id": "922",
+                "id_district": "71",
+                "nom": "Andriba"
+            },
+            {
+                "id": "923",
+                "id_district": "71",
+                "nom": "Antanimbary"
+            },
+            {
+                "id": "924",
+                "id_district": "71",
+                "nom": "Antsiafabositra"
+            },
+            {
+                "id": "925",
+                "id_district": "71",
+                "nom": "Bemokotra"
+            },
+            {
+                "id": "926",
+                "id_district": "71",
+                "nom": "Beratsimanana"
+            },
+            {
+                "id": "927",
+                "id_district": "71",
+                "nom": "Madiromirafy"
+            },
+            {
+                "id": "928",
+                "id_district": "71",
+                "nom": "Maevatanana"
+            },
+            {
+                "id": "929",
+                "id_district": "71",
+                "nom": "Maevatanana-II"
+            },
+            {
+                "id": "930",
+                "id_district": "71",
+                "nom": "Mahatsinjo"
+            },
+            {
+                "id": "931",
+                "id_district": "71",
+                "nom": "Mahazoma"
+            },
+            {
+                "id": "932",
+                "id_district": "71",
+                "nom": "Mangabe"
+            },
+            {
+                "id": "933",
+                "id_district": "71",
+                "nom": "Maria"
+            },
+            {
+                "id": "934",
+                "id_district": "71",
+                "nom": "Morafeno"
+            },
+            {
+                "id": "935",
+                "id_district": "71",
+                "nom": "Tsararano"
+            },
+            {
+                "id": "936",
+                "id_district": "72",
+                "nom": "Ambakireny"
+            },
+            {
+                "id": "937",
+                "id_district": "72",
+                "nom": "Andriamena"
+            },
+            {
+                "id": "938",
+                "id_district": "72",
+                "nom": "Bekapaika"
+            },
+            {
+                "id": "939",
+                "id_district": "72",
+                "nom": "Betrandraka"
+            },
+            {
+                "id": "940",
+                "id_district": "72",
+                "nom": "Brieville"
+            },
+            {
+                "id": "941",
+                "id_district": "72",
+                "nom": "Keliloha"
+            },
+            {
+                "id": "942",
+                "id_district": "72",
+                "nom": "Manakana"
+            },
+            {
+                "id": "943",
+                "id_district": "72",
+                "nom": "Sarobaratra"
+            },
+            {
+                "id": "944",
+                "id_district": "72",
+                "nom": "Tsararova"
+            },
+            {
+                "id": "945",
+                "id_district": "72",
+                "nom": "Tsaratanana"
+            },
+            {
+                "id": "946",
+                "id_district": "73",
+                "nom": "Ambatomainty"
+            },
+            {
+                "id": "947",
+                "id_district": "73",
+                "nom": "Bemarivo"
+            },
+            {
+                "id": "948",
+                "id_district": "73",
+                "nom": "Marotsialeha"
+            },
+            {
+                "id": "949",
+                "id_district": "73",
+                "nom": "Sarodrano"
+            },
+            {
+                "id": "950",
+                "id_district": "74",
+                "nom": "Antsalova"
+            },
+            {
+                "id": "951",
+                "id_district": "74",
+                "nom": "Bekopaka"
+            },
+            {
+                "id": "952",
+                "id_district": "74",
+                "nom": "Masoarivo"
+            },
+            {
+                "id": "953",
+                "id_district": "74",
+                "nom": "Soahany"
+            },
+            {
+                "id": "954",
+                "id_district": "74",
+                "nom": "Trangahy"
+            },
+            {
+                "id": "955",
+                "id_district": "75",
+                "nom": "Ambolodia-Sud"
+            },
+            {
+                "id": "956",
+                "id_district": "75",
+                "nom": "Bekodoka"
+            },
+            {
+                "id": "957",
+                "id_district": "75",
+                "nom": "Besalampy"
+            },
+            {
+                "id": "958",
+                "id_district": "75",
+                "nom": "Mahabe"
+            },
+            {
+                "id": "959",
+                "id_district": "75",
+                "nom": "Marovoay-Sud"
+            },
+            {
+                "id": "960",
+                "id_district": "75",
+                "nom": "Soanenga"
+            },
+            {
+                "id": "961",
+                "id_district": "76",
+                "nom": "Andabotoka"
+            },
+            {
+                "id": "962",
+                "id_district": "76",
+                "nom": "Andranovao"
+            },
+            {
+                "id": "963",
+                "id_district": "76",
+                "nom": "Ankisatra"
+            },
+            {
+                "id": "964",
+                "id_district": "76",
+                "nom": "Antsahidoha-Bebao"
+            },
+            {
+                "id": "965",
+                "id_district": "76",
+                "nom": "Antsondrodava"
+            },
+            {
+                "id": "966",
+                "id_district": "76",
+                "nom": "Bebakony-Sud"
+            },
+            {
+                "id": "967",
+                "id_district": "76",
+                "nom": "Berevo-Ranobe"
+            },
+            {
+                "id": "968",
+                "id_district": "76",
+                "nom": "Betanatanana"
+            },
+            {
+                "id": "969",
+                "id_district": "76",
+                "nom": "Mafaijijo"
+            },
+            {
+                "id": "970",
+                "id_district": "76",
+                "nom": "Maintirano"
+            },
+            {
+                "id": "971",
+                "id_district": "76",
+                "nom": "Marohazo"
+            },
+            {
+                "id": "972",
+                "id_district": "76",
+                "nom": "Maromavo"
+            },
+            {
+                "id": "973",
+                "id_district": "76",
+                "nom": "Tambohorano"
+            },
+            {
+                "id": "974",
+                "id_district": "76",
+                "nom": "Veromanga"
+            },
+            {
+                "id": "975",
+                "id_district": "77",
+                "nom": "Andramy"
+            },
+            {
+                "id": "976",
+                "id_district": "77",
+                "nom": "Beravina"
+            },
+            {
+                "id": "977",
+                "id_district": "77",
+                "nom": "Morafenobe"
+            },
+            {
+                "id": "978",
+                "id_district": "78",
+                "nom": "Ambandrika"
+            },
+            {
+                "id": "979",
+                "id_district": "78",
+                "nom": "Banlieue-d'Ambatondrazaka"
+            },
+            {
+                "id": "980",
+                "id_district": "78",
+                "nom": "Ambatondrazaka"
+            },
+            {
+                "id": "981",
+                "id_district": "78",
+                "nom": "Ambatosoratra"
+            },
+            {
+                "id": "982",
+                "id_district": "78",
+                "nom": "Ambohitsilaozana"
+            },
+            {
+                "id": "983",
+                "id_district": "78",
+                "nom": "Amparihitsokatra"
+            },
+            {
+                "id": "984",
+                "id_district": "78",
+                "nom": "Ampitatsimo"
+            },
+            {
+                "id": "985",
+                "id_district": "78",
+                "nom": "Andilanatoby"
+            },
+            {
+                "id": "986",
+                "id_district": "78",
+                "nom": "Andromba"
+            },
+            {
+                "id": "987",
+                "id_district": "78",
+                "nom": "Antanandava"
+            },
+            {
+                "id": "988",
+                "id_district": "78",
+                "nom": "Antsangasanga"
+            },
+            {
+                "id": "989",
+                "id_district": "78",
+                "nom": "Bejofo"
+            },
+            {
+                "id": "990",
+                "id_district": "78",
+                "nom": "Didy"
+            },
+            {
+                "id": "991",
+                "id_district": "78",
+                "nom": "Feramanga-Avaratra"
+            },
+            {
+                "id": "992",
+                "id_district": "78",
+                "nom": "Ilafy"
+            },
+            {
+                "id": "993",
+                "id_district": "78",
+                "nom": "Imerimandroso"
+            },
+            {
+                "id": "994",
+                "id_district": "78",
+                "nom": "Manakambahiny-Est"
+            },
+            {
+                "id": "995",
+                "id_district": "78",
+                "nom": "Manakambahiny-Ouest"
+            },
+            {
+                "id": "996",
+                "id_district": "78",
+                "nom": "Soalazaina"
+            },
+            {
+                "id": "997",
+                "id_district": "78",
+                "nom": "Tanambao-Besakay"
+            },
+            {
+                "id": "998",
+                "id_district": "79",
+                "nom": "Ambatomainty"
+            },
+            {
+                "id": "999",
+                "id_district": "79",
+                "nom": "Amboavory"
+            },
+            {
+                "id": "1000",
+                "id_district": "79",
+                "nom": "Ambohijanahary"
+            },
+            {
+                "id": "1001",
+                "id_district": "79",
+                "nom": "Ambohitrarivo"
+            },
+            {
+                "id": "1002",
+                "id_district": "79",
+                "nom": "Amparafaravola"
+            },
+            {
+                "id": "1003",
+                "id_district": "79",
+                "nom": "Andrebakely-Est"
+            },
+            {
+                "id": "1004",
+                "id_district": "79",
+                "nom": "Beanana"
+            },
+            {
+                "id": "1005",
+                "id_district": "79",
+                "nom": "Bedidy"
+            },
+            {
+                "id": "1006",
+                "id_district": "79",
+                "nom": "Morarano-Chrome"
+            },
+            {
+                "id": "1007",
+                "id_district": "79",
+                "nom": "Ranomainty"
+            },
+            {
+                "id": "1008",
+                "id_district": "79",
+                "nom": "Tanambe"
+            },
+            {
+                "id": "1009",
+                "id_district": "79",
+                "nom": "Vohimena"
+            },
+            {
+                "id": "1010",
+                "id_district": "79",
+                "nom": "Vohitsara"
+            },
+            {
+                "id": "1011",
+                "id_district": "80",
+                "nom": "Andilamena"
+            },
+            {
+                "id": "1012",
+                "id_district": "80",
+                "nom": "Antanimenabaka"
+            },
+            {
+                "id": "1013",
+                "id_district": "80",
+                "nom": "Bemaitso"
+            },
+            {
+                "id": "1014",
+                "id_district": "80",
+                "nom": "Maintsokely"
+            },
+            {
+                "id": "1015",
+                "id_district": "80",
+                "nom": "Maroadabo"
+            },
+            {
+                "id": "1016",
+                "id_district": "80",
+                "nom": "Marovato"
+            },
+            {
+                "id": "1017",
+                "id_district": "80",
+                "nom": "Miarinarivo"
+            },
+            {
+                "id": "1018",
+                "id_district": "80",
+                "nom": "Tanananifololahy"
+            },
+            {
+                "id": "1019",
+                "id_district": "81",
+                "nom": "Ambalaomby"
+            },
+            {
+                "id": "1020",
+                "id_district": "81",
+                "nom": "Ambatoharanana"
+            },
+            {
+                "id": "1021",
+                "id_district": "81",
+                "nom": "Ampandoantraka"
+            },
+            {
+                "id": "1022",
+                "id_district": "81",
+                "nom": "Ampasimaneva"
+            },
+            {
+                "id": "1023",
+                "id_district": "81",
+                "nom": "Anosibe-An'ala"
+            },
+            {
+                "id": "1024",
+                "id_district": "81",
+                "nom": "Antandrokomby"
+            },
+            {
+                "id": "1025",
+                "id_district": "81",
+                "nom": "Longozabe"
+            },
+            {
+                "id": "1026",
+                "id_district": "81",
+                "nom": "Niarovana-Marosampanana"
+            },
+            {
+                "id": "1027",
+                "id_district": "81",
+                "nom": "Tratramarina"
+            },
+            {
+                "id": "1028",
+                "id_district": "82",
+                "nom": "Ambatovola"
+            },
+            {
+                "id": "1029",
+                "id_district": "82",
+                "nom": "Amboasary"
+            },
+            {
+                "id": "1030",
+                "id_district": "82",
+                "nom": "Ambohidronono"
+            },
+            {
+                "id": "1031",
+                "id_district": "82",
+                "nom": "Ampasipotsy-Gare"
+            },
+            {
+                "id": "1032",
+                "id_district": "82",
+                "nom": "Ampasipotsy-Mandialaza"
+            },
+            {
+                "id": "1033",
+                "id_district": "82",
+                "nom": "Andaingo"
+            },
+            {
+                "id": "1034",
+                "id_district": "82",
+                "nom": "Andasibe"
+            },
+            {
+                "id": "1035",
+                "id_district": "82",
+                "nom": "Anosibe-Ifody"
+            },
+            {
+                "id": "1036",
+                "id_district": "82",
+                "nom": "Antanandava"
+            },
+            {
+                "id": "1037",
+                "id_district": "82",
+                "nom": "Antaniditra"
+            },
+            {
+                "id": "1038",
+                "id_district": "82",
+                "nom": "Beforona"
+            },
+            {
+                "id": "1039",
+                "id_district": "82",
+                "nom": "Belavabary"
+            },
+            {
+                "id": "1040",
+                "id_district": "82",
+                "nom": "Beparasy"
+            },
+            {
+                "id": "1041",
+                "id_district": "82",
+                "nom": "Fierenana"
+            },
+            {
+                "id": "1042",
+                "id_district": "82",
+                "nom": "Lakato"
+            },
+            {
+                "id": "1043",
+                "id_district": "82",
+                "nom": "Mandialaza"
+            },
+            {
+                "id": "1044",
+                "id_district": "82",
+                "nom": "Moramanga"
+            },
+            {
+                "id": "1045",
+                "id_district": "82",
+                "nom": "Moramanga-Suburbaine"
+            },
+            {
+                "id": "1046",
+                "id_district": "82",
+                "nom": "MoraranoGare"
+            },
+            {
+                "id": "1047",
+                "id_district": "82",
+                "nom": "Sabotsy-Anjiro"
+            },
+            {
+                "id": "1048",
+                "id_district": "82",
+                "nom": "Vodiriana"
+            },
+            {
+                "id": "1049",
+                "id_district": "83",
+                "nom": "Antanambao-Manampotsy"
+            },
+            {
+                "id": "1050",
+                "id_district": "83",
+                "nom": "Antanandehibe"
+            },
+            {
+                "id": "1051",
+                "id_district": "83",
+                "nom": "Mahela"
+            },
+            {
+                "id": "1052",
+                "id_district": "83",
+                "nom": "Manakana"
+            },
+            {
+                "id": "1053",
+                "id_district": "83",
+                "nom": "Saivaza"
+            },
+            {
+                "id": "1054",
+                "id_district": "84",
+                "nom": "Ambalarondra"
+            },
+            {
+                "id": "1055",
+                "id_district": "84",
+                "nom": "Ambinaninony"
+            },
+            {
+                "id": "1056",
+                "id_district": "84",
+                "nom": "Ambohimanana"
+            },
+            {
+                "id": "1057",
+                "id_district": "84",
+                "nom": "Ampasimbe"
+            },
+            {
+                "id": "1058",
+                "id_district": "84",
+                "nom": "Andekaleka"
+            },
+            {
+                "id": "1059",
+                "id_district": "84",
+                "nom": "Andevoranto"
+            },
+            {
+                "id": "1060",
+                "id_district": "84",
+                "nom": "Anivorano-Est"
+            },
+            {
+                "id": "1061",
+                "id_district": "84",
+                "nom": "Anjahamana"
+            },
+            {
+                "id": "1062",
+                "id_district": "84",
+                "nom": "Vohibinany-Brickaville"
+            },
+            {
+                "id": "1063",
+                "id_district": "84",
+                "nom": "Fanasana"
+            },
+            {
+                "id": "1064",
+                "id_district": "84",
+                "nom": "Fetraomby"
+            },
+            {
+                "id": "1065",
+                "id_district": "84",
+                "nom": "Lohariandava"
+            },
+            {
+                "id": "1066",
+                "id_district": "84",
+                "nom": "Mahatsara"
+            },
+            {
+                "id": "1067",
+                "id_district": "84",
+                "nom": "Maroseranana"
+            },
+            {
+                "id": "1068",
+                "id_district": "84",
+                "nom": "Ranomafana-Est"
+            },
+            {
+                "id": "1069",
+                "id_district": "84",
+                "nom": "Razanaka"
+            },
+            {
+                "id": "1070",
+                "id_district": "84",
+                "nom": "Vohitranivona"
+            },
+            {
+                "id": "1071",
+                "id_district": "85",
+                "nom": "Ambinanidilana"
+            },
+            {
+                "id": "1072",
+                "id_district": "85",
+                "nom": "Ambinanindrano"
+            },
+            {
+                "id": "1073",
+                "id_district": "85",
+                "nom": "Ambodibonara"
+            },
+            {
+                "id": "1074",
+                "id_district": "85",
+                "nom": "Ambodiharina"
+            },
+            {
+                "id": "1075",
+                "id_district": "85",
+                "nom": "Ankazotsifantatra"
+            },
+            {
+                "id": "1076",
+                "id_district": "85",
+                "nom": "Befotaka"
+            },
+            {
+                "id": "1077",
+                "id_district": "85",
+                "nom": "Betsizaraina"
+            },
+            {
+                "id": "1078",
+                "id_district": "85",
+                "nom": "Mahanoro"
+            },
+            {
+                "id": "1079",
+                "id_district": "85",
+                "nom": "Manjakandriana"
+            },
+            {
+                "id": "1080",
+                "id_district": "85",
+                "nom": "Masomeloka"
+            },
+            {
+                "id": "1081",
+                "id_district": "85",
+                "nom": "Tsaravinany"
+            },
+            {
+                "id": "1082",
+                "id_district": "86",
+                "nom": "Ambalapaiso-II"
+            },
+            {
+                "id": "1083",
+                "id_district": "86",
+                "nom": "Amboasary"
+            },
+            {
+                "id": "1084",
+                "id_district": "86",
+                "nom": "Ambodinonoka"
+            },
+            {
+                "id": "1085",
+                "id_district": "86",
+                "nom": "Ambohimilanja"
+            },
+            {
+                "id": "1086",
+                "id_district": "86",
+                "nom": "Anbatofisaka-II"
+            },
+            {
+                "id": "1087",
+                "id_district": "86",
+                "nom": "Andonabe-Sud"
+            },
+            {
+                "id": "1088",
+                "id_district": "86",
+                "nom": "Androrangavola"
+            },
+            {
+                "id": "1089",
+                "id_district": "86",
+                "nom": "Anosiarivo"
+            },
+            {
+                "id": "1090",
+                "id_district": "86",
+                "nom": "Betampona"
+            },
+            {
+                "id": "1091",
+                "id_district": "86",
+                "nom": "Lohavanana"
+            },
+            {
+                "id": "1092",
+                "id_district": "86",
+                "nom": "Marolambo"
+            },
+            {
+                "id": "1093",
+                "id_district": "86",
+                "nom": "Sahakevo"
+            },
+            {
+                "id": "1094",
+                "id_district": "87",
+                "nom": "Ambodimanga"
+            },
+            {
+                "id": "1095",
+                "id_district": "87",
+                "nom": "Ankirihiry"
+            },
+            {
+                "id": "1096",
+                "id_district": "87",
+                "nom": "Firaisana-Anjoma"
+            },
+            {
+                "id": "1097",
+                "id_district": "87",
+                "nom": "Morarano"
+            },
+            {
+                "id": "1098",
+                "id_district": "87",
+                "nom": "Tanambao-V"
+            },
+            {
+                "id": "1099",
+                "id_district": "88",
+                "nom": "Ambodilazana"
+            },
+            {
+                "id": "1100",
+                "id_district": "88",
+                "nom": "Ambodiriana"
+            },
+            {
+                "id": "1101",
+                "id_district": "88",
+                "nom": "Amboditandroho"
+            },
+            {
+                "id": "1102",
+                "id_district": "88",
+                "nom": "AmpasibeOnibe"
+            },
+            {
+                "id": "1103",
+                "id_district": "88",
+                "nom": "Ampasimadinika"
+            },
+            {
+                "id": "1104",
+                "id_district": "88",
+                "nom": "Andondabe"
+            },
+            {
+                "id": "1105",
+                "id_district": "88",
+                "nom": "Andranobolaha"
+            },
+            {
+                "id": "1106",
+                "id_district": "88",
+                "nom": "Antenina"
+            },
+            {
+                "id": "1107",
+                "id_district": "88",
+                "nom": "Antetezambaro"
+            },
+            {
+                "id": "1108",
+                "id_district": "88",
+                "nom": "Fanandrana"
+            },
+            {
+                "id": "1109",
+                "id_district": "88",
+                "nom": "Foulpointe"
+            },
+            {
+                "id": "1110",
+                "id_district": "88",
+                "nom": "Ifito"
+            },
+            {
+                "id": "1111",
+                "id_district": "88",
+                "nom": "Mangabe"
+            },
+            {
+                "id": "1112",
+                "id_district": "88",
+                "nom": "Sahambala"
+            },
+            {
+                "id": "1113",
+                "id_district": "88",
+                "nom": "Toamasina-suburbaine"
+            },
+            {
+                "id": "1114",
+                "id_district": "89",
+                "nom": "Ambalabe"
+            },
+            {
+                "id": "1115",
+                "id_district": "89",
+                "nom": "Ambalavolo"
+            },
+            {
+                "id": "1116",
+                "id_district": "89",
+                "nom": "Amboditavolo"
+            },
+            {
+                "id": "1117",
+                "id_district": "89",
+                "nom": "Ambodivoananto"
+            },
+            {
+                "id": "1118",
+                "id_district": "89",
+                "nom": "Ampasimadinika"
+            },
+            {
+                "id": "1119",
+                "id_district": "89",
+                "nom": "Ampasimazava"
+            },
+            {
+                "id": "1120",
+                "id_district": "89",
+                "nom": "AntanambaoMahatsara"
+            },
+            {
+                "id": "1121",
+                "id_district": "89",
+                "nom": "IfasinaI"
+            },
+            {
+                "id": "1122",
+                "id_district": "89",
+                "nom": "IfasinaII"
+            },
+            {
+                "id": "1123",
+                "id_district": "89",
+                "nom": "IlakaEst"
+            },
+            {
+                "id": "1124",
+                "id_district": "89",
+                "nom": "Maintinandry"
+            },
+            {
+                "id": "1125",
+                "id_district": "89",
+                "nom": "Nierenana"
+            },
+            {
+                "id": "1126",
+                "id_district": "89",
+                "nom": "Sahamatevina"
+            },
+            {
+                "id": "1127",
+                "id_district": "89",
+                "nom": "TanambaoVahatrakaka"
+            },
+            {
+                "id": "1128",
+                "id_district": "89",
+                "nom": "Tsivangiana"
+            },
+            {
+                "id": "1129",
+                "id_district": "89",
+                "nom": "Vatomandry"
+            },
+            {
+                "id": "1130",
+                "id_district": "90",
+                "nom": "Ambatoharanana"
+            },
+            {
+                "id": "1131",
+                "id_district": "90",
+                "nom": "Ambodimanga-II"
+            },
+            {
+                "id": "1132",
+                "id_district": "90",
+                "nom": "Ampasimbe-Manantsatrana"
+            },
+            {
+                "id": "1133",
+                "id_district": "90",
+                "nom": "Ampasina-Maningory"
+            },
+            {
+                "id": "1134",
+                "id_district": "90",
+                "nom": "Antsiatsiaka"
+            },
+            {
+                "id": "1135",
+                "id_district": "90",
+                "nom": "Fenoarivo-Atsinanana"
+            },
+            {
+                "id": "1136",
+                "id_district": "90",
+                "nom": "Mahambo"
+            },
+            {
+                "id": "1137",
+                "id_district": "90",
+                "nom": "Miorimivalana"
+            },
+            {
+                "id": "1138",
+                "id_district": "90",
+                "nom": "Saranambana"
+            },
+            {
+                "id": "1139",
+                "id_district": "90",
+                "nom": "Vohilengo"
+            },
+            {
+                "id": "1140",
+                "id_district": "90",
+                "nom": "Vohipeno"
+            },
+            {
+                "id": "1141",
+                "id_district": "91",
+                "nom": "Ambatoharanana"
+            },
+            {
+                "id": "1142",
+                "id_district": "91",
+                "nom": "Ambodiampana"
+            },
+            {
+                "id": "1143",
+                "id_district": "91",
+                "nom": "Ambodivoanio"
+            },
+            {
+                "id": "1144",
+                "id_district": "91",
+                "nom": "Antanambaobe"
+            },
+            {
+                "id": "1145",
+                "id_district": "91",
+                "nom": "Antanambe"
+            },
+            {
+                "id": "1146",
+                "id_district": "91",
+                "nom": "Manambolosy"
+            },
+            {
+                "id": "1147",
+                "id_district": "91",
+                "nom": "Mananara-Nord"
+            },
+            {
+                "id": "1148",
+                "id_district": "91",
+                "nom": "Sandrakatsy"
+            },
+            {
+                "id": "1149",
+                "id_district": "91",
+                "nom": "Saromaona"
+            },
+            {
+                "id": "1150",
+                "id_district": "91",
+                "nom": "Tanibe"
+            },
+            {
+                "id": "1151",
+                "id_district": "91",
+                "nom": "Vanono"
+            },
+            {
+                "id": "1152",
+                "id_district": "92",
+                "nom": "Ambinanitelo"
+            },
+            {
+                "id": "1153",
+                "id_district": "92",
+                "nom": "Andranofotsy"
+            },
+            {
+                "id": "1154",
+                "id_district": "92",
+                "nom": "Androndrono"
+            },
+            {
+                "id": "1155",
+                "id_district": "92",
+                "nom": "Anjanazana"
+            },
+            {
+                "id": "1156",
+                "id_district": "92",
+                "nom": "Ankofa"
+            },
+            {
+                "id": "1157",
+                "id_district": "92",
+                "nom": "Antakotako"
+            },
+            {
+                "id": "1158",
+                "id_district": "92",
+                "nom": "Antsahana"
+            },
+            {
+                "id": "1159",
+                "id_district": "92",
+                "nom": "Antsirabe-Sahatany"
+            },
+            {
+                "id": "1160",
+                "id_district": "92",
+                "nom": "Manambolo"
+            },
+            {
+                "id": "1161",
+                "id_district": "92",
+                "nom": "Maroantsetra"
+            },
+            {
+                "id": "1162",
+                "id_district": "92",
+                "nom": "Rantabe"
+            },
+            {
+                "id": "1163",
+                "id_district": "92",
+                "nom": "Voloina"
+            },
+            {
+                "id": "1164",
+                "id_district": "93",
+                "nom": "Sainte-Marie\/NosyBoraha"
+            },
+            {
+                "id": "1165",
+                "id_district": "94",
+                "nom": "Ambahoabe"
+            },
+            {
+                "id": "1166",
+                "id_district": "94",
+                "nom": "Ambodiampana"
+            },
+            {
+                "id": "1167",
+                "id_district": "94",
+                "nom": "Andapafito"
+            },
+            {
+                "id": "1168",
+                "id_district": "94",
+                "nom": "Antanifotsy"
+            },
+            {
+                "id": "1169",
+                "id_district": "94",
+                "nom": "Antenina"
+            },
+            {
+                "id": "1170",
+                "id_district": "94",
+                "nom": "Fotsialanana"
+            },
+            {
+                "id": "1171",
+                "id_district": "94",
+                "nom": "Manompana"
+            },
+            {
+                "id": "1172",
+                "id_district": "94",
+                "nom": "Soanierana-Ivongo"
+            },
+            {
+                "id": "1173",
+                "id_district": "95",
+                "nom": "Ambatoharanana"
+            },
+            {
+                "id": "1174",
+                "id_district": "95",
+                "nom": "Ambodimangavalo"
+            },
+            {
+                "id": "1175",
+                "id_district": "95",
+                "nom": "Ambohibe"
+            },
+            {
+                "id": "1176",
+                "id_district": "95",
+                "nom": "Ampasimazava"
+            },
+            {
+                "id": "1177",
+                "id_district": "95",
+                "nom": "Andasibe"
+            },
+            {
+                "id": "1178",
+                "id_district": "95",
+                "nom": "Anjahambe"
+            },
+            {
+                "id": "1179",
+                "id_district": "95",
+                "nom": "Maromitety"
+            },
+            {
+                "id": "1180",
+                "id_district": "95",
+                "nom": "Miarinarivo"
+            },
+            {
+                "id": "1181",
+                "id_district": "95",
+                "nom": "Sahatavy"
+            },
+            {
+                "id": "1182",
+                "id_district": "95",
+                "nom": "Vavatenina"
+            },
+            {
+                "id": "1183",
+                "id_district": "96",
+                "nom": "Ambiky"
+            },
+            {
+                "id": "1184",
+                "id_district": "96",
+                "nom": "Amboalimena"
+            },
+            {
+                "id": "1185",
+                "id_district": "96",
+                "nom": "Andimaky-Manambolo"
+            },
+            {
+                "id": "1186",
+                "id_district": "96",
+                "nom": "Ankalalobe"
+            },
+            {
+                "id": "1187",
+                "id_district": "96",
+                "nom": "Ankiliroroka"
+            },
+            {
+                "id": "1188",
+                "id_district": "96",
+                "nom": "Ankirondro"
+            },
+            {
+                "id": "1189",
+                "id_district": "96",
+                "nom": "Antsoha"
+            },
+            {
+                "id": "1190",
+                "id_district": "96",
+                "nom": "Belinta"
+            },
+            {
+                "id": "1191",
+                "id_district": "96",
+                "nom": "Belon'i-Tsiribihina"
+            },
+            {
+                "id": "1192",
+                "id_district": "96",
+                "nom": "Berevo"
+            },
+            {
+                "id": "1193",
+                "id_district": "96",
+                "nom": "Beroboka"
+            },
+            {
+                "id": "1194",
+                "id_district": "96",
+                "nom": "Masoarivo"
+            },
+            {
+                "id": "1195",
+                "id_district": "96",
+                "nom": "Tsaraotana"
+            },
+            {
+                "id": "1196",
+                "id_district": "96",
+                "nom": "Tsimafana"
+            },
+            {
+                "id": "1197",
+                "id_district": "97",
+                "nom": "Ambia"
+            },
+            {
+                "id": "1198",
+                "id_district": "97",
+                "nom": "Ampanihy"
+            },
+            {
+                "id": "1199",
+                "id_district": "97",
+                "nom": "Analamitsivala"
+            },
+            {
+                "id": "1200",
+                "id_district": "97",
+                "nom": "Ankilivalo"
+            },
+            {
+                "id": "1201",
+                "id_district": "97",
+                "nom": "Ankilizato"
+            },
+            {
+                "id": "1202",
+                "id_district": "97",
+                "nom": "Befotaka"
+            },
+            {
+                "id": "1203",
+                "id_district": "97",
+                "nom": "Beronono"
+            },
+            {
+                "id": "1204",
+                "id_district": "97",
+                "nom": "Mahabo"
+            },
+            {
+                "id": "1205",
+                "id_district": "97",
+                "nom": "Malaimbandy"
+            },
+            {
+                "id": "1206",
+                "id_district": "97",
+                "nom": "Mandabe"
+            },
+            {
+                "id": "1207",
+                "id_district": "97",
+                "nom": "Tsimazava"
+            },
+            {
+                "id": "1208",
+                "id_district": "98",
+                "nom": "Andranopasy"
+            },
+            {
+                "id": "1209",
+                "id_district": "98",
+                "nom": "Ankiliabo"
+            },
+            {
+                "id": "1210",
+                "id_district": "98",
+                "nom": "AnontsibeCentre"
+            },
+            {
+                "id": "1211",
+                "id_district": "98",
+                "nom": "Beharona"
+            },
+            {
+                "id": "1212",
+                "id_district": "98",
+                "nom": "Manja"
+            },
+            {
+                "id": "1213",
+                "id_district": "98",
+                "nom": "Soaserana"
+            },
+            {
+                "id": "1214",
+                "id_district": "99",
+                "nom": "Ambatolahy"
+            },
+            {
+                "id": "1215",
+                "id_district": "99",
+                "nom": "Ampanihy"
+            },
+            {
+                "id": "1216",
+                "id_district": "99",
+                "nom": "Ankavandra"
+            },
+            {
+                "id": "1217",
+                "id_district": "99",
+                "nom": "Ankondromena"
+            },
+            {
+                "id": "1218",
+                "id_district": "99",
+                "nom": "Ankotrofotsy"
+            },
+            {
+                "id": "1219",
+                "id_district": "99",
+                "nom": "Anosimena"
+            },
+            {
+                "id": "1220",
+                "id_district": "99",
+                "nom": "Bemahatazana"
+            },
+            {
+                "id": "1221",
+                "id_district": "99",
+                "nom": "Betsipolitra"
+            },
+            {
+                "id": "1222",
+                "id_district": "99",
+                "nom": "Dabolava"
+            },
+            {
+                "id": "1223",
+                "id_district": "99",
+                "nom": "Isalo"
+            },
+            {
+                "id": "1224",
+                "id_district": "99",
+                "nom": "Itondy"
+            },
+            {
+                "id": "1225",
+                "id_district": "99",
+                "nom": "Manambina"
+            },
+            {
+                "id": "1226",
+                "id_district": "99",
+                "nom": "Manandaza"
+            },
+            {
+                "id": "1227",
+                "id_district": "99",
+                "nom": "Miandrivazo"
+            },
+            {
+                "id": "1228",
+                "id_district": "99",
+                "nom": "Soaloka"
+            },
+            {
+                "id": "1229",
+                "id_district": "100",
+                "nom": "Analaiva"
+            },
+            {
+                "id": "1230",
+                "id_district": "100",
+                "nom": "Befasy"
+            },
+            {
+                "id": "1231",
+                "id_district": "100",
+                "nom": "BelosurMer"
+            },
+            {
+                "id": "1232",
+                "id_district": "100",
+                "nom": "Bemanonga"
+            },
+            {
+                "id": "1233",
+                "id_district": "100",
+                "nom": "Morondava"
+            },
+            {
+                "id": "1234",
+                "id_district": "101",
+                "nom": "Amboropotsy"
+            },
+            {
+                "id": "1235",
+                "id_district": "101",
+                "nom": "Ampanihy"
+            },
+            {
+                "id": "1236",
+                "id_district": "101",
+                "nom": "Androka"
+            },
+            {
+                "id": "1237",
+                "id_district": "101",
+                "nom": "Ankiliabo"
+            },
+            {
+                "id": "1238",
+                "id_district": "101",
+                "nom": "Ankilimivory"
+            },
+            {
+                "id": "1239",
+                "id_district": "101",
+                "nom": "Ankilizato"
+            },
+            {
+                "id": "1240",
+                "id_district": "101",
+                "nom": "Antaly"
+            },
+            {
+                "id": "1241",
+                "id_district": "101",
+                "nom": "Beahitse"
+            },
+            {
+                "id": "1242",
+                "id_district": "101",
+                "nom": "Belafike"
+            },
+            {
+                "id": "1243",
+                "id_district": "101",
+                "nom": "Beroy-Sud"
+            },
+            {
+                "id": "1244",
+                "id_district": "101",
+                "nom": "Ejeda"
+            },
+            {
+                "id": "1245",
+                "id_district": "101",
+                "nom": "Fotadrevo"
+            },
+            {
+                "id": "1246",
+                "id_district": "101",
+                "nom": "Gogogogo"
+            },
+            {
+                "id": "1247",
+                "id_district": "101",
+                "nom": "Itampolo"
+            },
+            {
+                "id": "1248",
+                "id_district": "101",
+                "nom": "Maniry"
+            },
+            {
+                "id": "1249",
+                "id_district": "101",
+                "nom": "Vohitany"
+            },
+            {
+                "id": "1250",
+                "id_district": "102",
+                "nom": "Andranomafana"
+            },
+            {
+                "id": "1251",
+                "id_district": "102",
+                "nom": "Ankazoabo"
+            },
+            {
+                "id": "1252",
+                "id_district": "102",
+                "nom": "Berenty"
+            },
+            {
+                "id": "1253",
+                "id_district": "102",
+                "nom": "Tandrano"
+            },
+            {
+                "id": "1254",
+                "id_district": "103",
+                "nom": "Benenitra"
+            },
+            {
+                "id": "1255",
+                "id_district": "103",
+                "nom": "Ehara"
+            },
+            {
+                "id": "1256",
+                "id_district": "103",
+                "nom": "Ianapera"
+            },
+            {
+                "id": "1260",
+                "id_district": "104",
+                "nom": "Andranomangatsiaka"
+            },
+            {
+                "id": "1261",
+                "id_district": "104",
+                "nom": "Antohabato"
+            },
+            {
+                "id": "1262",
+                "id_district": "104",
+                "nom": "Beantake"
+            },
+            {
+                "id": "1263",
+                "id_district": "104",
+                "nom": "Beavoha"
+            },
+            {
+                "id": "1264",
+                "id_district": "104",
+                "nom": "Belamoty"
+            },
+            {
+                "id": "1265",
+                "id_district": "104",
+                "nom": "Betioky"
+            },
+            {
+                "id": "1266",
+                "id_district": "104",
+                "nom": "Bezaha"
+            },
+            {
+                "id": "1267",
+                "id_district": "104",
+                "nom": "Fenoandala"
+            },
+            {
+                "id": "1268",
+                "id_district": "104",
+                "nom": "Lazarivo"
+            },
+            {
+                "id": "1269",
+                "id_district": "104",
+                "nom": "Manalobe"
+            },
+            {
+                "id": "1270",
+                "id_district": "104",
+                "nom": "Masiaboay"
+            },
+            {
+                "id": "1271",
+                "id_district": "104",
+                "nom": "Montifeno"
+            },
+            {
+                "id": "1272",
+                "id_district": "104",
+                "nom": "Salobe"
+            },
+            {
+                "id": "1273",
+                "id_district": "104",
+                "nom": "Soamanonga"
+            },
+            {
+                "id": "1274",
+                "id_district": "104",
+                "nom": "Soaserana"
+            },
+            {
+                "id": "1275",
+                "id_district": "104",
+                "nom": "Tameantsoa"
+            },
+            {
+                "id": "1276",
+                "id_district": "104",
+                "nom": "TanambaoAmbony"
+            },
+            {
+                "id": "1277",
+                "id_district": "104",
+                "nom": "Tongobory"
+            },
+            {
+                "id": "1278",
+                "id_district": "104",
+                "nom": "Vatolatsaka"
+            },
+            {
+                "id": "1279",
+                "id_district": "105",
+                "nom": "Behisatra"
+            },
+            {
+                "id": "1280",
+                "id_district": "105",
+                "nom": "Beroroha"
+            },
+            {
+                "id": "1281",
+                "id_district": "105",
+                "nom": "Bemavo"
+            },
+            {
+                "id": "1282",
+                "id_district": "105",
+                "nom": "Fanjakana"
+            },
+            {
+                "id": "1283",
+                "id_district": "105",
+                "nom": "Mandronarivo"
+            },
+            {
+                "id": "1284",
+                "id_district": "105",
+                "nom": "Marerano"
+            },
+            {
+                "id": "1285",
+                "id_district": "105",
+                "nom": "Sakena"
+            },
+            {
+                "id": "1286",
+                "id_district": "105",
+                "nom": "Tanamary"
+            },
+            {
+                "id": "1287",
+                "id_district": "105",
+                "nom": "Vondrove"
+            },
+            {
+                "id": "1288",
+                "id_district": "106",
+                "nom": "Ambahikily"
+            },
+            {
+                "id": "1289",
+                "id_district": "106",
+                "nom": "Antanimeva"
+            },
+            {
+                "id": "1290",
+                "id_district": "106",
+                "nom": "AntongoVaovao"
+            },
+            {
+                "id": "1291",
+                "id_district": "106",
+                "nom": "Basibasy"
+            },
+            {
+                "id": "1292",
+                "id_district": "106",
+                "nom": "Befandefa"
+            },
+            {
+                "id": "1293",
+                "id_district": "106",
+                "nom": "BefandrianaSud"
+            },
+            {
+                "id": "1294",
+                "id_district": "106",
+                "nom": "Morombe"
+            },
+            {
+                "id": "1295",
+                "id_district": "106",
+                "nom": "NosyAmbositra"
+            },
+            {
+                "id": "1296",
+                "id_district": "107",
+                "nom": "Ambinany"
+            },
+            {
+                "id": "1297",
+                "id_district": "107",
+                "nom": "Amboronabo"
+            },
+            {
+                "id": "1298",
+                "id_district": "107",
+                "nom": "Andamasina-Vineta"
+            },
+            {
+                "id": "1299",
+                "id_district": "107",
+                "nom": "Andranolava"
+            },
+            {
+                "id": "1300",
+                "id_district": "107",
+                "nom": "Bereketa"
+            },
+            {
+                "id": "1301",
+                "id_district": "107",
+                "nom": "Mahaboboka"
+            },
+            {
+                "id": "1302",
+                "id_district": "107",
+                "nom": "Miary-Lamatihy"
+            },
+            {
+                "id": "1303",
+                "id_district": "107",
+                "nom": "Miary-Taheza"
+            },
+            {
+                "id": "1304",
+                "id_district": "107",
+                "nom": "Mihavatsy"
+            },
+            {
+                "id": "1305",
+                "id_district": "107",
+                "nom": "Mikoboka"
+            },
+            {
+                "id": "1306",
+                "id_district": "107",
+                "nom": "Mitsinjo"
+            },
+            {
+                "id": "1307",
+                "id_district": "107",
+                "nom": "Sakaraha"
+            },
+            {
+                "id": "1308",
+                "id_district": "108",
+                "nom": "Toliara"
+            },
+            {
+                "id": "1309",
+                "id_district": "109",
+                "nom": "Ambohimahavelona"
+            },
+            {
+                "id": "1310",
+                "id_district": "109",
+                "nom": "Ambolofoty"
+            },
+            {
+                "id": "1311",
+                "id_district": "109",
+                "nom": "Analamisampy"
+            },
+            {
+                "id": "1312",
+                "id_district": "109",
+                "nom": "Andranovory"
+            },
+            {
+                "id": "1313",
+                "id_district": "109",
+                "nom": "Ankililoake"
+            },
+            {
+                "id": "1314",
+                "id_district": "109",
+                "nom": "Ankilimalinike"
+            },
+            {
+                "id": "1315",
+                "id_district": "109",
+                "nom": "Antanimena"
+            },
+            {
+                "id": "1316",
+                "id_district": "109",
+                "nom": "Beheloke"
+            },
+            {
+                "id": "1317",
+                "id_district": "109",
+                "nom": "Behompy"
+            },
+            {
+                "id": "1318",
+                "id_district": "109",
+                "nom": "Belalanda"
+            },
+            {
+                "id": "1319",
+                "id_district": "109",
+                "nom": "Mandrofify"
+            },
+            {
+                "id": "1320",
+                "id_district": "109",
+                "nom": "Manombo-Sud"
+            },
+            {
+                "id": "1321",
+                "id_district": "109",
+                "nom": "Marofoty"
+            },
+            {
+                "id": "1322",
+                "id_district": "109",
+                "nom": "Maromiandra"
+            },
+            {
+                "id": "1323",
+                "id_district": "109",
+                "nom": "Miary"
+            },
+            {
+                "id": "1324",
+                "id_district": "109",
+                "nom": "Milenaka"
+            },
+            {
+                "id": "1325",
+                "id_district": "109",
+                "nom": "Saint-Augustin"
+            },
+            {
+                "id": "1326",
+                "id_district": "109",
+                "nom": "Soalara"
+            },
+            {
+                "id": "1327",
+                "id_district": "109",
+                "nom": "Tsianisiha"
+            },
+            {
+                "id": "1328",
+                "id_district": "110",
+                "nom": "Ambanisarike"
+            },
+            {
+                "id": "1329",
+                "id_district": "110",
+                "nom": "Ambazoa"
+            },
+            {
+                "id": "1330",
+                "id_district": "110",
+                "nom": "Ambohimalaza"
+            },
+            {
+                "id": "1331",
+                "id_district": "110",
+                "nom": "Ambonaivo"
+            },
+            {
+                "id": "1332",
+                "id_district": "110",
+                "nom": "Ambondro"
+            },
+            {
+                "id": "1333",
+                "id_district": "110",
+                "nom": "Ambovombe"
+            },
+            {
+                "id": "1334",
+                "id_district": "110",
+                "nom": "Ampamata"
+            },
+            {
+                "id": "1335",
+                "id_district": "110",
+                "nom": "Andalatanosy"
+            },
+            {
+                "id": "1336",
+                "id_district": "110",
+                "nom": "Anjeky-Ankilikira"
+            },
+            {
+                "id": "1337",
+                "id_district": "110",
+                "nom": "Antanimora-Sud"
+            },
+            {
+                "id": "1338",
+                "id_district": "110",
+                "nom": "Imanombo"
+            },
+            {
+                "id": "1339",
+                "id_district": "110",
+                "nom": "Erada"
+            },
+            {
+                "id": "1340",
+                "id_district": "110",
+                "nom": "Jafaro"
+            },
+            {
+                "id": "1341",
+                "id_district": "110",
+                "nom": "Maroalomainty"
+            },
+            {
+                "id": "1342",
+                "id_district": "110",
+                "nom": "Maroalopoty"
+            },
+            {
+                "id": "1343",
+                "id_district": "110",
+                "nom": "Marovato-Befeno"
+            },
+            {
+                "id": "1344",
+                "id_district": "110",
+                "nom": "Sihanamaro"
+            },
+            {
+                "id": "1345",
+                "id_district": "111",
+                "nom": "Ambahita"
+            },
+            {
+                "id": "1346",
+                "id_district": "111",
+                "nom": "Ambatosola"
+            },
+            {
+                "id": "1347",
+                "id_district": "111",
+                "nom": "Anivorano-Mitsinjo"
+            },
+            {
+                "id": "1348",
+                "id_district": "111",
+                "nom": "Anja-Nord"
+            },
+            {
+                "id": "1349",
+                "id_district": "111",
+                "nom": "Ankaranabo-Nord"
+            },
+            {
+                "id": "1350",
+                "id_district": "111",
+                "nom": "Antsakoamaro"
+            },
+            {
+                "id": "1351",
+                "id_district": "111",
+                "nom": "Bekitro"
+            },
+            {
+                "id": "1352",
+                "id_district": "111",
+                "nom": "Belindo-Mahasoa"
+            },
+            {
+                "id": "1353",
+                "id_district": "111",
+                "nom": "Beraketa"
+            },
+            {
+                "id": "1354",
+                "id_district": "111",
+                "nom": "Beteza"
+            },
+            {
+                "id": "1355",
+                "id_district": "111",
+                "nom": "Bevitiky"
+            },
+            {
+                "id": "1356",
+                "id_district": "111",
+                "nom": "Manakompy"
+            },
+            {
+                "id": "1357",
+                "id_district": "111",
+                "nom": "Maroviro"
+            },
+            {
+                "id": "1358",
+                "id_district": "111",
+                "nom": "MorafenoBekily"
+            },
+            {
+                "id": "1359",
+                "id_district": "111",
+                "nom": "TanambaoTsirandrana"
+            },
+            {
+                "id": "1360",
+                "id_district": "111",
+                "nom": "Tanandava"
+            },
+            {
+                "id": "1361",
+                "id_district": "111",
+                "nom": "Tsikolaky"
+            },
+            {
+                "id": "1362",
+                "id_district": "111",
+                "nom": "Vohimanga"
+            },
+            {
+                "id": "1363",
+                "id_district": "112",
+                "nom": "Beloha"
+            },
+            {
+                "id": "1364",
+                "id_district": "112",
+                "nom": "Kopoky"
+            },
+            {
+                "id": "1365",
+                "id_district": "112",
+                "nom": "Marolinta"
+            },
+            {
+                "id": "1366",
+                "id_district": "112",
+                "nom": "Tranoroa"
+            },
+            {
+                "id": "1367",
+                "id_district": "112",
+                "nom": "Tranovaho"
+            },
+            {
+                "id": "1368",
+                "id_district": "113",
+                "nom": "Antaritarika"
+            },
+            {
+                "id": "1369",
+                "id_district": "113",
+                "nom": "Faux-Cap"
+            },
+            {
+                "id": "1370",
+                "id_district": "113",
+                "nom": "Imongy"
+            },
+            {
+                "id": "1371",
+                "id_district": "113",
+                "nom": "Marovato"
+            },
+            {
+                "id": "1372",
+                "id_district": "113",
+                "nom": "Tsihombe"
+            },
+            {
+                "id": "1373",
+                "id_district": "114",
+                "nom": "Amboasary-Atsimo"
+            },
+            {
+                "id": "1374",
+                "id_district": "114",
+                "nom": "Behara"
+            },
+            {
+                "id": "1375",
+                "id_district": "114",
+                "nom": "Ebelo"
+            },
+            {
+                "id": "1376",
+                "id_district": "114",
+                "nom": "Elonty"
+            },
+            {
+                "id": "1377",
+                "id_district": "114",
+                "nom": "Esira"
+            },
+            {
+                "id": "1378",
+                "id_district": "114",
+                "nom": "Ifotaka"
+            },
+            {
+                "id": "1379",
+                "id_district": "114",
+                "nom": "Mahaly"
+            },
+            {
+                "id": "1380",
+                "id_district": "114",
+                "nom": "Manevy"
+            },
+            {
+                "id": "1381",
+                "id_district": "114",
+                "nom": "Maromby"
+            },
+            {
+                "id": "1382",
+                "id_district": "114",
+                "nom": "Marotsiraka"
+            },
+            {
+                "id": "1383",
+                "id_district": "114",
+                "nom": "Sampona"
+            },
+            {
+                "id": "1384",
+                "id_district": "114",
+                "nom": "TanandavaSud"
+            },
+            {
+                "id": "1385",
+                "id_district": "114",
+                "nom": "Tranomaro"
+            },
+            {
+                "id": "1386",
+                "id_district": "114",
+                "nom": "Tsivory"
+            },
+            {
+                "id": "1387",
+                "id_district": "115",
+                "nom": "Ambalasoa"
+            },
+            {
+                "id": "1388",
+                "id_district": "115",
+                "nom": "Ambatomivary"
+            },
+            {
+                "id": "1389",
+                "id_district": "115",
+                "nom": "Analamary"
+            },
+            {
+                "id": "1390",
+                "id_district": "115",
+                "nom": "Andriandampy"
+            },
+            {
+                "id": "1391",
+                "id_district": "115",
+                "nom": "Beapombo-I"
+            },
+            {
+                "id": "1392",
+                "id_district": "115",
+                "nom": "Beapombo-II"
+            },
+            {
+                "id": "1393",
+                "id_district": "115",
+                "nom": "Bekorobo"
+            },
+            {
+                "id": "1394",
+                "id_district": "115",
+                "nom": "Benato-Toby"
+            },
+            {
+                "id": "1395",
+                "id_district": "115",
+                "nom": "Betroka"
+            },
+            {
+                "id": "1396",
+                "id_district": "115",
+                "nom": "Iaborotra"
+            },
+            {
+                "id": "1397",
+                "id_district": "115",
+                "nom": "Ianabinda"
+            },
+            {
+                "id": "1398",
+                "id_district": "115",
+                "nom": "Ianakafy"
+            },
+            {
+                "id": "1399",
+                "id_district": "115",
+                "nom": "Isoanala"
+            },
+            {
+                "id": "1400",
+                "id_district": "115",
+                "nom": "Ivahona"
+            },
+            {
+                "id": "1401",
+                "id_district": "115",
+                "nom": "Jangany"
+            },
+            {
+                "id": "1402",
+                "id_district": "115",
+                "nom": "Mahabo"
+            },
+            {
+                "id": "1403",
+                "id_district": "115",
+                "nom": "MahasoaEst"
+            },
+            {
+                "id": "1404",
+                "id_district": "115",
+                "nom": "Nagnarena"
+            },
+            {
+                "id": "1405",
+                "id_district": "115",
+                "nom": "Naninora"
+            },
+            {
+                "id": "1406",
+                "id_district": "115",
+                "nom": "Tsaraitso"
+            },
+            {
+                "id": "1407",
+                "id_district": "116",
+                "nom": "Ambatoabo"
+            },
+            {
+                "id": "1408",
+                "id_district": "116",
+                "nom": "Ampasimena"
+            },
+            {
+                "id": "1409",
+                "id_district": "116",
+                "nom": "AmpasyNahampoa"
+            },
+            {
+                "id": "1410",
+                "id_district": "116",
+                "nom": "Analamary"
+            },
+            {
+                "id": "1411",
+                "id_district": "116",
+                "nom": "Analapatsy"
+            },
+            {
+                "id": "1412",
+                "id_district": "116",
+                "nom": "Andranombory"
+            },
+            {
+                "id": "1413",
+                "id_district": "116",
+                "nom": "Ankaramena"
+            },
+            {
+                "id": "1414",
+                "id_district": "116",
+                "nom": "Bevoay"
+            },
+            {
+                "id": "1415",
+                "id_district": "116",
+                "nom": "Enakara-Haut"
+            },
+            {
+                "id": "1416",
+                "id_district": "116",
+                "nom": "Enaniliha"
+            },
+            {
+                "id": "1417",
+                "id_district": "116",
+                "nom": "Fenoevo"
+            },
+            {
+                "id": "1418",
+                "id_district": "116",
+                "nom": "Iabakoho"
+            },
+            {
+                "id": "1419",
+                "id_district": "116",
+                "nom": "Ifarantsa"
+            },
+            {
+                "id": "1420",
+                "id_district": "116",
+                "nom": "Isaka-Ivondro"
+            },
+            {
+                "id": "1421",
+                "id_district": "116",
+                "nom": "Mahatalaky"
+            },
+            {
+                "id": "1422",
+                "id_district": "116",
+                "nom": "Manambaro"
+            },
+            {
+                "id": "1423",
+                "id_district": "116",
+                "nom": "Manantenina"
+            },
+            {
+                "id": "1424",
+                "id_district": "116",
+                "nom": "Mandiso"
+            },
+            {
+                "id": "1425",
+                "id_district": "116",
+                "nom": "Mandromodromotra"
+            },
+            {
+                "id": "1426",
+                "id_district": "116",
+                "nom": "Ranomafana"
+            },
+            {
+                "id": "1427",
+                "id_district": "116",
+                "nom": "Ranopiso"
+            },
+            {
+                "id": "1428",
+                "id_district": "116",
+                "nom": "Sarasambo"
+            },
+            {
+                "id": "1429",
+                "id_district": "116",
+                "nom": "Soanierana"
+            },
+            {
+                "id": "1430",
+                "id_district": "116",
+                "nom": "Tôlanaro"
+            }
+        ]
+    }
+]

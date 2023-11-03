@@ -1,0 +1,245 @@
+{
+    "emptyTable": "Tsy misy angona hita eo amin'ny tabilao",
+    "loadingRecords": "Miandrasa kely...",
+    "processing": "Eo ampanatontosana...",
+    "select": {
+        "rows": {
+            "_": "%d andalana voafantina",
+            "1": "1 andalana voafantina"
+        },
+        "cells": {
+            "1": "1 sela voafantina",
+            "_": "%d sela voafantina"
+        },
+        "columns": {
+            "1": "1 sela voafantina",
+            "_": "%d sela voafantina"
+        }
+    },
+    "autoFill": {
+        "cancel": "Foanana",
+        "fill": "Fenoy ny sela rehetra amin'ny <i>%d<\/i>",
+        "fillHorizontal": "Fenoy mitsivalana ny sela",
+        "fillVertical": "Fenoy mitsangana ny sela"
+    },
+    "searchBuilder": {
+        "conditions": {
+            "date": {
+                "after": "Aorian'ny",
+                "before": "Talohan'ny",
+                "between": "Eo anelanelan'i",
+                "empty": "Foana",
+                "not": "Tsy mitovy amin'ny",
+                "notBetween": "Tsy eo anelanelan'ny",
+                "notEmpty": "Tsy foana",
+                "equals": "Mitovy amin'ny"
+            },
+            "number": {
+                "between": "Eo anelanelan'i",
+                "empty": "Foana",
+                "gt": "Lehibe noho ny",
+                "gte": "Lehibe na mitovy amin'ny",
+                "lt": "Kely noho ny",
+                "lte": "Kely na mitovy amin'ny",
+                "not": "Tsy mitovy amin'ny",
+                "notBetween": "Tsy eo anelanelan'ny",
+                "notEmpty": "Tsy foana",
+                "equals": "Mitovy amin'ny"
+            },
+            "string": {
+                "contains": "Misy",
+                "empty": "Foana",
+                "endsWith": "Mifarana amin'ny",
+                "not": "Tsy mitovy amin'ny",
+                "notEmpty": "Tsy foana",
+                "startsWith": "Manomboka amin'ny",
+                "equals": "Mitovy amin'ny",
+                "notContains": "Tsy misy",
+                "notEndsWith": "Tsy manomboka amin'ny",
+                "notStartsWith": "Tsy mifarana amin'ny"
+            },
+            "array": {
+                "empty": "Foana",
+                "contains": "Misy",
+                "not": "Tsy mitovy amin'ny",
+                "notEmpty": "Tsy foana",
+                "without": "Tsy misy",
+                "equals": "Mitovy amin'ny"
+            }
+        },
+        "add": "Manampia fepetra",
+        "button": {
+            "0": "Fikarohana avolenta",
+            "_": "Fikarohana avolenta (%d)"
+        },
+        "clearAll": "Fafàna daholo",
+        "condition": "Fepetra",
+        "data": "Data",
+        "deleteTitle": "Fafàna ny fitsipika sivana",
+        "logicAnd": "Sy",
+        "logicOr": "Na",
+        "title": {
+            "0": "Fikarohana avolenta",
+            "_": "Fikarohana avolenta (%d)"
+        },
+        "value": "Valera",
+        "leftTitle": "Esory ny sivana",
+        "rightTitle": "Ampidiro ny sivana"
+    },
+    "searchPanes": {
+        "clearMessage": "Fafàna daholo",
+        "count": "{total}",
+        "title": "Sivana - %d",
+        "collapse": {
+            "0": "Fikarohana",
+            "_": "Fikarohana (%d)"
+        },
+        "countFiltered": "{shown} ({total})",
+        "emptyPanes": "Tsy misy fikarohana",
+        "loadMessage": "Eo ampiandrana ny fikarohana...",
+        "collapseMessage": "Atao kely daholo",
+        "showMessage": "Aseho daholo"
+    },
+    "buttons": {
+        "collection": "Famoriana",
+        "colvis": "Fahitana tsanganana",
+        "colvisRestore": "Avereno ny fahitana",
+        "copy": "Adika",
+        "copySuccess": {
+            "1": "1 nadika ho amin'ny solaitrabe",
+            "_": "%d nadika ho amin'ny solaitrabe"
+        },
+        "copyTitle": "Adika ho amin'ny solaitrabe",
+        "csv": "CSV",
+        "excel": "Excel",
+        "pageLength": {
+            "-1": "Aseho ny andalana rehetra",
+            "_": "Aseho %d andalana",
+            "1": "Aseho 1 andalana"
+        },
+        "pdf": "PDF",
+        "print": "Imprimer",
+        "copyKeys": "Appuyez sur ctrl ou u2318 + C pour copier les données du tableau dans votre presse-papier.",
+        "createState": "Créer un état",
+        "removeAllStates": "Supprimer tous les états",
+        "removeState": "Supprimer",
+        "renameState": "Renommer",
+        "savedStates": "États sauvegardés",
+        "stateRestore": "État %d",
+        "updateState": "Mettre à jour"
+    },
+    "decimal": ",",
+    "datetime": {
+        "previous": "Précédent",
+        "next": "Suivant",
+        "hours": "Heures",
+        "minutes": "Minutes",
+        "seconds": "Secondes",
+        "unknown": "-",
+        "amPm": [
+            "am",
+            "pm"
+        ],
+        "months": {
+            "0": "Janvier",
+            "2": "Mars",
+            "3": "Avril",
+            "4": "Mai",
+            "5": "Juin",
+            "6": "Juillet",
+            "8": "Septembre",
+            "9": "Octobre",
+            "10": "Novembre",
+            "1": "Février",
+            "11": "Décembre",
+            "7": "Août"
+        },
+        "weekdays": [
+            "Dim",
+            "Lun",
+            "Mar",
+            "Mer",
+            "Jeu",
+            "Ven",
+            "Sam"
+        ]
+    },
+    "editor": {
+        "close": "Fermer",
+        "create": {
+            "title": "Créer une nouvelle entrée",
+            "button": "Nouveau",
+            "submit": "Créer"
+        },
+        "edit": {
+            "button": "Editer",
+            "title": "Editer Entrée",
+            "submit": "Mettre à jour"
+        },
+        "remove": {
+            "button": "Supprimer",
+            "title": "Supprimer",
+            "submit": "Supprimer",
+            "confirm": {
+                "_": "Êtes-vous sûr de vouloir supprimer %d lignes ?",
+                "1": "Êtes-vous sûr de vouloir supprimer 1 ligne ?"
+            }
+        },
+        "multi": {
+            "title": "Valeurs multiples",
+            "info": "Les éléments sélectionnés contiennent différentes valeurs pour cette entrée. Pour modifier et définir tous les éléments de cette entrée à la même valeur, cliquez ou tapez ici, sinon ils conserveront leurs valeurs individuelles.",
+            "restore": "Annuler les modifications",
+            "noMulti": "Ce champ peut être modifié individuellement, mais ne fait pas partie d'un groupe. "
+        },
+        "error": {
+            "system": "Une erreur système s'est produite (<a target=\"\\\" rel=\"nofollow\" href=\"\\\">Plus d'information<\/a>)."
+        }
+    },
+    "stateRestore": {
+        "removeSubmit": "Supprimer",
+        "creationModal": {
+            "button": "Créer",
+            "order": "Tri",
+            "paging": "Pagination",
+            "scroller": "Position du défilement",
+            "search": "Recherche",
+            "select": "Sélection",
+            "columns": {
+                "search": "Recherche par colonne",
+                "visible": "Visibilité des colonnes"
+            },
+            "name": "Nom :",
+            "searchBuilder": "Recherche avancée",
+            "title": "Créer un nouvel état",
+            "toggleLabel": "Inclus :"
+        },
+        "renameButton": "Renommer",
+        "duplicateError": "Il existe déjà un état avec ce nom.",
+        "emptyError": "Le nom ne peut pas être vide.",
+        "emptyStates": "Aucun état sauvegardé",
+        "removeConfirm": "Voulez vous vraiment supprimer %s ?",
+        "removeError": "Échec de la suppression de l'état.",
+        "removeJoiner": "et",
+        "removeTitle": "Supprimer l'état",
+        "renameLabel": "Nouveau nom pour %s :",
+        "renameTitle": "Renommer l'état"
+    },
+    "info": "Fampisehoana _START_ hatramin'ny _END_ amin'ny _TOTAL_ nampidirina",
+    "infoEmpty": "Fampisehoana 0 hatramin'ny 0 amin'ny 0 nampidirina",
+    "infoFiltered": "(voasivana avy amin'ny fitambaran'ny _MAX_ nampidirina)",
+    "lengthMenu": "Aseho ny _MENU_ nampidirina",
+    "paginate": {
+        "first": "Voalohany",
+        "last": "Farany",
+        "next": "Manaraka",
+        "previous": "Hiverina"
+    },
+    "zeroRecords": "Tsy misy valiny mifanandrify hita",
+    "aria": {
+        "sortAscending": " : activer pour trier la colonne par ordre croissant",
+        "sortDescending": " : activer pour trier la colonne par ordre décroissant"
+    },
+    "infoThousands": " ",
+    "search": "Mikaroka :",
+    "thousands": " "
+}

@@ -4,12 +4,13 @@
 <head>
     <title>E-fidy</title>
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="//cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/static/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
     <script defer src="/js/script.js"></script>
-    <script defer src="/js/electeur.js"></script>
-    <script src="//code.jquery.com/jquery-3.7.0.js"></script>
-    <script src="//cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <script defer src="/js/resultatVote.js"></script>
+    <script src="/static/jquery-3.7.1.min.js"></script>
+    <script src="/static/jquery.dataTables.min.js"></script>
+    <script>var resultat_stringify = "<%=resultat%>";</script>
 </head>
 
 <body>
@@ -39,7 +40,7 @@
                     <a class="nav-link" href="/liste-electorale"><i class="fa-solid fa-list-ol"></i>Lisi-pifidianana</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="javascript:void(0);"><i
+                    <a class="nav-link" href="/bureau-de-vote"><i
                             class="fa-regular fa-building"></i></i>Biraom-pifidianana</a>
                 </li>
                 <li class="nav-item active">
@@ -55,24 +56,22 @@
 
             <section class="section-liste-electorale">
                 <!--for demo wrap-->
-                <!-- <h1>Liste électorale</h1> -->
-                <button class="ajout-electeur" onclick="openModal()"><i class="fa-solid fa-user-plus"></i> Hampiditra mpifidy</button>
+                <h1>Valim-pifidianana 2023</h1>
 
                 <div class="tbl-content">
-                    <table cellpadding="0" cellspacing="0" border="0" id="mon-table">
+                    <table cellpadding="0" cellspacing="0" border="0" id="mon-table" class="table-resultat">
 
                         <thead style="padding: 0 10px ;" class="tbl-header">
                             <tr>
-                                <th style="width: 20px;">N°</th>
-                                <th>CIN</th>
-                                <th>Anarana</th>
-                                <th>Sary Voalohany</th>
-                                <th>Sary faharoa</th>
-                                <th>Fanovàna</th>
+                                <th style="width:9%;" class="th-resultat">N° mpifaninana</th>
+                                <th style="width:9%;" class="th-resultat">Sarin'ny mpifaninana</th>
+                                <th style="width:9%;" class="th-resultat">Anaran'ny mpifaninana</th>
+                                <th style="width:9%;" class="th-resultat">Vato azo</th>
+                                <th style="width:9%;" class="th-resultat">Isan-jato</th>
                             </tr>
                         </thead>
 
-                        <tbody id="inner-liste-electorale">
+                        <tbody id="inner-resultat-electorale">
 
 
                         </tbody>
@@ -80,32 +79,6 @@
                 </div>
             </section>
 
-            <div class="d-none" id="modal">
-                <div class="alert">
-                    <div>
-                        <form class="form-eleteur" action="/saveOneElector" method="post" enctype="multipart/form-data">
-                            <label class="label-electeur">Anaran'ny mpifidy</label>
-                            <input type="text" class="input-electeur" id="nom-electeur" name="nom_electeur" required>
-                            <label class="label-electeur">CIN an'ny mpifidy</label>
-                            <input type="text" class="input-electeur" id="cin-electeur" name="cin_electeur" required>
-                            <label class="label-electeur" for="photo-electeur">Sary voalohany</label>
-                            <input type="file" class="input-electeur" id="photo-electeur" name="photo_electeur"
-                                required>
-                            <label class="label-electeur" for="photo2-electeur">Sary faharoa</label>
-                            <input type="file" class="input-electeur" id="photo2-electeur" name="photo2_electeur"
-                                required>
-                            <div class="d-flex">
-                                <button class="btn btn-danger btn-2" type="button"
-                                    onclick="closeModal()"><i class="fa-solid fa-delete-left"></i>Aoka aloha</button>
-                                <button class="btn btn-success btn-2" type="submit"><i class="fa-solid fa-floppy-disk"></i>Ampidirina</button>
-                            </div>
-
-                        </form>
-
-                    </div>
-                </div>
-
-            </div>
         </div>
 </body>
 

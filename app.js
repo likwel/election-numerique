@@ -13,9 +13,19 @@ const { Sequelize } = require('sequelize');
 const db = require('./connexion');
 
 const CandidatModel = require('./entity/candidat');
+const FokontanyModel = require('./entity/fokontany');
+const DistrictModel = require('./entity/district');
+const RegionModel = require('./entity/region');
+const ProvinceModel = require('./entity/province');
+const CommuneModel = require('./entity/commune');
 const ElecteurModel = require('./entity/electeur');
 const VoteModel = require('./entity/vote');
 const CandidatList = require('./public/js/candida_list');
+const CommuneList = require('./public/static/commune.json');
+const FokontanyList = require('./public/static/fokontany.json');
+const DistrictList = require('./public/static/district.json');
+const RegionList = require('./public/static/region.json');
+const ProvinceList = require('./public/static/province.json');
 const Electeur = require('./entity/electeur');
 
 app.use(bodyParser.json());
@@ -60,6 +70,28 @@ app.get('/liste-electorale', (req, res) => {
 })
 
 /**
+ * Retourner la template electeur.html
+ */
+app.get('/bureau-de-vote', (req, res) => {
+    res.render("bureauVote");
+})
+
+/**
+ * Retourner la template electeur.html
+ */
+app.get('/getAllbureau-de-vote', (req, res) => {
+
+    FokontanyModel.findAll()
+        .then(data => {
+            res.send(data);
+            // res.render("bureauVote",{
+            //     data : data
+            // });
+        })
+    // res.render("bureauVote");
+})
+
+/**
  * Affichage de la liste des electeurs
  */
 app.get('/getAllElector', (req, res) => {
@@ -92,6 +124,9 @@ app.post('/saveOneElector', (req, res) => {
         let nom = fields.nom_electeur[0]
         let identite = fields.cin_electeur[0]
 
+        let type = fields.type_election[0]
+        let id = fields.id_electeur[0]
+
         let newpath = path.join(__dirname, 'public/labels') + '/' + nom + '-' + identite + '/'
 
         photo = newpath + 1 + path.extname(file.photo_electeur[0].originalFilename);
@@ -119,7 +154,22 @@ app.post('/saveOneElector', (req, res) => {
             // return res.send("Successfully uploaded")
         })
 
-        ElecteurModel.create(electeur);
+        if (type == "create") {
+
+            ElecteurModel.create(electeur);
+
+        } else {
+
+            ElecteurModel.update(electeur, {
+                where: {
+                    id: id
+                }
+            });
+
+            // ElecteurModel.create(electeur);
+
+        }
+
 
         res.redirect('/liste-electorale')
         // res.render("electeur");
@@ -141,6 +191,22 @@ app.get('/getOneCandidatByNumero/:numero', (req, res) => {
     })
         .then(electeurs => {
             res.send(electeurs);
+
+        })
+})
+
+/**
+ * Return json d'un candidat par Numero dans la bulletin unique
+ */
+app.get('/getOneCandidatById/:id', (req, res) => {
+    // console.log(req.params.numero);
+    CandidatModel.findOne({
+        where: {
+            numero: req.params.id,
+        }
+    })
+        .then(candidat => {
+            res.send(candidat);
 
         })
 })
@@ -195,6 +261,95 @@ app.get('/save-candidat/WqaTx0Uj', (req, res) => {
 })
 
 /**
+ * Sauvegarder fokontany.json dans la base de données
+ */
+app.get('/save-fokontany/WJtXTx0Uj', (req, res) => {
+
+    let fokontany = FokontanyList[2].data
+
+    for (let foko of fokontany) {
+        FokontanyModel.create({
+            name: foko.name,
+            commune: foko.commune
+        });
+    }
+
+    res.redirect('/')
+    // res.render("index");
+})
+
+/**
+ * Sauvegarder commune.json dans la base de données
+ */
+app.get('/save-commune/WJtrTx0Uj', (req, res) => {
+
+    let comumes = CommuneList[2].data
+
+    for (let commune of comumes) {
+        CommuneModel.create({
+            id_district: commune.id_district,
+            nom: commune.nom
+        });
+    }
+
+    res.redirect('/')
+    // res.render("index");
+})
+
+/**
+ * Sauvegarder district.json dans la base de données
+ */
+app.get('/save-district/WotrTx0Uj', (req, res) => {
+
+    let districts = DistrictList[2].data
+
+    for (let district of districts) {
+        DistrictModel.create({
+            id_region: district.id_region,
+            libelle: district.libelle
+        });
+    }
+
+    res.redirect('/')
+    // res.render("index");
+})
+
+/**
+ * Sauvegarder region.json dans la base de données
+ */
+app.get('/save-region/W0IhrTx0Uj', (req, res) => {
+
+    let regions = RegionList[2].data
+
+    for (let district of regions) {
+        RegionModel.create({
+            id_province: district.id_province,
+            nom: district.nom
+        });
+    }
+
+    res.redirect('/')
+    // res.render("index");
+})
+
+/**
+ * Sauvegarder region.json dans la base de données
+ */
+app.get('/save-province/WplDrTx0Uj', (req, res) => {
+
+    let provinces = ProvinceList[2].data
+
+    for (let district of provinces) {
+        ProvinceModel.create({
+            nom: district.nom
+        });
+    }
+
+    res.redirect('/')
+    // res.render("index");
+})
+
+/**
  * Return template election.html
  */
 app.get('/election', (req, res) => {
@@ -232,7 +387,8 @@ app.get('/destroy-electeur/:id', (req, res) => {
         where: {
             id: req.params.id
         },
-        truncate: true
+        // truncate: true,
+        // restartIdentity: true
     });
     res.redirect('/liste-electorale')
 })
@@ -258,13 +414,13 @@ app.get('/update-electeur', (req, res) => {
  */
 app.get('/resultat-election', (req, res) => {
 
-    VoteModel.findAll({
-        where: {
-            electeur_id: id,
-        }
+    VoteModel.findAndCountAll({
+        attributes: ['candidat_id', [Sequelize.fn('count', Sequelize.col('candidat_id')), 'resultat']],
+        group: ['candidat_id']
     }).then(result => {
+        // res.send(result.rows)
         res.render("resultatVote", {
-            result: result
+            resultat: JSON.stringify(result.rows)
         });
     })
 })
