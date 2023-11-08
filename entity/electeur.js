@@ -15,10 +15,13 @@ const Electeur = db.define('electeur', {
     },
     photo2 : {
         type : Sequelize.TEXT
+    },
+    id_fokontany: {
+        type : Sequelize.INTEGER
     }
 });
 
 Electeur.sync().then(() => {
-  console.log('table created');
+  console.log('table Electeur created');
 });
 module.exports = Electeur;

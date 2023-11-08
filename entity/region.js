@@ -4,15 +4,19 @@ const db = require('../connexion');
 
 const Region = db.define('region', {
 
-    id_province : {
-        type : Sequelize.INTEGER
+    code: {
+        type: Sequelize.TEXT
     },
-    nom : {
-        type : Sequelize.TEXT
+
+    id_province: {
+        type: Sequelize.INTEGER
+    },
+    nom: {
+        type: Sequelize.TEXT
     }
 });
 
 Region.sync().then(() => {
-  console.log('table created');
+    console.log('table Region created');
 });
 module.exports = Region;

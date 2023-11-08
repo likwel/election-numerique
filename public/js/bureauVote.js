@@ -1,7 +1,14 @@
+const searchParams = (new URL(document.location)).searchParams
 
-runSpinner()
+let request = ""
+if(searchParams.has("id") && searchParams.get("id")){
+    request = "/getBureau-de-vote/"+searchParams.get("id")
+}else{
+    request = "/getAllbureau-de-vote"
+    runSpinner()
+}
 
-fetch('/getAllbureau-de-vote').then(response => response.json())
+fetch(request).then(response => response.json())
     .then(data => {
 
         let lis = ''
@@ -12,10 +19,13 @@ fetch('/getAllbureau-de-vote').then(response => response.json())
 
                 // console.log(electeur);
                 lis += `<tr>
-            <td style="width:20px;">${electeur.id}</td>
-            <td>${electeur.name}</td>
-            <td>${electeur.commune}</td>
-            </tr>`
+                            <td style="width:20px;">${electeur.id_fokontany}</td>
+                            <td>${electeur.fokontany}</td>
+                            <td>${electeur.commune}</td>
+                            <td>${electeur.district}</td>
+                            <td>${electeur.region}</td>
+                            <td>${electeur.province}</td>
+                        </tr>`
             }
 
             document.querySelector("#inner-bureau-electorale").innerHTML = lis

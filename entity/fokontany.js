@@ -4,15 +4,18 @@ const db = require('../connexion');
 
 const Fokontany = db.define('fokontany', {
 
-    name : {
-        type : Sequelize.TEXT
+    code: {
+        type: Sequelize.TEXT
     },
-    commune : {
+    id_commune : {
+        type : Sequelize.INTEGER
+    },
+    nom : {
         type : Sequelize.TEXT
     }
 });
 
 Fokontany.sync().then(() => {
-  console.log('table created');
+  console.log('table Fokontany created');
 });
 module.exports = Fokontany;

@@ -179,8 +179,8 @@ canvas {
     position: fixed;
     left: 28%;
     right: 28%;
-    top: 25%;
-    bottom: 25%;
+    top: 20%;
+    bottom: 20%;
     z-index: 1;
     border: 1px solid #0079bf;
     background-color: white;
@@ -190,6 +190,13 @@ canvas {
     /* transition: 1s ease-in-out; */
     transition: all .7s;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.alert-form{
+    left: 20% !important;
+    right: 20% !important;
+    top: 15% !important;
+    bottom: 15% !important;
 }
 
 .alert-content {
@@ -530,6 +537,14 @@ td {
 
 .input-electeur {
     height: 20px;
+    padding: 5px;
+    border-radius: 0.5rem;
+    outline: none;
+    border: 1px solid #25b7c4;
+}
+
+.select-electeur {
+    height: 30px;
     padding: 5px;
     border-radius: 0.5rem;
     outline: none;
@@ -913,4 +928,12 @@ i {
 
 #inner-bureau-electorale tr td {
     height: 40px;
+}
+.input-flot{
+    display: flex;
+    flex-direction: column;
+    width: 19%;
+}
+.div-map{
+    display: flex;
 }

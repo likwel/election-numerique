@@ -1,0 +1,686 @@
+[
+  {
+    "code": 101,
+    "nom": "Antananarivo Renivohitra",
+    "id_region": 1,
+    "id": 1
+  },
+  {
+    "code": 102,
+    "nom": "Antananarivo Avaradrano",
+    "id_region": 1,
+    "id": 2
+  },
+  {
+    "code": 103,
+    "nom": "Ambohidratrimo",
+    "id_region": 1,
+    "id": 3
+  },
+  {
+    "code": 104,
+    "nom": "Ankazobe",
+    "id_region": 1,
+    "id": 4
+  },
+  {
+    "code": 106,
+    "nom": "Manjakandriana",
+    "id_region": 1,
+    "id": 5
+  },
+  {
+    "code": 107,
+    "nom": "Anjozorobe",
+    "id_region": 1,
+    "id": 6
+  },
+  {
+    "code": 115,
+    "nom": "Andramasina",
+    "id_region": 1,
+    "id": 7
+  },
+  {
+    "code": 117,
+    "nom": "Antananarivo Atsimondrano",
+    "id_region": 1,
+    "id": 8
+  },
+  {
+    "code": 108,
+    "nom": "Antsirabe I",
+    "id_region": 2,
+    "id": 9
+  },
+  {
+    "code": 109,
+    "nom": "Betafo",
+    "id_region": 2,
+    "id": 10
+  },
+  {
+    "code": 110,
+    "nom": "Ambatolampy",
+    "id_region": 2,
+    "id": 11
+  },
+  {
+    "code": 114,
+    "nom": "Antanifotsy",
+    "id_region": 2,
+    "id": 12
+  },
+  {
+    "code": 116,
+    "nom": "Faratsiho",
+    "id_region": 2,
+    "id": 13
+  },
+  {
+    "code": 118,
+    "nom": "Antsirabe II",
+    "id_region": 2,
+    "id": 14
+  },
+  {
+    "code": 120,
+    "nom": "Mandoto",
+    "id_region": 2,
+    "id": 15
+  },
+  {
+    "code": 105,
+    "nom": "Arivonimamo",
+    "id_region": 3,
+    "id": 16
+  },
+  {
+    "code": 112,
+    "nom": "Miarinarivo",
+    "id_region": 3,
+    "id": 17
+  },
+  {
+    "code": 113,
+    "nom": "Soavinandriana",
+    "id_region": 3,
+    "id": 18
+  },
+  {
+    "code": 111,
+    "nom": "Tsiroanomandidy",
+    "id_region": 4,
+    "id": 19
+  },
+  {
+    "code": 119,
+    "nom": "Fenoarivobe",
+    "id_region": 4,
+    "id": 20
+  },
+  {
+    "code": 201,
+    "nom": "Fianarantsoa I",
+    "id_region": 5,
+    "id": 21
+  },
+  {
+    "code": 205,
+    "nom": "Ambalavao",
+    "id_region": 5,
+    "id": 22
+  },
+  {
+    "code": 208,
+    "nom": "Ambohimahasoa",
+    "id_region": 5,
+    "id": 23
+  },
+  {
+    "code": 219,
+    "nom": "Ikalamavony",
+    "id_region": 5,
+    "id": 24
+  },
+  {
+    "code": 220,
+    "nom": "Lalangina",
+    "id_region": 5,
+    "id": 25
+  },
+  {
+    "code": 224,
+    "nom": "Vohibato",
+    "id_region": 5,
+    "id": 26
+  },
+  {
+    "code": 225,
+    "nom": "Isandra",
+    "id_region": 5,
+    "id": 27
+  },
+  {
+    "code": 202,
+    "nom": "Ambatofinandrahana",
+    "id_region": 6,
+    "id": 28
+  },
+  {
+    "code": 203,
+    "nom": "Ambositra",
+    "id_region": 6,
+    "id": 29
+  },
+  {
+    "code": 204,
+    "nom": "Fandriana",
+    "id_region": 6,
+    "id": 30
+  },
+  {
+    "code": 223,
+    "nom": "Manandriana",
+    "id_region": 6,
+    "id": 31
+  },
+  {
+    "code": 206,
+    "nom": "Ifanadiana",
+    "id_region": 7,
+    "id": 32
+  },
+  {
+    "code": 207,
+    "nom": "Nosy-Varika",
+    "id_region": 7,
+    "id": 33
+  },
+  {
+    "code": 209,
+    "nom": "Mananjary",
+    "id_region": 7,
+    "id": 34
+  },
+  {
+    "code": 210,
+    "nom": "Manakara Atsimo",
+    "id_region": 7,
+    "id": 35
+  },
+  {
+    "code": 211,
+    "nom": "Ikongo",
+    "id_region": 7,
+    "id": 36
+  },
+  {
+    "code": 212,
+    "nom": "Vohipeno",
+    "id_region": 7,
+    "id": 37
+  },
+  {
+    "code": 216,
+    "nom": "Ihosy",
+    "id_region": 8,
+    "id": 38
+  },
+  {
+    "code": 218,
+    "nom": "Ivohibe",
+    "id_region": 8,
+    "id": 39
+  },
+  {
+    "code": 221,
+    "nom": "Iakora",
+    "id_region": 8,
+    "id": 40
+  },
+  {
+    "code": 213,
+    "nom": "Farafangana",
+    "id_region": 9,
+    "id": 41
+  },
+  {
+    "code": 214,
+    "nom": "Vangaindrano",
+    "id_region": 9,
+    "id": 42
+  },
+  {
+    "code": 215,
+    "nom": "Midongy-Atsimo",
+    "id_region": 9,
+    "id": 43
+  },
+  {
+    "code": 217,
+    "nom": "Vondrozo",
+    "id_region": 9,
+    "id": 44
+  },
+  {
+    "code": 222,
+    "nom": "Befotaka",
+    "id_region": 9,
+    "id": 45
+  },
+  {
+    "code": 301,
+    "nom": "Toamasina I",
+    "id_region": 10,
+    "id": 46
+  },
+  {
+    "code": 306,
+    "nom": "Brickaville",
+    "id_region": 10,
+    "id": 47
+  },
+  {
+    "code": 307,
+    "nom": "Vatomandry",
+    "id_region": 10,
+    "id": 48
+  },
+  {
+    "code": 308,
+    "nom": "Mahanoro",
+    "id_region": 10,
+    "id": 49
+  },
+  {
+    "code": 309,
+    "nom": "Marolambo",
+    "id_region": 10,
+    "id": 50
+  },
+  {
+    "code": 310,
+    "nom": "Toamasina II",
+    "id_region": 10,
+    "id": 51
+  },
+  {
+    "code": 311,
+    "nom": "Antanambao Manampontsy",
+    "id_region": 10,
+    "id": 52
+  },
+  {
+    "code": 302,
+    "nom": "Sainte Marie",
+    "id_region": 11,
+    "id": 53
+  },
+  {
+    "code": 303,
+    "nom": "Maroantsetra",
+    "id_region": 11,
+    "id": 54
+  },
+  {
+    "code": 304,
+    "nom": "Mananara-Avaratra",
+    "id_region": 11,
+    "id": 55
+  },
+  {
+    "code": 305,
+    "nom": "Fenerive Est",
+    "id_region": 11,
+    "id": 56
+  },
+  {
+    "code": 315,
+    "nom": "Vavatenina",
+    "id_region": 11,
+    "id": 57
+  },
+  {
+    "code": 318,
+    "nom": "Soanierana Ivongo",
+    "id_region": 11,
+    "id": 58
+  },
+  {
+    "code": 312,
+    "nom": "Amparafaravola",
+    "id_region": 12,
+    "id": 59
+  },
+  {
+    "code": 313,
+    "nom": "Ambatondrazaka",
+    "id_region": 12,
+    "id": 60
+  },
+  {
+    "code": 314,
+    "nom": "Moramanga",
+    "id_region": 12,
+    "id": 61
+  },
+  {
+    "code": 316,
+    "nom": "Andilamena",
+    "id_region": 12,
+    "id": 62
+  },
+  {
+    "code": 317,
+    "nom": "Anosibe-An'Ala",
+    "id_region": 12,
+    "id": 63
+  },
+  {
+    "code": 401,
+    "nom": "Mahajanga I",
+    "id_region": 13,
+    "id": 64
+  },
+  {
+    "code": 403,
+    "nom": "Soalala",
+    "id_region": 13,
+    "id": 65
+  },
+  {
+    "code": 405,
+    "nom": "Ambato Boeni",
+    "id_region": 13,
+    "id": 66
+  },
+  {
+    "code": 406,
+    "nom": "Marovoay",
+    "id_region": 13,
+    "id": 67
+  },
+  {
+    "code": 407,
+    "nom": "Mitsinjo",
+    "id_region": 13,
+    "id": 68
+  },
+  {
+    "code": 415,
+    "nom": "Mahajanga II",
+    "id_region": 13,
+    "id": 69
+  },
+  {
+    "code": 409,
+    "nom": "Port-Berge(Boriziny-Vaovao)",
+    "id_region": 14,
+    "id": 70
+  },
+  {
+    "code": 410,
+    "nom": "Mandritsara",
+    "id_region": 14,
+    "id": 71
+  },
+  {
+    "code": 411,
+    "nom": "Analalava",
+    "id_region": 14,
+    "id": 72
+  },
+  {
+    "code": 412,
+    "nom": "Befandriana Nord",
+    "id_region": 14,
+    "id": 73
+  },
+  {
+    "code": 413,
+    "nom": "Antsohihy",
+    "id_region": 14,
+    "id": 74
+  },
+  {
+    "code": 414,
+    "nom": "Bealanana",
+    "id_region": 14,
+    "id": 75
+  },
+  {
+    "code": 423,
+    "nom": "Mampikony",
+    "id_region": 14,
+    "id": 76
+  },
+  {
+    "code": 404,
+    "nom": "Maevatanana",
+    "id_region": 15,
+    "id": 77
+  },
+  {
+    "code": 408,
+    "nom": "Tsaratanana",
+    "id_region": 15,
+    "id": 78
+  },
+  {
+    "code": 416,
+    "nom": "Kandreho",
+    "id_region": 15,
+    "id": 79
+  },
+  {
+    "code": 402,
+    "nom": "Besalampy",
+    "id_region": 16,
+    "id": 80
+  },
+  {
+    "code": 417,
+    "nom": "Ambatomainty",
+    "id_region": 16,
+    "id": 81
+  },
+  {
+    "code": 420,
+    "nom": "Antsalova",
+    "id_region": 16,
+    "id": 82
+  },
+  {
+    "code": 421,
+    "nom": "Maintirano",
+    "id_region": 16,
+    "id": 83
+  },
+  {
+    "code": 422,
+    "nom": "Morafenobe",
+    "id_region": 16,
+    "id": 84
+  },
+  {
+    "code": 501,
+    "nom": "Toliary-I",
+    "id_region": 17,
+    "id": 85
+  },
+  {
+    "code": 503,
+    "nom": "Beroroha",
+    "id_region": 17,
+    "id": 86
+  },
+  {
+    "code": 504,
+    "nom": "Morombe",
+    "id_region": 17,
+    "id": 87
+  },
+  {
+    "code": 505,
+    "nom": "Ankazoabo",
+    "id_region": 17,
+    "id": 88
+  },
+  {
+    "code": 506,
+    "nom": "Betioky Atsimo",
+    "id_region": 17,
+    "id": 89
+  },
+  {
+    "code": 507,
+    "nom": "Ampanihy Ouest",
+    "id_region": 17,
+    "id": 90
+  },
+  {
+    "code": 512,
+    "nom": "Sakaraha",
+    "id_region": 17,
+    "id": 91
+  },
+  {
+    "code": 520,
+    "nom": "Toliary-II",
+    "id_region": 17,
+    "id": 92
+  },
+  {
+    "code": 521,
+    "nom": "Benenitra",
+    "id_region": 17,
+    "id": 93
+  },
+  {
+    "code": 513,
+    "nom": "Beloha",
+    "id_region": 18,
+    "id": 94
+  },
+  {
+    "code": 514,
+    "nom": "Tsihombe",
+    "id_region": 18,
+    "id": 95
+  },
+  {
+    "code": 516,
+    "nom": "Ambovombe-Androy",
+    "id_region": 18,
+    "id": 96
+  },
+  {
+    "code": 518,
+    "nom": "Bekily",
+    "id_region": 18,
+    "id": 97
+  },
+  {
+    "code": 515,
+    "nom": "Taolagnaro",
+    "id_region": 19,
+    "id": 98
+  },
+  {
+    "code": 517,
+    "nom": "Betroka",
+    "id_region": 19,
+    "id": 99
+  },
+  {
+    "code": 519,
+    "nom": "Amboasary-Atsimo",
+    "id_region": 19,
+    "id": 100
+  },
+  {
+    "code": 502,
+    "nom": "Manja",
+    "id_region": 20,
+    "id": 101
+  },
+  {
+    "code": 508,
+    "nom": "Morondava",
+    "id_region": 20,
+    "id": 102
+  },
+  {
+    "code": 509,
+    "nom": "Mahabo",
+    "id_region": 20,
+    "id": 103
+  },
+  {
+    "code": 510,
+    "nom": "Belo Sur Tsiribihina",
+    "id_region": 20,
+    "id": 104
+  },
+  {
+    "code": 511,
+    "nom": "Miandrivazo",
+    "id_region": 20,
+    "id": 105
+  },
+  {
+    "code": 713,
+    "nom": "Antsiranana II",
+    "id_region": 21,
+    "id": 106
+  },
+  {
+    "code": 715,
+    "nom": "Antsiranana I",
+    "id_region": 21,
+    "id": 107
+  },
+  {
+    "code": 717,
+    "nom": "Ambilobe",
+    "id_region": 21,
+    "id": 108
+  },
+  {
+    "code": 718,
+    "nom": "Nosy-Be",
+    "id_region": 21,
+    "id": 109
+  },
+  {
+    "code": 719,
+    "nom": "Ambanja",
+    "id_region": 21,
+    "id": 110
+  },
+  {
+    "code": 710,
+    "nom": "Antalaha",
+    "id_region": 22,
+    "id": 111
+  },
+  {
+    "code": 711,
+    "nom": "Sambava",
+    "id_region": 22,
+    "id": 112
+  },
+  {
+    "code": 712,
+    "nom": "Andapa",
+    "id_region": 22,
+    "id": 113
+  },
+  {
+    "code": 716,
+    "nom": "Vohemar",
+    "id_region": 22,
+    "id": 114
+  }
+]

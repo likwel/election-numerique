@@ -28,7 +28,7 @@ function getLabeledFaceDescriptions() {
 
     for (let elect of list_electeur) {
         labels.push({
-            label: elect.nom + "-" + elect.identite,
+            label: elect.nom + " - " + elect.identite,
             images: [elect.photo, elect.photo2]
         })
     }
@@ -98,14 +98,14 @@ video.addEventListener('play', async () => {
 
             for (let electeur of list_electeur) {
 
-                if (result.label == electeur.nom + "-" + electeur.identite) {
+                if (result.label == electeur.nom + " - " + electeur.identite) {
 
                     writeElector(div, JSON.stringify(electeur))
 
                     res.appendChild(div)
 
                     runSpinner()
-
+                    
                     setInterval(() => {
                         location.href = "/election?id=" + electeur.id
                     }, 5000)
@@ -121,11 +121,11 @@ function writeElector(div, electo) {
     let elector = JSON.parse(electo)
     div.innerHTML = `
     <div class="card-profil">
-        <img src="${elector.photo}" alt="John" style="width:100%;height:auto;">
+        <img src="${elector.photo}" alt="${elector.identite}" style="width:100%;height:auto;">
         <label class="nom-profil">${elector.nom}</label>
         <p class="identite-profil">CIN : ${elector.identite}</p>
-        <p class="p-profil">Harvard University</p>
-        <p><button class="button-profil">E-fidy</button></p>
+        <p class="p-profil">${capitalize(elector.fokontany)} - ${capitalize(elector.commune)} - ${capitalize(elector.district)}</p>
+        <p><button class="button-profil">${capitalize(elector.province)}</button></p>
     </div>
 
     `

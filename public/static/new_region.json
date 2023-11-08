@@ -1,0 +1,134 @@
+[
+  {
+    "code": 11,
+    "nom": "Analamanga",
+    "id_province": 1,
+    "id": 1
+  },
+  {
+    "code": 12,
+    "nom": "Vakinankaratra",
+    "id_province": 1,
+    "id": 2
+  },
+  {
+    "code": 13,
+    "nom": "Itasy",
+    "id_province": 1,
+    "id": 3
+  },
+  {
+    "code": 14,
+    "nom": "Bongolava",
+    "id_province": 1,
+    "id": 4
+  },
+  {
+    "code": 21,
+    "nom": "Haute Matsiatra",
+    "id_province": 2,
+    "id": 5
+  },
+  {
+    "code": 22,
+    "nom": "Amoron'I Mania",
+    "id_province": 2,
+    "id": 6
+  },
+  {
+    "code": 23,
+    "nom": "Vatovavy Fitovinany",
+    "id_province": 2,
+    "id": 7
+  },
+  {
+    "code": 24,
+    "nom": "Ihorombe",
+    "id_province": 2,
+    "id": 8
+  },
+  {
+    "code": 25,
+    "nom": "Atsimo Atsinanana",
+    "id_province": 2,
+    "id": 9
+  },
+  {
+    "code": 31,
+    "nom": "Atsinanana",
+    "id_province": 3,
+    "id": 10
+  },
+  {
+    "code": 32,
+    "nom": "Analanjirofo",
+    "id_province": 3,
+    "id": 11
+  },
+  {
+    "code": 33,
+    "nom": "Alaotra Mangoro",
+    "id_province": 3,
+    "id": 12
+  },
+  {
+    "code": 41,
+    "nom": "Boeny",
+    "id_province": 4,
+    "id": 13
+  },
+  {
+    "code": 42,
+    "nom": "Sofia",
+    "id_province": 4,
+    "id": 14
+  },
+  {
+    "code": 43,
+    "nom": "Betsiboka",
+    "id_province": 4,
+    "id": 15
+  },
+  {
+    "code": 44,
+    "nom": "Melaky",
+    "id_province": 4,
+    "id": 16
+  },
+  {
+    "code": 51,
+    "nom": "Atsimo Andrefana",
+    "id_province": 5,
+    "id": 17
+  },
+  {
+    "code": 52,
+    "nom": "Androy",
+    "id_province": 5,
+    "id": 18
+  },
+  {
+    "code": 53,
+    "nom": "Anosy",
+    "id_province": 5,
+    "id": 19
+  },
+  {
+    "code": 54,
+    "nom": "Menabe",
+    "id_province": 5,
+    "id": 20
+  },
+  {
+    "code": 71,
+    "nom": "Diana",
+    "id_province": 6,
+    "id": 21
+  },
+  {
+    "code": 72,
+    "nom": "Sava",
+    "id_province": 6,
+    "id": 22
+  }
+]

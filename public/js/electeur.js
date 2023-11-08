@@ -1,4 +1,3 @@
-
 fetch('/getAllElector').then(response => response.json())
     .then(electeurs => {
 
@@ -10,8 +9,8 @@ fetch('/getAllElector').then(response => response.json())
             <td style="width:20px;">${electeur.id}</td>
             <td>${electeur.identite}</td>
             <td>${electeur.nom}</td>
-            <td><img class="photo-electeur" src="${electeur.photo}"></td>
-            <td><img class="photo-electeur" src="${electeur.photo2}"></td>
+            <td><img class="photo-electeur" src="${electeur.photo}"><img class="photo-electeur" src="${electeur.photo2}"></td>
+            <td><a href="/bureau-de-vote?id=${electeur.id_fokontany}" style="color: blue;">${electeur.id_fokontany}</a></td>
             <td><button class="btn btn-success" onclick="hanova(${electeur.id},'${electeur.nom}','${electeur.identite}','${electeur.photo}','${electeur.photo2}')"><i class="fa-regular fa-pen-to-square"></i>Hanova</button><button class="btn btn-danger" onclick="hamafa(${electeur.id})"><i class="fa-solid fa-user-xmark"></i>Fafàna</button></td>
             </tr>`
             }
@@ -50,6 +49,16 @@ function openModal() {
     document.querySelector('#cin-electeur').value =""
     document.querySelector('#photo-electeur').value = ""
     document.querySelector('#photo2-electeur').value =""
+
+    fetch('/getAllProvince').then(r=>r.json())
+    .then(data=>{
+        let htm = '<option value="0">Safidio</option>'
+        for(let pro of data){
+            htm+=`<option value="${pro.id}">${pro.nom}</option>`
+        }
+
+        document.querySelector("#province-electeur").innerHTML = htm
+    })
 }
 
 function saveElector() {
@@ -99,4 +108,63 @@ function hanova(id, nom, identite, photo, photo2){
     document.querySelector('#cin-electeur').value =identite
     document.querySelector('#photo-electeur').value = photo
     document.querySelector('#photo2-electeur').value =photo2
+}
+
+function selectRegion(province){
+
+    let id = province.value
+    fetch('/getAllRegion/'+id).then(r=>r.json())
+    .then(data=>{
+        let htm = '<option value="0">Safidio</option>'
+        for(let pro of data){
+
+            htm+=`<option value="${pro.id}">${pro.nom}</option>`
+        }
+
+        document.querySelector("#region-electeur").innerHTML = htm
+    })
+}
+
+function selectDistrict(region){
+
+    let id = region.value
+    fetch('/getAllDistrict/'+id).then(r=>r.json())
+    .then(data=>{
+        let htm = '<option value="0">Safidio</option>'
+        for(let pro of data){
+            htm+=`<option value="${pro.id}">${pro.nom}</option>`
+        }
+
+        document.querySelector("#district-electeur").innerHTML = htm
+    })
+}
+
+
+function selectCommune(district){
+
+    let id = district.value
+    fetch('/getAllCommune/'+id).then(r=>r.json())
+    .then(data=>{
+        let htm = '<option value="0">Safidio</option>'
+        for(let pro of data){
+            htm+=`<option value="${pro.id}">${pro.nom}</option>`
+        }
+
+        document.querySelector("#commune-electeur").innerHTML = htm
+    })
+}
+
+
+function selectFokontany(commune){
+
+    let id = commune.value
+    fetch('/getAllFokontany/'+id).then(r=>r.json())
+    .then(data=>{
+        let htm = '<option value="0">Safidio</option>'
+        for(let pro of data){
+            htm+=`<option value="${pro.id}">${pro.nom}</option>`
+        }
+
+        document.querySelector("#fokontany-electeur").innerHTML = htm
+    })
 }

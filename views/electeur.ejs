@@ -5,7 +5,7 @@
     <title>E-fidy</title>
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/static/jquery.dataTables.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
     <script defer src="/js/script.js"></script>
     <script defer src="/js/electeur.js"></script>
     <script src="/static/jquery-3.7.1.min.js"></script>
@@ -46,7 +46,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/resultat-election"><i class="far fa-chart-bar"></i>Valim-pifidianana</a>
                 </li>
-                
+
             </ul>
         </div>
     </nav>
@@ -57,7 +57,8 @@
             <section class="section-liste-electorale">
                 <!--for demo wrap-->
                 <!-- <h1>Liste électorale</h1> -->
-                <button class="ajout-electeur" onclick="openModal()"><i class="fa-solid fa-user-plus"></i> Hampiditra mpifidy</button>
+                <button class="ajout-electeur" onclick="openModal()"><i class="fa-solid fa-user-plus"></i> Hampiditra
+                    mpifidy</button>
 
                 <div class="tbl-content">
                     <table cellpadding="0" cellspacing="0" border="0" id="mon-table">
@@ -67,8 +68,8 @@
                                 <th style="width: 20px;">N°</th>
                                 <th>CIN</th>
                                 <th>Anarana</th>
-                                <th>Sary Voalohany</th>
-                                <th>Sary faharoa</th>
+                                <th>Sary</th>
+                                <th>Biraom-pifidianana</th>
                                 <th>Fanovàna</th>
                             </tr>
                         </thead>
@@ -82,15 +83,52 @@
             </section>
 
             <div class="d-none" id="modal">
-                <div class="alert">
+                <div class="alert alert-form">
                     <div>
+                        <h2 style="color: blueviolet; text-align: center; margin: 0;"><i class="fa-solid fa-user-plus"></i>Ampiditra mpifidy</h2>
                         <form class="form-eleteur" action="/saveOneElector" method="post" enctype="multipart/form-data">
-                            <input type="hidden" class="input-electeur" id="type-hidden" name="type_election" required value="create">
-                            <input type="hidden" class="input-electeur" id="id-hidden" name="id_electeur" required value="0">
+                            <input type="hidden" class="input-electeur" id="type-hidden" name="type_election" required
+                                value="create">
+                            <input type="hidden" class="input-electeur" id="id-hidden" name="id_electeur" required
+                                value="0">
                             <label class="label-electeur">Anaran'ny mpifidy</label>
                             <input type="text" class="input-electeur" id="nom-electeur" name="nom_electeur" required>
                             <label class="label-electeur">CIN an'ny mpifidy</label>
                             <input type="text" class="input-electeur" id="cin-electeur" name="cin_electeur" required>
+                            <div class="div-map">
+                                <div class="input-flot">
+                                    <label class="label-electeur">Faritany</label>
+                                    <select class="select-electeur" id="province-electeur"
+                                        onchange="selectRegion(this)" required>
+                                    </select>
+                                </div>
+                                <div class="input-flot">
+                                    <label class="label-electeur">Faritra</label>
+                                    <select class="select-electeur" id="region-electeur"
+                                        onchange="selectDistrict(this)" required>
+                                    </select>
+                                </div>
+                                <div class="input-flot">
+                                    <label class="label-electeur">Distrika</label>
+                                    <select class="select-electeur" id="district-electeur"
+                                        onchange="selectCommune(this)" required>
+                                    </select>
+                                </div>
+                                <div class="input-flot">
+                                    <label class="label-electeur">Kaominina</label>
+                                    <select class="select-electeur" id="commune-electeur"
+                                        onchange="selectFokontany(this)" required>
+                                    </select>
+                                </div>
+                                <div class="input-flot">
+                                    <label class="label-electeur">Fokontany</label>
+                                    <select class="select-electeur" id="fokontany-electeur" required name="fokontany_electeur">
+                                    </select>
+                                </div>
+                                
+                            </div>
+
+
                             <label class="label-electeur" for="photo-electeur">Sary voalohany</label>
                             <input type="file" class="input-electeur" id="photo-electeur" name="photo_electeur"
                                 required>
@@ -98,9 +136,10 @@
                             <input type="file" class="input-electeur" id="photo2-electeur" name="photo2_electeur"
                                 required>
                             <div class="d-flex">
-                                <button class="btn btn-danger btn-2" type="button"
-                                    onclick="closeModal()"><i class="fa-solid fa-delete-left"></i>Aoka aloha</button>
-                                <button class="btn btn-success btn-2" type="submit"><i class="fa-solid fa-floppy-disk"></i>Ampidirina</button>
+                                <button class="btn btn-danger btn-2" type="button" onclick="closeModal()"><i
+                                        class="fa-solid fa-delete-left"></i>Aoka aloha</button>
+                                <button class="btn btn-success btn-2" type="submit"><i
+                                        class="fa-solid fa-floppy-disk"></i>Ampidirina</button>
                             </div>
 
                         </form>

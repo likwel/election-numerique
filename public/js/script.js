@@ -53,3 +53,24 @@ function runSpinner() {
     }, 5000)
 
 }
+
+/**
+ * @constructor
+ * @param {string} string 
+ * @returns 
+ */
+function capitalize(string){
+    
+    return string.toLowerCase().replace(/(^\w{1})|(\s+\w{1})/g, letter => letter.toUpperCase())
+
+}
+
+/**
+ * @constructor
+ * @param {string} string 
+ * @returns 
+ */
+function numberRoman(string){
+    return string.replaceAll("Ii","II").replaceAll("Iii","III").replaceAll("IIig","IIIG").replaceAll("IIig-i","IIIG-I").replaceAll("IIih-i","IIIH-I")
+    .replaceAll("IIil","IIIL").replaceAll("IIin","IIIN").replaceAll("IIi-i","III-I").replaceAll("IIij","IIIJ").replaceAll("IIi","III").replaceAll("IIIG-i","IIIG-I")
+}
