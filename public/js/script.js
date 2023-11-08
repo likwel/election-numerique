@@ -48,9 +48,14 @@ $(".navbar-toggler").click(function () {
 
 function runSpinner() {
     document.querySelector(".simple-spinner").classList.remove("d-none")
-    setInterval(() => {
+    setTimeout (() => {
         document.querySelector(".simple-spinner").classList.add("d-none")
     }, 5000)
+
+}
+
+function moveSpinner() {
+    document.querySelector(".simple-spinner").classList.add("d-none")
 
 }
 

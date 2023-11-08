@@ -21,7 +21,10 @@ function startVideo() {
     )
 }
 
-
+let oo = []
+list_electeur.forEach(li => {
+    oo.push(li.identite + " - " + li.fokontany + " - " + li.commune + " - " + li.district + " - " + li.region + " - " + li.province)
+})
 function getLabeledFaceDescriptions() {
 
     let labels = []
@@ -90,23 +93,35 @@ video.addEventListener('play', async () => {
             const box = resizedDetections[i].detection.box;
             const drawBox = new faceapi.draw.DrawBox(box, {
                 label: result,
+                boxColor: "#008000",
+                lineWidth: 3,
+                drawLabelOptions :{
+                    // anchorPosition: "BOTTOM_RIGHT",
+                    backgroundColor: '#008000',
+                    padding : 15,
+                    fontSize : 18,
+                    fontStyle : "bold"
+                 }
             });
             drawBox.draw(canvas);
-
-            // res.innerHTML += result.label + " a éssayé d'entrer dans le bureau de vote n° 01, le " + new Date().toLocaleString() + "<br>----------------------<br>"
-            // res.scrollIntoView(false);
 
             for (let electeur of list_electeur) {
 
                 if (result.label == electeur.nom + " - " + electeur.identite) {
 
-                    writeElector(div, JSON.stringify(electeur))
+                    video.pause()
 
-                    res.appendChild(div)
+                    setTimeout(()=>{
+                        
+                        document.querySelector(".faciale").classList.add("d-none")
+                        writeElector(div, JSON.stringify(electeur))
+                        res.appendChild(div)
+                    },3000)
 
-                    runSpinner()
-                    
-                    setInterval(() => {
+                    // runSpinner()
+
+                    setTimeout(() => {
+                        runSpinner()
                         location.href = "/election?id=" + electeur.id
                     }, 5000)
 
@@ -121,14 +136,13 @@ function writeElector(div, electo) {
     let elector = JSON.parse(electo)
     div.innerHTML = `
     <div class="card-profil">
-        <img src="${elector.photo}" alt="${elector.identite}" style="width:100%;height:auto;">
+        <img class="show-profile" src="${elector.photo}" alt="${elector.identite}">
         <label class="nom-profil">${elector.nom}</label>
         <p class="identite-profil">CIN : ${elector.identite}</p>
-        <p class="p-profil">${capitalize(elector.fokontany)} - ${capitalize(elector.commune)} - ${capitalize(elector.district)}</p>
-        <p><button class="button-profil">${capitalize(elector.province)}</button></p>
+        <p class="p-profil">${elector.fokontany} - ${elector.commune} - ${elector.district}</p>
+        <p><button class="button-profil">${elector.province}</button></p>
     </div>
 
     `
+    document.querySelector("#title_").innerText = "(Ianao dia fantatry ny programa)"
 }
-
-

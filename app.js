@@ -31,14 +31,13 @@ const RegionList = require('./public/static/new_region.json');
 const ProvinceList = require('./public/static/new_province.json');
 const Electeur = require('./entity/electeur');
 
-app.use(bodyParser.json());
+app.use(bodyParser.json({limit: '50mb'}));
 // app.use(express.json())
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.urlencoded({ limit: '50mb', extended: true }));
 app.set("view engine", "ejs");
 // app.engine('ejs', require('ejs').__express);
 app.use(express.static(path.join(__dirname, "public")));
 require('dotenv').config();
-
 
 // Test DB
 db.authenticate()
@@ -58,15 +57,15 @@ const server = http.createServer(app);
 app.get('/', (req, res) => {
 
     let query = 'SELECT electeurs.id as id, electeurs.nom as nom, electeurs.identite as identite, '
-    +'electeurs.photo as photo, electeurs.photo2 as photo2, fokontanies.nom as fokontany, communes.nom as commune, districts.nom as district,' 
-    +'regions.nom as region, provinces.nom as province FROM electeurs '
-    +'INNER JOIN fokontanies ON electeurs.id_fokontany = fokontanies.id '
-    +'INNER JOIN communes ON fokontanies.id_commune = communes.id INNER JOIN districts ON communes.id_district = districts.id '
-    +'INNER JOIN regions ON districts.id_region = regions.id INNER JOIN provinces ON regions.id_province = provinces.id '
+        + 'electeurs.photo as photo, electeurs.photo2 as photo2, fokontanies.nom as fokontany, communes.nom as commune, districts.nom as district,'
+        + 'regions.nom as region, provinces.nom as province FROM electeurs '
+        + 'INNER JOIN fokontanies ON electeurs.id_fokontany = fokontanies.id '
+        + 'INNER JOIN communes ON fokontanies.id_commune = communes.id INNER JOIN districts ON communes.id_district = districts.id '
+        + 'INNER JOIN regions ON districts.id_region = regions.id INNER JOIN provinces ON regions.id_province = provinces.id '
 
     const records = db.query(query, {
         type: QueryTypes.SELECT
-      }).then(electeurs => {
+    }).then(electeurs => {
 
         res.render('index', {
             electeurs: JSON.stringify(electeurs)
@@ -100,16 +99,16 @@ app.get('/bureau-de-vote', (req, res) => {
  */
 app.get('/getAllbureau-de-vote', (req, res) => {
 
-    let query = 'SELECT fokontanies.id as id_fokontany, fokontanies.nom as fokontany, communes.nom as commune, districts.nom as district,' 
-    +'regions.nom as region, provinces.nom as province FROM fokontanies '
-    +'INNER JOIN communes ON fokontanies.id_commune = communes.id INNER JOIN districts ON communes.id_district = districts.id '
-    +'INNER JOIN regions ON districts.id_region = regions.id INNER JOIN provinces ON regions.id_province = provinces.id '
-    
+    let query = 'SELECT fokontanies.id as id_fokontany, fokontanies.nom as fokontany, communes.nom as commune, districts.nom as district,'
+        + 'regions.nom as region, provinces.nom as province FROM fokontanies '
+        + 'INNER JOIN communes ON fokontanies.id_commune = communes.id INNER JOIN districts ON communes.id_district = districts.id '
+        + 'INNER JOIN regions ON districts.id_region = regions.id INNER JOIN provinces ON regions.id_province = provinces.id '
+
     const records = db.query(query, {
         type: QueryTypes.SELECT
-      }).then(data=>{
+    }).then(data => {
         res.send(data);
-      });
+    });
 
 })
 
@@ -118,15 +117,15 @@ app.get('/getAllbureau-de-vote', (req, res) => {
  */
 app.get('/getBureau-de-vote/:id', (req, res) => {
 
-    let query = 'SELECT fokontanies.id as id_fokontany, fokontanies.nom as fokontany, communes.nom as commune, districts.nom as district,' 
-    +'regions.nom as region, provinces.nom as province FROM fokontanies '
-    +'INNER JOIN communes ON fokontanies.id_commune = communes.id INNER JOIN districts ON communes.id_district = districts.id '
-    +'INNER JOIN regions ON districts.id_region = regions.id INNER JOIN provinces ON regions.id_province = provinces.id WHERE fokontanies.id ='+req.params.id
+    let query = 'SELECT fokontanies.id as id_fokontany, fokontanies.nom as fokontany, communes.nom as commune, districts.nom as district,'
+        + 'regions.nom as region, provinces.nom as province FROM fokontanies '
+        + 'INNER JOIN communes ON fokontanies.id_commune = communes.id INNER JOIN districts ON communes.id_district = districts.id '
+        + 'INNER JOIN regions ON districts.id_region = regions.id INNER JOIN provinces ON regions.id_province = provinces.id WHERE fokontanies.id =' + req.params.id
     const records = db.query(query, {
         type: QueryTypes.SELECT
-      }).then(data=>{
+    }).then(data => {
         res.send(data);
-      });
+    });
 
 })
 
@@ -135,12 +134,31 @@ app.get('/getBureau-de-vote/:id', (req, res) => {
  */
 app.get('/getAllElector', (req, res) => {
 
-    ElecteurModel.findAll()
-        .then(electeurs => {
-            // console.log(electeurs);
-            res.send(electeurs);
+    let query = 'SELECT electeurs.id as id, electeurs.nom as nom, electeurs.identite as identite, '
+        + 'electeurs.id_fokontany as id_fokontany, communes.id as id_commune, districts.id as id_district,regions.id as id_region,provinces.id as id_province, '
+        + 'electeurs.photo as photo, electeurs.photo2 as photo2, fokontanies.nom as fokontany, communes.nom as commune, districts.nom as district,'
+        + 'regions.nom as region, provinces.nom as province FROM electeurs '
+        + 'INNER JOIN fokontanies ON electeurs.id_fokontany = fokontanies.id '
+        + 'INNER JOIN communes ON fokontanies.id_commune = communes.id INNER JOIN districts ON communes.id_district = districts.id '
+        + 'INNER JOIN regions ON districts.id_region = regions.id INNER JOIN provinces ON regions.id_province = provinces.id '
 
-        })
+    const records = db.query(query, {
+        type: QueryTypes.SELECT
+    }).then(electeurs => {
+
+        res.send(electeurs);
+
+        // res.render('index', {
+        //     electeurs: JSON.stringify(electeurs)
+        // });
+    })
+
+    // ElecteurModel.findAll()
+    //     .then(electeurs => {
+    //         // console.log(electeurs);
+    //         res.send(electeurs);
+
+    //     })
 
 })
 
@@ -181,6 +199,12 @@ app.post('/saveOneElector', (req, res) => {
             photo2: '/labels/' + nom + '-' + identite + '/' + 2 + path.extname(file.photo2_electeur[0].originalFilename)
         }
 
+        let electeur_update = {
+            identite: identite,
+            nom: nom,
+            id_fokontany: id_fokontany
+        }
+
 
         if (!fs.existsSync(newpath)) {
             fs.mkdirSync(newpath);
@@ -202,24 +226,68 @@ app.post('/saveOneElector', (req, res) => {
 
         } else {
 
-            ElecteurModel.update(electeur, {
+            ElecteurModel.update(electeur_update, {
                 where: {
                     id: id
                 }
             });
 
-            // ElecteurModel.create(electeur);
-
         }
 
 
         res.redirect('/liste-electorale')
-        // res.render("electeur");
 
     });
 
 
 })
+
+/**
+ * Change photo electeur
+ */
+app.post('/change-photo/:number', (req, res) => {
+    let id = req.body.id;
+    let file = req.body.file;
+    let nom = req.body.nom;
+    let identite = req.body.identite;
+
+    let base64 = file.match(/^data:([A-Za-z-+\/]+);base64,(.+)$/);
+    var buffer = new Buffer.from(base64[2], 'base64');
+
+    let newpath = path.join(__dirname, 'public/labels') + '/' + nom + '-' + identite + '/'
+
+    let extension = file.split(';')[0].split('/')[1]
+
+    let photo = newpath + req.params.number + "."+extension;
+
+    let photo_name = '/labels/' + nom + '-' + identite + '/' + req.params.number + "."+extension
+
+    fs.writeFile(photo, buffer, 'base64', function (err) {
+        // console.log(err);
+    });
+
+    if(req.params.number==1){
+        ElecteurModel.update({
+            photo : photo_name
+        }, {
+            where: {
+                id: id
+            }
+        });
+    }
+    if(req.params.number==2){
+        ElecteurModel.update({
+            photo2 : photo_name
+        }, {
+            where: {
+                id: id
+            }
+        });
+    }
+
+    res.redirect('/liste-electorale')
+
+});
 
 /**
  * Return json d'un candidat par Numero dans la bulletin unique
@@ -311,7 +379,7 @@ app.get('/save-fokontany/WJtXTx0Uj', (req, res) => {
 
     for (let foko of fokontany) {
         FokontanyModel.create({
-            code : foko.code,
+            code: foko.code,
             nom: foko.nom,
             id_commune: foko.id_commune
         });
@@ -330,7 +398,7 @@ app.get('/save-commune/WJtrTx0Uj', (req, res) => {
 
     for (let commune of comumes) {
         CommuneModel.create({
-            code : commune.code,
+            code: commune.code,
             id_district: commune.id_district,
             nom: commune.nom
         });
@@ -349,7 +417,7 @@ app.get('/save-district/WotrTx0Uj', (req, res) => {
 
     for (let district of districts) {
         DistrictModel.create({
-            code : district.code,
+            code: district.code,
             id_region: district.id_region,
             nom: district.nom
         });
@@ -368,7 +436,7 @@ app.get('/save-region/W0IhrTx0Uj', (req, res) => {
 
     for (let district of regions) {
         RegionModel.create({
-            code : district.code,
+            code: district.code,
             id_province: district.id_province,
             nom: district.nom
         });
@@ -387,7 +455,7 @@ app.get('/save-province/WplDrTx0Uj', (req, res) => {
 
     for (let district of provinces) {
         ProvinceModel.create({
-            code : district.code,
+            code: district.code,
             nom: district.nom
         });
     }
@@ -537,8 +605,8 @@ app.get('/getAllProvince', (req, res) => {
 app.get('/getAllRegion/:id_province', (req, res) => {
 
     RegionModel.findAll({
-        where : {
-            id_province : req.params.id_province
+        where: {
+            id_province: req.params.id_province
         }
     }).then(result => {
         // console.log(res);
@@ -553,8 +621,8 @@ app.get('/getAllRegion/:id_province', (req, res) => {
 app.get('/getAllDistrict/:id_region', (req, res) => {
 
     DistrictModel.findAll({
-        where : {
-            id_region : req.params.id_region
+        where: {
+            id_region: req.params.id_region
         }
     }).then(result => {
         // console.log(res);
@@ -569,8 +637,8 @@ app.get('/getAllDistrict/:id_region', (req, res) => {
 app.get('/getAllCommune/:id_dist', (req, res) => {
 
     CommuneModel.findAll({
-        where : {
-            id_district : req.params.id_dist
+        where: {
+            id_district: req.params.id_dist
         }
     }).then(result => {
         // console.log(res);
@@ -585,8 +653,8 @@ app.get('/getAllCommune/:id_dist', (req, res) => {
 app.get('/getAllFokontany/:id_commune', (req, res) => {
 
     FokontanyModel.findAll({
-        where : {
-            id_commune : req.params.id_commune
+        where: {
+            id_commune: req.params.id_commune
         }
     }).then(result => {
         // console.log(res);
