@@ -409,7 +409,7 @@ h1 {
     }
 }
 
-@media screen and (max-height: 650px) {
+@media screen and (max-height: 600px) {
     .bulletin-specimen {
         display: none;
     }
@@ -1010,4 +1010,12 @@ i {
     width: 96%;
     height: 90%;
     border: 10px solid aqua;
+}
+
+.aucun-result{
+    padding: 20px !important;
+    color: #dc3545;
+}
+.add-border{
+    border-bottom: 0.125rem solid #dc3545 !important;
 }

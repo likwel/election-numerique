@@ -74,30 +74,31 @@ video.addEventListener('play', async () => {
         // const detections = await faceapi.detectAllFaces(video, new faceapi.TinyFaceDetectorOptions()).withFaceLandmarks().withFaceExpressions()
         const detections = await faceapi.detectAllFaces(video, new faceapi.TinyFaceDetectorOptions()).withFaceLandmarks().withFaceDescriptors()
         const resizedDetections = faceapi.resizeResults(detections, displaySize)
-        canvas.getContext('2d').clearRect(0, 0, canvas.width, canvas.height)
+        let context = canvas.getContext('2d').clearRect(0, 0, canvas.width, canvas.height)
+
         faceapi.draw.drawDetections(canvas, resizedDetections)
+
         // console.log(canvas);
-        // faceapi.draw.drawFaceLandmarks(canvas, resizedDetections)
+        //faceapi.draw.drawFaceLandmarks(canvas, resizedDetections)
         // faceapi.draw.drawFaceExpressions(canvas, resizedDetections)
 
+        
         const results = resizedDetections.map((im) => {
-            // console.log(im);
             return faceMatcher.findBestMatch(im.descriptor);
         });
-
-        // console.log(list_electeur);
+        // console.log(results);
 
         results.forEach((result, i) => {
 
-            // console.log(result);
-            const box = resizedDetections[i].detection.box;
+            let box = resizedDetections[i].detection.box;
+            //console.log(box)
             const drawBox = new faceapi.draw.DrawBox(box, {
                 label: result,
-                boxColor: "#008000",
+                boxColor: "#00FF1A",
                 lineWidth: 3,
                 drawLabelOptions :{
                     // anchorPosition: "BOTTOM_RIGHT",
-                    backgroundColor: '#008000',
+                    backgroundColor: '#00FF1A',
                     padding : 15,
                     fontSize : 18,
                     fontStyle : "bold"
@@ -106,6 +107,7 @@ video.addEventListener('play', async () => {
             drawBox.draw(canvas);
 
             for (let electeur of list_electeur) {
+                
 
                 if (result.label == electeur.nom + " - " + electeur.identite) {
 
@@ -129,7 +131,7 @@ video.addEventListener('play', async () => {
             }
 
         });
-    }, 100)
+    }, 200)
 })
 
 function writeElector(div, electo) {

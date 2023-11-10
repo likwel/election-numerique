@@ -13,14 +13,14 @@ const sequelize = require('sequelize');
 
 const db = require('./connexion');
 
-const CandidatModel = require('./entity/candidat');
-const FokontanyModel = require('./entity/fokontany');
-const DistrictModel = require('./entity/district');
-const RegionModel = require('./entity/region');
-const ProvinceModel = require('./entity/province');
-const CommuneModel = require('./entity/commune');
-const ElecteurModel = require('./entity/electeur');
-const VoteModel = require('./entity/vote');
+const CandidatModel = require('./models/candidat');
+const FokontanyModel = require('./models/fokontany');
+const DistrictModel = require('./models/district');
+const RegionModel = require('./models/region');
+const ProvinceModel = require('./models/province');
+const CommuneModel = require('./models/commune');
+const ElecteurModel = require('./models/electeur');
+const VoteModel = require('./models/vote');
 
 
 const CandidatList = require('./public/js/candida_list');
@@ -29,7 +29,7 @@ const FokontanyList = require('./public/static/new_fokontany.json');
 const DistrictList = require('./public/static/new_district.json');
 const RegionList = require('./public/static/new_region.json');
 const ProvinceList = require('./public/static/new_province.json');
-const Electeur = require('./entity/electeur');
+const Electeur = require('./models/electeur');
 
 app.use(bodyParser.json({limit: '50mb'}));
 // app.use(express.json())
@@ -563,6 +563,9 @@ app.post('/election/send', async (req, res) => {
 app.get('/getResultat', (req, res) => {
 
     VoteModel.findAndCountAll({
+        order: [
+            ['candidat_id', 'ASC'],
+        ],
         // attributes: ['candidat_id', [Sequelize.fn('count', Sequelize.col('candidat_id')), 'resultat']],
         group: ['candidat_id']
     }).then(result => {
@@ -580,7 +583,11 @@ app.get('/getResultat', (req, res) => {
  */
 app.get('/getAllCandidat', (req, res) => {
 
-    CandidatModel.findAll().then(result => {
+    CandidatModel.findAll({
+        order: [
+            ['id', 'ASC'],
+        ],
+    }).then(result => {
         // console.log(res);
         res.send(result);
     })

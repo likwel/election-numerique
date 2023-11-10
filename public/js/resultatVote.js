@@ -30,5 +30,6 @@ if (list_resultat.length > 0) {
         
     }
 }else{
-    document.querySelector("#inner-resultat-electorale").innerHTML = "Aucun resultat électorale pour le moment!"
+    document.querySelector("#inner-resultat-electorale").innerHTML = `<tr class="odd add-border"><td valign="top" colspan="5" class="dataTables_empty center aucun-result">Mbola tsy misy valim-pifidianana voatahiry!</td></tr>`
+    
 }
