@@ -22,6 +22,6 @@ const Candidat = db.define('candidat', {
 });
 
 Candidat.sync().then(() => {
-  console.log('table created');
+  console.log('table candidat created');
 });
 module.exports = Candidat;

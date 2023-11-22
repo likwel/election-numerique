@@ -194,7 +194,7 @@ canvas {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.alert-form{
+.alert-form {
     left: 20% !important;
     right: 20% !important;
     top: 15% !important;
@@ -383,7 +383,8 @@ h1 {
     .bulletin-specimen {
         display: none;
     }
-    .alert-form{
+
+    .alert-form {
         left: 0 !important;
         right: 0 !important;
         top: 0 !important;
@@ -392,18 +393,22 @@ h1 {
         border-radius: 0 !important;
         border: none !important;
     }
-    .election-body{
+
+    .election-body {
         flex-flow: column;
         align-items: center;
     }
-    .ul1{
+
+    .ul1 {
         margin: 0;
         margin-top: 10px !important;
     }
-    .ul2{
+
+    .ul2 {
         margin: 0;
     }
-    #resultat{
+
+    #resultat {
         width: 100% !important;
         height: 100% !important;
     }
@@ -413,11 +418,13 @@ h1 {
     .bulletin-specimen {
         display: none;
     }
-    .election-body{
+
+    .election-body {
         flex-flow: column;
         align-items: center;
     }
-    .alert-form{
+
+    .alert-form {
         left: 0 !important;
         right: 0 !important;
         top: 0 !important;
@@ -426,10 +433,13 @@ h1 {
         border-radius: 0 !important;
         border: none !important;
     }
-    .ul1, .ul2{
+
+    .ul1,
+    .ul2 {
         margin: 0;
     }
-    #resultat{
+
+    #resultat {
         width: 100% !important;
         height: 100% !important;
     }
@@ -572,13 +582,15 @@ td {
     cursor: pointer;
 }
 
-.form-eleteur {
+.form-eleteur,
+.form-login {
     display: flex;
     flex-direction: column;
     margin: 10px;
 }
 
-.form-eleteur * {
+.form-eleteur *,
+.form-login * {
     margin: 5px;
 }
 
@@ -983,15 +995,18 @@ i {
 #inner-bureau-electorale tr td {
     height: 40px;
 }
-.input-flot{
+
+.input-flot {
     display: flex;
     flex-direction: column;
     width: 19%;
 }
-.div-map{
+
+.div-map {
     display: flex;
 }
-.change-image{
+
+.change-image {
     color: aqua;
     position: absolute;
     margin: 26px -28px;
@@ -1002,20 +1017,57 @@ i {
     cursor: pointer;
 }
 
-.input-photo{
+.input-photo {
     display: none;
 }
 
-.show-profile{
+.show-profile {
     width: 96%;
     height: 90%;
     border: 10px solid aqua;
 }
 
-.aucun-result{
+.aucun-result {
     padding: 20px !important;
     color: #dc3545;
 }
-.add-border{
+
+.add-border {
     border-bottom: 0.125rem solid #dc3545 !important;
+}
+
+.user-model {
+    width: 30% !important;
+    margin: auto;
+}
+
+.logo-show {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    display: flex;
+}
+
+.flush {
+    padding: 20px;
+    background-color: #f8d7da;
+    color: #58151c;
+    border: 1px solid;
+    border-color: #f1aeb5;
+    border-radius: 5px;
+}
+
+.closebtn-flush {
+    margin-left: 10px;
+    color: #58151c;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.closebtn-flush:hover {
+    color: black;
 }

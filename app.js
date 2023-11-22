@@ -13,6 +13,9 @@ const sequelize = require('sequelize');
 
 const db = require('./connexion');
 
+const cookieParser = require('cookie-parser')
+const userRoutes = require ('./Routes/userRouter')
+
 const CandidatModel = require('./models/candidat');
 const FokontanyModel = require('./models/fokontany');
 const DistrictModel = require('./models/district');
@@ -56,6 +59,26 @@ const server = http.createServer(app);
  */
 app.get('/', (req, res) => {
 
+    // res.setHeader('Content-Type', 'application/json');
+
+    const cookie = req.headers.cookie;
+
+    var output = {};
+    cookie.split(/\s*;\s*/).forEach(function(pair) {
+    pair = pair.split(/\s*=\s*/);
+    output[pair[0]] = pair.splice(1).join('=');
+    });
+    var json = JSON.stringify(output, null, 4);
+
+    
+    let token = output.jwt
+
+    if(!token){
+        res.redirect('/login')
+    }
+
+    // console.log(output);
+    
     let query = 'SELECT electeurs.id as id, electeurs.nom as nom, electeurs.identite as identite, '
         + 'electeurs.photo as photo, electeurs.photo2 as photo2, fokontanies.nom as fokontany, communes.nom as commune, districts.nom as district,'
         + 'regions.nom as region, provinces.nom as province FROM electeurs '
@@ -670,6 +693,9 @@ app.get('/getAllFokontany/:id_commune', (req, res) => {
 
 })
 
+
+//routes for the user API
+app.use('/', userRoutes)
 
 server.listen(port, () => {
     console.log(`Maintenant à l'écoute sur le port ${port}`);

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Labostat | MG</title>
+  <link rel="icon" href="/assets/images/Logo-LaboStat.png" type="image/x-icon"/>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <script defer src="/static/face-api.min.js"></script>
+  <!-- <script defer src="/js/script.js"></script> -->
+  <script defer src="/js/user.js"></script>
+  <script src="/static/jquery-3.7.1.min.js"></script>
+</head>
+
+<body class="body-cam">
+  
+  <div class="user-model">
+    <img class="logo-show" src="/assets/images/LaboStat.png" alt="logo"/>
+    <div>
+      <h2 style="color: blueviolet; text-align: center; margin: 0;" id="title-modale">Sign Up</h2>
+      <form class="form-login" action="/signup" method="post" enctype="multipart/form-data">
+
+          <label class="label-electeur">Username</label>
+          <input type="text" class="input-electeur" id="username-user" name="username" required>
+
+          <label class="label-electeur">E-mail</label>
+          <input type="email" class="input-electeur" id="email-user" name="email" required>
+          <label class="label-electeur">Mot de passe</label>
+          <input type="password" class="input-electeur" id="password-user" name="password" required>
+          
+          <div class="d-flex">
+              <button class="btn btn-danger btn-2" type="button"><i
+                      class="fa-solid fa-delete-left"></i>Annuler</button>
+              <button class="btn btn-success btn-2" type="button" onclick="register()"><i class="fa fa-save"></i>Enregistrer</button>
+          </div>
+
+      </form>
+
+  </div>
+  </div>
+
+
+  <div class="simple-spinner d-none" id="modal">
+    <div>
+      <span></span>
+      <label>Miandrasa kely azafady...</label>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
