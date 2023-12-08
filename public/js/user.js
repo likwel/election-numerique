@@ -30,6 +30,7 @@ function login(){
                 document.querySelector("#password-user").value =""
     
             }
+            // console.log(response);
         })
     }else{
         writeFlush(document.querySelector(".form-login"), "error", "Champs invalides!")
@@ -74,6 +75,7 @@ function register(){
                 document.querySelector("#username-user").value =""
                 writeFlush(document.querySelector(".form-login"), "warning", "Nom d'utilisateur déjà utilisé!")
             }
+            
 
         })
     }else{

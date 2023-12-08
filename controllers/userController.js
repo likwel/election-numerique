@@ -27,13 +27,15 @@ const signup = async (req, res) => {
         //generate token with the user's id and the secretKey in the env file
         // set cookie with the token generated
         if (user) {
-            let token = jwt.sign({ id: user.id }, process.env.secretKey, {
+            let token = jwt.sign({ id: user.id }, process.env.ACCESS_TOKEN_SECRET, {
                 expiresIn: 1 * 24 * 60 * 60 * 1000,
             });
 
             // res.setHeader('Content-Type', 'application/json');
 
-            res.cookie("jwt", token, { maxAge: 1 * 24 * 60 * 60, httpOnly: true });
+            res.cookie("jwt", token, { maxAge: 1 * 24 * 60 * 60 * 1000, httpOnly: true });
+            // res.cookie("user", JSON.stringify(user, null, 2));
+            // res.cookie("user", JSON.stringify(user, null, 2), {maxAge: 360000, httpOnly: true});
 
             //console.log("user", JSON.stringify(user, null, 2));
             //console.log(token);
@@ -76,14 +78,15 @@ const login = async (req, res) => {
             //generate token with the user's id and the secretKey in the env file
 
             if (isSame) {
-                let token = jwt.sign({ id: user.id }, process.env.secretKey, {
+                let token = jwt.sign({ id: user.id }, process.env.ACCESS_TOKEN_SECRET, {
                     expiresIn: 1 * 24 * 60 * 60 * 1000,
                 });
 
                 //if password matches wit the one in the database
                 //go ahead and generate a cookie for the user
                 // res.setHeader('Content-Type', 'application/json');
-                res.cookie("jwt", token, { maxAge: 1 * 24 * 60 * 60, httpOnly: true });
+                res.cookie("token", token, { maxAge: 1 * 24 * 60 * 60 * 1000, httpOnly: true });
+                res.cookie("user", JSON.stringify(user), {maxAge: 360000, httpOnly: true});
                 //console.log("user", JSON.stringify(user, null, 2));
                 //console.log(token);
                 //send user data

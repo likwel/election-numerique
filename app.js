@@ -4,6 +4,7 @@ const app = express();
 const port = 5000;
 const path = require('path');
 var bodyParser = require('body-parser');
+var PDFExtract = require('pdf.js-extract').PDFExtract;
 
 let formidable = require('formidable');
 let fs = require('fs');
@@ -15,6 +16,7 @@ const db = require('./connexion');
 
 const cookieParser = require('cookie-parser')
 const userRoutes = require ('./Routes/userRouter')
+const dashboardRoutes = require ('./Routes/dashboardRouter')
 
 const CandidatModel = require('./models/candidat');
 const FokontanyModel = require('./models/fokontany');
@@ -37,6 +39,7 @@ const Electeur = require('./models/electeur');
 app.use(bodyParser.json({limit: '50mb'}));
 // app.use(express.json())
 app.use(bodyParser.urlencoded({ limit: '50mb', extended: true }));
+app.use(cookieParser())
 app.set("view engine", "ejs");
 // app.engine('ejs', require('ejs').__express);
 app.use(express.static(path.join(__dirname, "public")));
@@ -54,30 +57,91 @@ const con_param = {
 
 const server = http.createServer(app);
 
+app.get("/scan/pdf", (req, res)=>{
+
+    let homepath = path.join(__dirname, 'public/assets').replace(new RegExp('\\' + path.sep, 'g'), '/');
+
+    var pdfExtract = new PDFExtract();
+
+    let op ={
+            firstPage : 1, // default:`1` - start extract at page nr
+            lastPage : 2, //  stop extract at page nr, no default value
+            password : '', //  for decrypting password-protected PDFs., no default value
+            verbosity : -1, // default:`-1` - log level of pdf.js
+            normalizeWhitespace : true, // default:`false` - replaces all occurrences of whitespace with standard spaces (0x20).
+            disableCombineTextItems : true // default:`false` - do not attempt to combine  same line {@link TextItem}'s.
+    }
+
+    
+    var pdfFilePath = homepath + '\\'+'Recapitulation_par_Commune.pdf';
+
+    pdfExtract.extract(pdfFilePath , op, function (err, data) {
+        if (err) return console.log(err);
+        let all_data_array = data.pages
+        
+
+        for(let data of all_data_array){
+            // console.log(data.content);
+
+            for(let i=0; i<data.content.length; i++){
+
+                let result = {}
+
+                let page = data.content[i]
+                console.log(page);
+
+                if(page.x.toString().includes('55')){
+                    //result["fokontany"] = page.str
+                    console.log("Fokontany : "+page.str);
+                }else{
+                    if(page.x.toString().includes("128")){
+                        console.log("Data : "+page.str);
+                    }
+                    if(page.str.toString().includes("58")){
+                        console.log("District: "+page.str);
+                    }
+                    if(page.str.toString().includes("557")) {
+                        console.log("Commune: "+page.str);
+                    }
+                    //console.log("Data : "+page.str);
+                }
+
+                //console.log(result);
+                
+
+                // if(open.x == 55.7000000000001){
+                //     res['fokontany'] = open.str
+                // }else{
+                //     res['data'] = open.str
+                // }
+            }
+            
+            
+        }
+        //console.log(res);
+        
+    });
+
+    
+})
+
 /**
  * Retourner la tepmate index.html
  */
 app.get('/', (req, res) => {
 
-    // res.setHeader('Content-Type', 'application/json');
+    // const cookie = req.headers.cookie;
+    const cookie = req.cookies;
 
-    const cookie = req.headers.cookie;
+    console.log(cookie);
 
-    var output = {};
-    cookie.split(/\s*;\s*/).forEach(function(pair) {
-    pair = pair.split(/\s*=\s*/);
-    output[pair[0]] = pair.splice(1).join('=');
-    });
-    var json = JSON.stringify(output, null, 4);
+    let token = cookie.token
 
-    
-    let token = output.jwt
-
-    if(!token){
+    if(!req.cookies.user){
         res.redirect('/login')
     }
 
-    // console.log(output);
+    // console.log(token);
     
     let query = 'SELECT electeurs.id as id, electeurs.nom as nom, electeurs.identite as identite, '
         + 'electeurs.photo as photo, electeurs.photo2 as photo2, fokontanies.nom as fokontany, communes.nom as commune, districts.nom as district,'
@@ -696,6 +760,9 @@ app.get('/getAllFokontany/:id_commune', (req, res) => {
 
 //routes for the user API
 app.use('/', userRoutes)
+
+//routes for the dashboard API
+app.use('/dashboard', dashboardRoutes)
 
 server.listen(port, () => {
     console.log(`Maintenant à l'écoute sur le port ${port}`);

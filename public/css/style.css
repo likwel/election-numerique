@@ -378,7 +378,11 @@ h1 {
         width: 1048px;
     }
 }
-
+@media screen and (max-width: 500px) {
+    .user-model{
+        width: 100% !important;
+    }
+}
 @media screen and (max-width: 1000px) {
     .bulletin-specimen {
         display: none;
@@ -411,6 +415,9 @@ h1 {
     #resultat {
         width: 100% !important;
         height: 100% !important;
+    }
+    .user-model{
+        width: 50% !important;
     }
 }
 
@@ -1037,7 +1044,7 @@ i {
 }
 
 .user-model {
-    width: 30% !important;
+    width: 30%;
     margin: auto;
 }
 
@@ -1071,3 +1078,5 @@ i {
 .closebtn-flush:hover {
     color: black;
 }
+
+/* .form-login */
